@@ -1,0 +1,8 @@
+---
+layout: post
+title: Passing by Value, Reference and somewhere in between
+---
+
+h1. {{ page.title }}
+
+Test
