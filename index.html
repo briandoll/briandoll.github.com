@@ -1,58 +1,18 @@
-<html>
-<title>Brian Doll</title>
-<style type="text/css">
-<!--
-body {
-	font-family: Verdana;
-	font-size: 18px;
-	font-weight: bold;
-	color: #A6A6A6;
-	background-color: #595959;	
-}
 
-a {
-	display: block;
-	font-size: 18px;
-	color: #B3D63E;	
-	text-decoration: none;	
-}
+---
+layout: default
+title: Brian Doll : emphatic solutions
+---
+ 
+  <h1>Blog Posts</h1>
+  <ul class="posts">
+    {% for post in site.posts %}
+      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+  </ul>
 
-a:hover {
-  background-color: #B3D63E;
-  color: #000;
-}
 
-table {
-	margin-left:auto;
-	margin-right:auto;
-}
-
-td {
-	vertical-align: top;
-}
-.name {
-	font-family: Verdana;
-	font-size: 96px;
-	font-weight: bold;
-	color: #FCB626;
-}
-
-.titles {
-	font-family: Verdana;
-	font-size: 48px;
-	font-weight: bold;
-	color: #3A9FF2;
-}
--->
-</style> 
-</head>	
-<body>
-<a href="http://github.com/briandoll"><img style="position: absolute; top: 0; left: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_left_orange_ff7600.png" alt="Fork me on GitHub" /></a>
-	
-<table border="0" cellpadding="20">
-	<tr>
-		<td colspan="3" align="center"><div class="name">Brian Doll</div>brian@emphaticsolutions.com</td>
-	</tr>
+<table border="0" cellpadding="20">	
 	<tr>
 		<td class="titles">Tech</td>
 		<td class="titles">Fitness</td>
