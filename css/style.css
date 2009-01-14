@@ -15,7 +15,7 @@
 */
 
 body {
-	background: #FFFFFF url(images/bg.gif) top center no-repeat;
+	background: #FFFFFF url(/images/bg.gif) top center no-repeat;
 	color: #333333;
 	font-size: 11px;
 	font-family: Verdana, Helvetica, Sans-Serif;
@@ -319,11 +319,11 @@ blockquote{
 ************************************************/
 
 #footerbg {
-	background: #333333 url(images/bg2.gif) no-repeat top;
+	background: #333333 url(/images/bg2.gif) no-repeat top;
 	}
 
 #footer {
-	background: #333333 url(images/bg2.gif) no-repeat top;
+	background: #333333 url(/images/bg2.gif) no-repeat top;
 	color: #FFFFFF;
 	width: 960px;
 	margin: 0px auto 0px;
@@ -356,7 +356,7 @@ blockquote{
 	}
 	
 #s {
-	background: #EFEFEF url(images/search.gif);
+	background: #EFEFEF url(/images/search.gif);
 	width: 200px;
 	color: #333333;
 	font-size: 11px;
@@ -423,7 +423,7 @@ blockquote{
 	margin: 3px 0px 20px 0px;
 	padding: 20px 10px 5px 10px;
 	width: 390px;
-	background: #FFFFFF url(images/comment.gif) no-repeat top;
+	background: #FFFFFF url(/images/comment.gif) no-repeat top;
 	}
 
 .commenttext-admin {
@@ -431,7 +431,7 @@ blockquote{
 	margin: 3px 0px 20px 0px;
 	padding: 20px 10px 5px 10px;
 	width: 390px;
-	background: #FFFFFF url(images/comment.gif) no-repeat top;
+	background: #FFFFFF url(/images/comment.gif) no-repeat top;
 	}
 
 #commentsformheader{
@@ -468,6 +468,7 @@ p.comments_link  img{
 
 ############## CUSTOM
 #####################
+
 
 #github-badge a {
 display:inline;
