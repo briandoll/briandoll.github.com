@@ -1,8 +1,32 @@
 ---
-layout: post
+layout: default
 title: Passing by Value, Reference and somewhere in between
 ---
 
 h1. {{ page.title }}
 
-Test
+I had recently run into what one might call an anti-pattern in a code base I was recently working in, and wanted to refresh my memory on exactly how java deals with object parameters that are modified within the method body. To be totally honest, the code (similar to the first code snippet below) was so strange to me because I had never ever seen that (anti-)pattern before. It’s likely an artifact left over from a C programmer that may have forgotten the language differences.
+
+This discussion is often had, but usually leaves the participants more confused than when they started. Java passes by value, right? Or is it reference? What is it with primitives again? Oh man, forget it.
+
+First, "let’s read up on the specifics":http://www.yoda.arachsys.com/java/passing.html of this subject, "and again with pictures":http://www.javaworld.com/javaworld/javaqa/2000-05/03-qa-0526-pass.html.
+
+
+Now, let’s grok this:
+<script src="http://gist.github.com/46734.js"></script> 
+
+What is the value of snappy and happy?
+
+In the above code, we see that we’re checking our Map for null, and if it is null we assign the parameter to a new HashMap object. This is where the world turns upside down. When we do this, we re-”point” (there, i said it, point, like pointer, i digress) the parameter to an entirely new object which we are then modifying. Snappy continues to be null after this code is run, but happy now has its foo/bar pair within.
+
+You know what is so frustrating about this? The method will look like it’s operating on the original map parameter. Sometimes it will. When map is null in this case (or anything else that the programmer of addToMap decided to muck with), the method does not modify the original map.
+
+Wait! It’s not all bad. Let’s note that the method addToMap does actually return something. It happens to return the right thing, all the time, in fact. Why all this madness then? Well, if we look above, the caller is completely ignoring the return value of the method! If we always were to assign the returned value back to the map in question, it would work the same way, all the time. It is possible to write a method that acts on the original parameter (object) without modifying it by using copies, but that’s expensive and usually redundant.
+
+<script src="http://gist.github.com/46735.js"></script>
+
+In the above case, we would have two maps, both with a foo/bar pair inside them.
+
+This example is using a HashMap, but imagine we were talking about Strings. Strings are immutable in Java, so whatever you do to them, you’ll end up with a new string object, which of course, isn’t the one you passed in.
+
+The point of this rant is that just because the compiler will let us, we should not rely on the confusing art of methods that modify their object parameters in place. As the article linked above states: “If a parameter is an “in-out” parameter, then its original value should be passed into the method and its result moved to the return value.”
