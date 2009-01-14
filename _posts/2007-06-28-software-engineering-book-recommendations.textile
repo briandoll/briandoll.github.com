@@ -1,0 +1,71 @@
+---
+layout: default
+title: Software Engineering Book Recommendations
+---
+
+h1. {{ page.title }}
+
+I always find it fascinating what books people prefer on various topics. I put together the following list of books I really enjoy, broken down by category. Please feel free to add to the list, or to comment on the selections.
+
+h3. People, Projects and surviving them both
+
+If only software development were as simple as writing a bit of code. Here are some good books that help us better understand and survive our evolving landscape.
+
+* *Getting Things Done* ("@amazon":http://www.amazon.com/Getting-Things-Done-Stress-Free-Productivity/dp/0142000280/)
+Sure, it's not specifically written with the software developer in mind, but is surely one of the best personal productivity methods out there. Yes, I drank the kool-aid fullstop!
+* *Peopleware* ("@bookpool":http://www.bookpool.com/sm/0932633439 )("@amazon":http://www.amazon.com/Peopleware-Productive-Projects-Teams-2nd/dp/0932633439/sr=1-1/qid=1172188899/ref=pd_bbs_sr_1/104-0433560-4352764?ie=UTF8&amp;s=books)
+There is a good reason why everybody and their brother recommends this book. A great book that clearly discusses the human element of software development. It's somehow reassuring to read this classic again and again, knowing that some things never change. (the new edition has some chapters (c)2000).
+* *Ship It!* ("@bookpool":http://www.bookpool.com/sm/0974514047) ("@amazon":http://www.amazon.com/Practical-Guide-Successful-Software-Projects/dp/0974514047/sr=1-1/qid=1172189083/ref=pd_bbs_sr_1/104-0433560-4352764?ie=UTF8&amp;s=books)
+Simple common-sense advice for development teams to instill a repeatable sense of quality in their projects.
+* *Applied Software Project Management* ("@bookpool":http://www.bookpool.com/sm/0596009488) ("@amazon":http://www.amazon.com/Applied-Software-Project-Management-Stellman/dp/0596009488/sr=1-1/qid=1172189281/ref=pd_bbs_sr_1/104-0433560-4352764?ie=UTF8&amp;s=books)
+Going with another simple recommendation here. PM books can make your eyes bleed and from the perspective of Agile development most of those same books tend to be full of useless metrics anyway. This is another common-sense book that serves as a good reminder of the no-fuss basics of good project management are.
+* *Crystal Clear: A Human-Powered Methodology for Small Teams* ("@amazon":http://www.amazon.com/Crystal-Clear-Human-Powered-Methodology-Development/dp/0201699478/sr=8-1/qid=1172523510/ref=pd_bbs_sr_1/105-1988709-1476447?ie=UTF8&amp;s=books)
+Another small yet very useful book on things that will allow you to make good software. The author even distills the book into a single page as a super quick overview. One issue that we see affecting us is the physical separation of teams - this is seen as a critical element to making good software in the book; unfortunately we&#8217;re not in a place to have that option.
+
+h3. Creating better software
+
+It's been said that every single piece of software on earth could be written a little smaller, run a little faster and it&#8217;s documentation could always be a wee bit better. Here are some books that aim to help in that noble pursuit.
+
+* *Refactoring: Improving the Design of Existing Code* ("@bookpool":http://www.bookpool.com/sm/0201485672) ("@amazon":http://www.amazon.com/Refactoring-Improving-Design-Existing-Code/dp/0201485672/sr=8-1/qid=1172203278/ref=pd_bbs_sr_1/104-0433560-4352764?ie=UTF8&amp;s=books)
+Because all code can be better. I think this is the single greatest book on improving software that has ever been written. I can't possibly love this book more.
+* *Code Complete* ("@bookpool":http://www.bookpool.com/sm/0735619670) ("@amazon":http://www.amazon.com/Code-Complete-Second-Steve-McConnell/dp/0735619670/sr=1-1/qid=1172205925/ref=pd_bbs_sr_1/104-0433560-4352764?ie=UTF8&amp;s=books)
+An award winning guide on software best practices.
+* *The Pragmatic Programmer* ("@bookpool":http://www.bookpool.com/sm/020161622X) ("@amazon":http://www.amazon.com/Pragmatic-Programmer-Journeyman-Master/dp/020161622X/sr=1-1/qid=1172206024/ref=pd_bbs_sr_1/104-0433560-4352764?ie=UTF8&amp;s=books)
+A true must-read for everyone involved in the craft of software engineering.
+
+
+h3. Architecture and Design
+
+Focusing on beautiful, thoughtful and elegant object oriented design.
+
+* *Head First Design Patterns* ("@bookpool":http://www.bookpool.com/sm/0596007124) ("@amazon":http://www.amazon.com/Head-First-Design-Patterns/dp/0596007124/sr=1-1/qid=1172207449/ref=pd_bbs_sr_1/104-0433560-4352764?ie=UTF8&amp;s=books)
+A nice gentle guide through the ever-popular design patterns made popular by "the GoF":http://www.bookpool.com/sm/0201633612
+* *Thinking in Java* ("@bookpool":http://www.bookpool.com/sm/0131872486) ("@amazon":http://www.amazon.com/Thinking-Java-4th-Bruce-Eckel/dp/0131872486/sr=1-1/qid=1172207706/ref=pd_bbs_sr_1/104-0433560-4352764?ie=UTF8&amp;s=books)
+An incredibly detailed and well written journey through the world of Java.
+* *Object-Oriented Design Heuristics* ("@bookpool":http://www.bookpool.com/sm/020163385X) ("@amazon":http://www.amazon.com/Object-Oriented-Design-Heuristics-Arthur-Riel/dp/020163385X/sr=1-1/qid=1172208105/ref=pd_bbs_sr_1/104-0433560-4352764?ie=UTF8&amp;s=books)
+This book outlines nearly 100 heuristics for object oriented design. The inside cover of this book lists the heuristics described within, which is a great reference when performing code reviews, or looking to refactor your own code.
+* *The Object Primer: Agile Model-Driven Development with UML* ("@bookpool":http://www.bookpool.com/sm/0521540186) ("@amazon":http://www.amazon.com/Object-Primer-Agile-Model-Driven-Development/dp/0521540186/sr=1-1/qid=1172208494/ref=pd_bbs_sr_1/104-0433560-4352764?ie=UTF8&amp;s=books)
+A great read and a wonderful reference for object oriented design, along with best practices for modeling those designs with UML.
+* *A Software Architecture Primer* ("@amazon":http://www.amazon.com/Software-Architecture-Primer-John-Reekie/dp/0646458418/sr=1-1/qid=1172208676/ref=sr_1_1/104-0433560-4352764?ie=UTF8&amp;s=books)
+A truly simple approach to describing the art of software architecture. A really great book to skim through at the beginning of every project.
+* *Database Design for Mere Mortals* ("@bookpool":http://www.bookpool.com/sm/0201752840) ("@amazon":http://www.amazon.com/Database-Design-Mere-Mortals-Hands/dp/0201752840/sr=1-1/qid=1172208880/ref=pd_bbs_sr_1/104-0433560-4352764?ie=UTF8&amp;s=books)
+Because databases, like the software they support, are as different as snowflakes. A great guide to the multitude of database design concepts and their appropriate uses.
+
+
+h3. Technology Specific
+* *Effective Java* ("@amazon":http://www.amazon.com/Effective-Java-Programming-Language-Guide/dp/0201310058/sr=1-1/qid=1172524024/ref=pd_bbs_sr_1/105-1988709-1476447?ie=UTF8&amp;s=books)
+This book goes beyond Java grammar and vocabulary (e.g. if and public class Foo to language <strong>usage</strong>. e.g. Always override hashcode() when you override equals. Joshua Bloch designed and implemented the 1.2 Collections framework, so he is considered not only a scholar on the subject of writing good java code, but also one of its most authoritative practitioners.
+* *Agile Development with Rails* ("@bookpool":http://www.bookpool.com/sm/0977616630) ("@amazon":http://www.amazon.com/Agile-Development-Rails-Pragmatic-Programmers/dp/0977616630/sr=1-1/qid=1172209239/ref=pd_bbs_sr_1/104-0433560-4352764?ie=UTF8&amp;s=books)
+The definitive, Jolt-award winning guide to learning and using Rails is now in its Second Edition. Rails is a new approach to web-based application development that enables developers to create full-featured, sophisticated web-based applications using less code and less effort. Now programmers can get the job done right and still leave work on time. - lofty book description from the publisher.
+* *Pro Spring* ("@bookpool":http://www.bookpool.com/sm/1590594614) ("@amazon":http://www.amazon.com/Pro-Spring-Rob-Harrop/dp/1590594614/sr=1-1/qid=1172209751/ref=pd_bbs_sr_1/104-0433560-4352764?ie=UTF8&amp;s=books)
+An intense, detailed book on the framework everybody loves to love(?). This book does not cover Spring 2, but is a fine upstanding reference anyway.
+* *Java Persistence with Hibernate* ("@bookpool":http://www.bookpool.com/sm/1932394885) ("@amazon":http://www.amazon.com/Java-Persistence-Hibernate-Christian-Bauer/dp/1932394885/sr=1-1/qid=1172209953/ref=pd_bbs_1/104-0433560-4352764?ie=UTF8&amp;s=books)
+Hibernate, everybody's favorite java-based ORM persistence tool, and a lovely deep dive into how to make the most of it in your applications. ORM is tough enough, but to then attempt to design that layer in tandem with your fancy polymorphic class hierarchy? This book helps if you like to model your classes first, or your database first.
+* *Struts: The Complete Reference* ("@bookpool":http://www.bookpool.com/sm/0072263865) ("@amazon":http://www.amazon.com/Struts-Complete-Reference-2nd/dp/0072263865/sr=1-1/qid=1172210403/ref=pd_bbs_sr_1/104-0433560-4352764?ie=UTF8&amp;s=books)
+A quite-complete reference to the Struts framework.
+* *sed &amp; awk* ("@bookpool":http://www.bookpool.com/sm/1565922255) ("@amazon":http://www.amazon.com/sed-awk-2nd-Arnold-Robbins/dp/1565922255/sr=1-1/qid=1172210564/ref=pd_bbs_sr_1/104-0433560-4352764?ie=UTF8&amp;s=books)
+sed &amp; awk describes two text processing programs that are mainstays of the UNIX programmer&#8217;s toolbox.&#8221; A great reference for these elusive tools, and a good reminder of the tenets of unix sensibilities.
+* *jUnit pocket reference* ("@bookpool":http://www.bookpool.com/sm/0596007434) ("@amazon":http://www.amazon.com/JUnit-Pocket-Guide-Kent-Beck/dp/0596007434/sr=1-4/qid=1172210811/ref=sr_1_4/104-0433560-4352764?ie=UTF8&amp;s=books)
+A lovely pocket reference for a tool we just can&#8217;t get enough of.
+* *The Elements of UML Style* ("@bookpool":http://www.bookpool.com/sm/0521616786) ("@amazon":http://www.amazon.com/Elements-UML-TM-2-0-Style/dp/0521616786/sr=1-1/qid=1172210929/ref=pd_bbs_sr_1/104-0433560-4352764?ie=UTF8&amp;s=books)
+An important book for developing accurate and expressive UML diagrams that have a solid sense of style. We&#8217;ve all seen those all-too-correct UML diagrams that felt like having a fork stuck in your eye. This is a great book for sharpening up your UML skills while taking some pointers on how to soften the edges a bit.
