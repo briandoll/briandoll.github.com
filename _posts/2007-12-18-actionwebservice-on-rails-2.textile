@@ -1,0 +1,16 @@
+---
+layout: post
+title: ActionWebService on Rails 2
+---
+
+h1. {{ page.title }}
+
+Well, I can't just say _nothing_ about the recent release of Rails 2 _(.0.2)_, right?
+
+One of the apps I'm working on uses a SOAP web service.  I know, how old skool.  As you have likely read, "ActionWebService (AWS) has been ousted from rails core.":http://weblog.rubyonrails.org/2007/12/7/rails-2-0-it-s-done
+
+While I certainly don't know enough about the intricacies of the ruby load path(s) as they pertain to gems (frozen or unfrozen), the suggestion to just _gem install actionwebservice_ just doesn't seem to work.
+
+"Zack Chandler @ Depixelate shows us how it's done":http://www.depixelate.com/2007/12/13/actionwebservice-with-rails-2-0
+
+Thanks again Zack!

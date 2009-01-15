@@ -1,0 +1,102 @@
+---
+layout: post
+title: Drag and drop AppleScript to convert video
+---
+
+h1. {{ page.title }}
+
+My parents were kind enough to get us a "JVC Everio digital video camera":http://www.jvc.com/presentations/everio_g/ after our son was born. The camera has incredible picture quality, loads of features and fits in the palm of your hand. We shot loads of video of his first few weeks and soon enough it came time to make our first DVD to send to friends and relatives.
+
+It turns out the Everio cameras create .mod files, which are similar to MPG files, but.. um.. aren't. I'm guessing this was a way to avoid paying royalties for MPG compression, but this does leave a little bit of leg work for the user. (And *no*, you can't just rename them to .mpg, I have no idea why most websites suggest that as they are not compatible.)
+
+After some quick digging, I found "ffmpegx":http://www.ffmpegx.com/ for the mac which provides a nice GUI to convert various video types. This is all well and good, but we had become quite the shutterbugs and I was not about to use a GUI to process a hundred individual clips (this was especially difficult seeing that your settings need to be re-done each time).
+
+Luckily, ffmpegx also ships with the command line interface, ffmpeg2. Now we're getting somewhere. I start playing around with a recursive AppleScript script that would process nested folders of .mod video files and converting them to .dv files (which are the default/preferred format for iMovie HD).
+
+The results are as follows.  This script is licensed under the do-what-ever-you-want-with-it license.  Enjoy.
+
+{% highlight applescript %}
+
+-- 
+-- convertMod2Dv.app
+-- 
+-- a simple apple script applet to convert .mod files to .dv files
+-- this is an essential step for those of us who own DV video cameras
+-- that use this .mod file format, but would also like to edit those videos
+-- in iMove HD or other editing apps. This applet was developed solely to
+-- provide drag-n-drop functionality to the command line tool ffmpeg2.
+-- It supports dragging individual files or folders of files, etc.
+--
+
+-- PROPERTIES OF THIS APPLET, MODIFY TO SUIT
+-- 
+-- just work on mod files, nothing else property extension_list : {"MOD"}
+-- path to ffmpeg property ffmpeg : 
+  "/Applications/MULTIMEDIA/VIDEO/ffmpegx.app/Contents/Resources/ffmpeg2"
+-- append to file name when converting to DV property new_suffix : ".converted.DV"
+-- converted movie count
+property movie_count : 0
+
+-- Applet Code
+-- 
+-- The following appears only when the droplet is double clicked
+on run
+  display dialog "convertMod2Dv.app" & return & return &
+    "Convert a MOD w/Audio to a DV file" & return & return &
+    "To convert .MOD files to .DV for editing, just drag the files
+    or folders of files onto this applet. The resulting converted .DV
+    movie files will be right along side the originals!"
+    & return & return & "Enjoy!"
+end run
+ 
+-- This droplet processes both files or folders of files dropped onto the applet
+on open these_items
+  repeat with i from 1 to the count of these_items
+    set this_item to (item i of these_items)
+    set the item_info to info for this_item
+    if folder of the item_info is true then
+      process_folder(this_item)
+    else if (alias of the item_info is false) and
+      (the name extension of the item_info is in the extension_list) then
+      process_item(this_item)
+    end if
+  end repeat
+  
+  display dialog "Converted " & movie_count & " Movie(s)." & return & return & "Enjoy!"  
+end open
+
+-- this sub-routine processes folders
+on process_folder(this_folder)
+  set these_items to list folder this_folder without invisibles
+  repeat with i from 1 to the count of these_items
+    set this_item to alias ((this_folder as text) & (item i of these_items))
+    set the item_info to info for this_item
+    if folder of the item_info is true then
+      process_folder(this_item)
+    else if (alias of the item_info is false) and
+      (the name extension of the item_info is in the extension_list) then
+      process_item(this_item)
+    end if
+  end repeat
+end process_folder
+
+-- this sub-routine processes files
+on process_item(this_item)
+  -- NOTE that the variable this_item is a file reference in alias format
+  set full_path to the POSIX path of this_item
+  -- !!! MODIFY THESE PARAMETERS TO SUIT if you have other preferences you'd like to use
+  do shell script ffmpeg & " -i " & full_path & " -target dv -aspect 16:9 " & full_path & new_suffix
+  set movie_count to movie_count + 1
+end process_item
+ 
+ 
+on getFileName(thefile)
+  set {oldDelims, AppleScript's text item delimiters} to {AppleScript's text item delimiters, {":"}}
+  set mytextfilename to last text item of (thefile as text)
+  set AppleScript's text item delimiters to oldDelims
+  return mytextfilename
+end getFileName
+
+{% endhighlight %}
+
+To fork this code and make improvements, it's available as "a gist.":http://gist.github.com/5748

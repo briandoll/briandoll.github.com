@@ -1,0 +1,26 @@
+---
+layout: post
+title: Testing - Static vs. Dynamic Typing
+---
+
+h1. {{ page.title }}
+
+Cedric Beust recently wrote an article entitled "Continuous Tax":http://beust.com/weblog/archives/000462.html where he describes the term "Continuous Tax" to be "dead-on" in describing what it's like to work with dynamically typed languages.
+
+This topic interests me for a variety of reasons but mostly because Cedric is quite authoritative in the world of software testing, what with the "framework":http://testng.org/doc/ and the "book":http://beust.com/weblog/archives/000459.html and all.
+
+I "commented":http://beust.com/weblog/archives/000462.html#comments on his post and to my delight, "he responded":http://beust.com/weblog/archives/000463.html.
+
+I can't say that I disagree that static typing is akin to "free tests", as you may decide you need to write those types of tests in dynamic language.  These tests however, are not free.  They come with a cost of dealing with types in the first place.  This is less of a discussion about the maintainability of software systems as it is one of values.
+
+To quote myself:
+<blockquote>
+Typically when discussing this religious topic (it's a debate about values, as one is not superior to others in all circumstances) ...<br/><br/>
+</blockquote>
+	
+What needs to be decided, on a project by project basis, is what things you'll value most.
+
+Here is a little snippet of "Martin Fowler's thoughts on the typing thing":http://martinfowler.com/bliki/DynamicTyping.html (the "we" refers to himself and "Bruce Eckel":http://www.mindview.net/):
+<blockquote>
+...we both agreed that one of the most frustrating things about the static/dynamic typing debate is that it's very hard to put into words the advantages of working in a dynamically typed language. Somehow things just seem to flow better when you're programming in that environment...<br/><br/>
+</blockquote>

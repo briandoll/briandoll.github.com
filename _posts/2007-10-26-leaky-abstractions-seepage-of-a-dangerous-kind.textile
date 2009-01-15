@@ -1,0 +1,37 @@
+---
+layout: post
+title: Leaky abstractions, seepage of a dangerous kind
+---
+
+h1. {{ page.title }}
+
+<small>(This is an excerpt from an article I wrote at my day job.  Specifics about team members and the projects at hand have been removed.)</small>
+
+*What are leaky abstractions?*
+The term _leaky abstractions_ comes from a posting by "Joel Spolsky":http://www.joelonsoftware.com/ entitled "The Law of Leaky Abstractions":http://www.joelonsoftware.com/articles/LeakyAbstractions.html where he noted *"All non-trivial abstractions, to some degree, are leaky."* While this sounds like a great excuse to say when your code is found to be a bit drippy, in most cases making our abstractions as complete and non-leaky as possible is actually a trivial task.
+
+The "wikipeida article":http://en.wikipedia.org/wiki/Leaky_abstraction describes leaky abstractions as *"A leaky abstraction is an unsatisfactory implementation of an abstraction."*
+
+This is an especially good way of understanding the main problem with leaky abstractions. The abstraction exists, like a domain object that exists in your application, but the implementation is unsatisfactory in that it exposes specific details of a separate layer of abstraction (in this case, XmlBean types).
+
+*How about some more examples?*
+Leaky abstractions can and do occur in all sorts of problem domains.
+
+In the his post that coined the term, Joel Spolsky described TCP as being a leaky abstraction on top of IP. TCP acts like a tirelessly dedicated traffic cop to the aimless and simple minded drivers that clog our information super highway (or is it a series of tubes?). The problem is, to continue this car crash of an analogy, that sometimes the highway itself can be plucked out and tossed to the ground of the NOC in another spaghetti pile of cat5 cables. Since TCP alone can't protect you from the backhoe that slices your network cable, it's unable to get those happy little packets to your browser as you had hoped.
+
+More on TCP issues as they pertain to web apps:
+<blockquote>
+*Why do I care about little old "layer 4":http://en.wikipedia.org/wiki/OSI_model*
+TCP issues, like extremely slow transmission speeds between two endpoints, can easily creep up the many layers of abstractions of your application code and wreak havoc like you never expected. "Michael Nygard's":http://www.michaelnygard.com/  book "Release It!":http://www.pragprog.com/titles/mnee/index.html  addresses many of these issues with patterns, anti-patterns and real-life postmortems that show how we can find and fix these common issues that are rarely addressed.<br/><br/>
+</blockquote>
+OK, back to those pesky leaky abstractions. How about HTML? That seems simple enough. The early days of HTML gave us abilities of composing paragraphs of text documents and linking them up together. Soon after though, the language that defined the _structure_ of the document soon began to define the _style_ of the document. This bad smell is similar to what "Bob" referred to as "Mixed Metaphors". Later versions of HTML attempt to address this issue by excluding many style-oriented tags, preferring instead to use CSS for styling the HTML document.
+
+*So now what?*
+It's a great idea to look for these leaky abstractions during code reviews. When you're writing code though, try to give some reverence to the abstraction that you're working on. In a typical MVC architecture, you should pretend to know nothing about you data access layer when authoring code in the view tier. When interacting with a domain object, you should know nothing about the XML marshaling technology behind it's properties, or even that the data came from a web service in the first place. When you wonder to yourself "why would I care about that (level of detail)", it's likely that you have stumbled upon a leaky abstraction.
+
+When it comes to abstractions, the band "The Offspring":http://wc04.allmusic.com/cg/amg.dll?p=amg&amp;sql=11:3pfqxqt5ldfe%7ET1 know just what to say: "You gotta keep 'em separated"
+
+*The counter argument:*
+You'll sometimes hear this quote by "Butler Lampson":http://en.wikipedia.org/wiki/Butler_Lampson *"All problems in computer science can be solved by another level of indirection"*, which when lined up right next to "Donald Knuth's":http://en.wikipedia.org/wiki/Donald_Knuth *"Premature optimization is the root of all evil ..."* can make it sound like abstractions themselves are the problem.
+
+The balancing act here is between the benefits of abstraction with the requirements of performance. The penalty of poor performance, brought on by extraneous abstraction, requires additional physical resources. The penalty of leaky abstractions however, can be paid only in blood, sweat and tears.

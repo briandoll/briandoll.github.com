@@ -1,0 +1,31 @@
+---
+layout: post
+title: Blocks, Closures and The Ruby Way
+---
+
+h1. {{ page.title }}
+
+I recently attended my first "Ruby Meetup":http://ruby.meetup.com/6/calendar/6597195/ here in San Francisco.  One of the talks, given by "Bala":http://ruby.meetup.com/6/members/3936949/ was on "Blocks" in Ruby.
+
+Let me first say that I have somewhat of a crush on Ruby right now.  I haven't been this excited about hacking at some code in ages.  Ruby is a dynamic language, letting me do things I used to do in Perl, but in a way that seems clean and concise.  I won't dare talk ill of Perl, but I'm betting you know what I mean.
+
+Ruby is simple.  So simple in fact that it uses a very simple term to describe something that by its very name is confusing.  I'm talking about "closures.":http://en.wikipedia.org/wiki/Closure_%28computer_science%29  Just like all Bourbons are Whisky but not all Whiskies are Bourbon, Ruby closures stem from blocks, but not all blocks are closures.  Got it?  Good.
+
+To be honest, I never really _got_ closures until recently.  I knew what they were, but the language I've been working in for most of my salaried work in recent memory has not been known to be able to spell closure.  Just like any other significant and interesting programming idiom, when I wanted to learn more, I turned to the master, "Martin Fowler":http://martinfowler.com/bliki/.
+
+Martin has two interesting articles up on closures "here":http://martinfowler.com/bliki/Closure.html and "here":http://martinfowler.com/bliki/CollectionClosureMethod.html.  I  don't aim to restate his thoughts nor quote him here, so if you're interested in blocks or closures you really should read them.
+
+During the Ruby Meetup, Bala talked about the various ways to use blocks, and in some examples used blocks as closures.  One of the very common use cases for blocks (and noted in the articles by MF) is with the various collection methods available like _each, select and collect._
+
+I'm working on a project where I have a reasonably complicated sort routine.  I leverage a class or two that contain methods to better process the elements in my array to get to a single representative element that I can use to compare elements against, to finally get to a sort that I can live with.
+
+In my existing code, this is implemented on a collection (an Array) where by I pass in this sorting block to the sort method of the array.  Standard fare.  Nothing interesting really.
+
+But how do I test it now?  For a while there, I had this sort routine built as a class method in one of my library classes.  As Martin Fowler has said of this behavior, _"no decent rubyist would write this"_.  While the block-based solution is cool and fits with "The Ruby Way":http://www.amazon.com/Ruby-Way-Second-Addison-Wesley-Professional/dp/0672328844, it's anonymous, which makes it hard to exercise in unit tests.
+
+As I'm searching around for more depth on Ruby blocks and Closures, I found "this article":http://www.artima.com/intv/closures.html with "Matz":http://en.wikipedia.org/wiki/Yukihiro_Matsumoto which contains quotes like this:
+"In fact, in early versions of Ruby, the methods called with blocks were referred to as iterators, because they were designed to iterate. But in the history of Ruby, the role of blocks was later enhanced from loop abstraction to anything."
+
+"Jamis Buck":http://weblog.jamisbuck.org/ (Rails core developer, 37 Signals employee) chimes in to let us know that "blocks rock":http://weblog.jamisbuck.org/2007/1/19/blocks-rock.  In his blog post, Jamis shows how blocks can be used to DRY up  code in what is also called the "execute around method":http://www.smallmemory.com/almanac/Beck97.html that first(?) appeared in "Kent Beck's":http://en.wikipedia.org/wiki/Kent_Beck "Smalltalk Best Practices":http://www.amazon.com/Smalltalk-Best-Practice-Patterns-Kent/dp/013476904X book.
+
+So.. where we were?  Blocks rock.  Closures are cool, and if you have some thoughts about how to best test blocks, be they sorting routines or otherwise, please leave your thoughts in the comments.
