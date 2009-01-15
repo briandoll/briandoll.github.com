@@ -11,9 +11,25 @@ This discussion is often had, but usually leaves the participants more confused 
 
 First, "let’s read up on the specifics":http://www.yoda.arachsys.com/java/passing.html of this subject, "and again with pictures":http://www.javaworld.com/javaworld/javaqa/2000-05/03-qa-0526-pass.html.
 
-
 Now, let’s grok this:
-<script src="http://gist.github.com/46734.js"></script> 
+{% highlight java %}
+public void testSnappyHappy() {	
+		Map snappy = null;
+		Map happy = new HashMap();
+
+		addToMap(snappy, "foo", "bar");
+		addToMap(happy, "foo", "bar");
+	}
+
+	private Map addToMap(Map map, String key, String value) {
+		if (map == null){
+			map = new HashMap();
+		}
+		map.put(key, value);
+		return map;
+	}
+{% endhighlight %}
+
 
 What is the value of snappy and happy?
 
@@ -22,8 +38,15 @@ In the above code, we see that we’re checking our Map for null, and if it is n
 You know what is so frustrating about this? The method will look like it’s operating on the original map parameter. Sometimes it will. When map is null in this case (or anything else that the programmer of addToMap decided to muck with), the method does not modify the original map.
 
 Wait! It’s not all bad. Let’s note that the method addToMap does actually return something. It happens to return the right thing, all the time, in fact. Why all this madness then? Well, if we look above, the caller is completely ignoring the return value of the method! If we always were to assign the returned value back to the map in question, it would work the same way, all the time. It is possible to write a method that acts on the original parameter (object) without modifying it by using copies, but that’s expensive and usually redundant.
-
-<script src="http://gist.github.com/46735.js"></script>
+{% highlight java %}
+public void testSnappyHappy() {
+  Map snappy = null;
+  Map happy = new HashMap();
+ 
+  snappy = addToMap(snappy, "foo", "bar");
+  happy = addToMap(happy, "foo", "bar");
+}
+{% endhighlight %}
 
 In the above case, we would have two maps, both with a foo/bar pair inside them.
 
