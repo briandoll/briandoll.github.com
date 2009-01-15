@@ -13,7 +13,7 @@ First, "let’s read up on the specifics":http://www.yoda.arachsys.com/java/pass
 
 Now, let’s grok this:
 {% highlight java %}
-public void testSnappyHappy() {	
+  public void testSnappyHappy() {	
 		Map snappy = null;
 		Map happy = new HashMap();
 
