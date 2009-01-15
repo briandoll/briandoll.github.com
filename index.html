@@ -3,13 +3,12 @@ layout: default
 title: Brian Doll - emphatic solutions
 ---
  
-  <h1>Musings in the ether...</h1>
-  <ul class="posts">
+  <h1>Emphatic musings in the ether...</h1>
+  <table border="0">
     {% for post in site.posts %}
-      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+      <tr><td align="right">{{ post.date | date_to_string }}</span></td><td> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></td></tr>
     {% endfor %}
-  </ul>
-
+  </table>
 
 </body>
 </html>
