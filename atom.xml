@@ -1,0 +1,28 @@
+---
+layout: nil
+site_url: http://briandoll.github.com
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+ 
+ <title>Brian Doll - emphatic solutions</title>
+ <link href="{{ page.site_url }}/atom.xml" rel="self"/>
+ <link href="{{ page.site_url }}"/>
+ <updated>{{ site.time | date_to_xmlschema }}</updated>
+ <id>{{ site_name }}</id>
+ <author>
+   <name>Brian Doll</name>
+   <email>brian@emphaticsolutions.com</email>
+ </author>
+
+ {% for post in site.posts %}
+ <entry>
+   <title>{{ post.title }}</title>
+   <link href="{{ page.site_url }}{{ post.url }}"/>
+   <updated>{{ post.date | date_to_xmlschema }}</updated>
+   <id>{{ page.site_url }}{{ post.id }}</id>
+   <content type="html">{{ post.content | xml_escape }}</content>
+ </entry>
+ {% endfor %}
+ 
+</feed>
