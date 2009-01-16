@@ -1,0 +1,66 @@
+---
+layout: post
+title: Supporting unique headers per SOAP request in soap4r
+---
+
+h1. {{ page.title }}
+
+"soap4r":http://dev.ctor.org/soap4r is a SOAP implementation in Ruby.   If you're writing a SOAP client in Ruby (with or without Rails), soap4r is great.  Until it isn't.  Since this is a rather specific use case that I'm solving for, I'll assume that you have some experience using soap4r.
+
+*Headers*
+Some SOAP services will utilize a header, which is part of the SOAP spec.  A header may include information that is used to process the request, but is not part of the SOAP request message body.  It is typical for some services to use headers to send API keys or other authentication mechanisms.
+
+"Here is a simple example that ships with soap4r":http://dev.ctor.org/soap4r/browser/trunk/sample/soapheader/authheader/client2.rb
+
+*Headers are a property of the Driver?*
+Yes.  As you can tell, the SOAP driver has a property called headerhandler, which stores the header(s) that will be sent along with each service call.  The call looks like this:
+
+{% highlight ruby %}driver.headerhandler << ClientAuthHeaderHandler.new {% endhighlight %}
+
+Since *<<* is an alias to *add*, we're just adding a header to the driver here.
+
+But what if the service requires certain unique properties in the headers of each service request?  Let's say you have a service that within the header of the SOAP request, requires that you specify the IP address of the remote host, if the service is initiated via a web browser.  In this use case, we need a unique header *per SOAP request*.
+
+*Open up the headerhandler*
+We can see that the headerhandler property of the SOAP driver holds a SOAP::Header::HandlerSet object.  Let's open 'er up.  We'll add two new methods that will allow us to set a single header on the driver, regardless of its current state.
+
+{% highlight ruby %}
+class SOAP::Header::HandlerSet
+  def reset
+    @store = XSD::NamedElements.new
+  end
+
+  def set(header)
+    reset
+    add header
+  end
+end
+{% endhighlight %}
+
+*Set and send*
+Now we can do this, to set the header before we make our call:
+
+{% highlight ruby %}
+driver.headerhandler.set( unique_header )
+response = driver.getFoo("bar")
+{% endhighlight %}
+
+*Gotta synchronize!*
+Since the creation of a SOAP driver is expensive (for those of us who create them on-the-fly by reading in the WSDL), it is common practice to cache the driver and reuse it each time.  (Remember that this is how we got into this mess in the first place, since the headers live on the driver, and we reuse the same driver for every request.)
+
+It is possible, then, to have two threads interacting with your service client class, which in turn is relying on this same driver for those two requests.   The code above is not thread safe, in that the driver's headerhandler may have been set by thread1, but thread2 makes the first getFoo service call, resulting in the sending of the wrong header.  DOH!
+
+To fix this, we'll need to wrap that call in a synchronize block:
+
+{% highlight ruby %}
+@@guard = Mutex.new
+...
+@@guard.synchronize do
+  driver.headerhandler.set( unique_header )
+  response = driver.getFoo("bar")
+end
+{% endhighlight %}
+
+Sure, it is ugly.  Since the design of soap4r is such that the headers belong to the driver, this sort of solution may be our best bet.  I look forward to any alternate suggestions.
+
+Note: This work was in response to "my original question to the soap4r forum":http://groups.google.com/group/soap4r/browse_thread/thread/d9aec7dcf5a155f7.

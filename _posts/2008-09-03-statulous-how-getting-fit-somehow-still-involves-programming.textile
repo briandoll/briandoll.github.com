@@ -1,0 +1,31 @@
+---
+layout: post
+title: statulo.us - how getting fit somehow still involves programming
+---
+
+h1. {{ page.title }}
+
+First, "David Heinemeier Hansson":http://loudthinking.com/ spoke of "the surplus":http://railsconf.blip.tv/#1170044.  Spend it on yourself, he said.  Invest in you.
+
+What does that mean to you?  How do you interpret that? Jamis got into woodworking.  Somebody else is playing the banjo.  The ukulele perhaps?  "Get out of your editor", David said, and I somehow quickly forgot about that part.
+
+When I heard David talk about that surplus, I could easily identify.  I felt like a race car driving on city streets.  I had more to give, but couldn't find that perfect outlet.  I spent a while digging into new technologies instead.  I "worked with git":http://github.com/briandoll.  I dug deeper into Ruby and Rails.  I read "classic programming language textbooks.":http://www.amazon.com/Programming-Language-Pragmatics-Second-Michael/dp/0126339511/ref=sr_1_1?ie=UTF8&amp;s=books&amp;qid=1220498856&amp;sr=1-1  Essentially, I did what I always do.
+
+Then I went swimming.  On a trip to Tahoe in early July this year, my family and I were at a pool when I heard a lifeguard shout something I hadn't heard in years.  "Adult Swim!"  Sweet!  The kids hopped out (mine included) and I decided to do some laps.  The last time I swam laps in a pool, I was more concerned with Merit Badges than ROIs.  Perhaps unsurprisingly, I sucked.  I did two down-and-back laps in the olympic pool, and came up sucking wind like an idiot.  I tried to reconcile my embarrassment by thinking about the altitude.  Sure, swimming at 6k feet may be a little harder than sea level, but yours truly was out of shape!
+
+I'm an "emphatic":http://dictionary.reference.com/browse/emphatic person. I do something emphatically, or not at all.  If I was going to attempt to attain personal fitness, I was going to have to do it right.  There are all sorts of paths.  My friend Shawn is running a marathon.  I could run to the edge of my driveway if my house was on fire, but I don't think that marathon stuff would work for me.  All the stuff I saw in traditional gym settings seemed lame.  Use a stationary bike with a sweaty guy shouting at me over lame techno music?  No thanks.  I needed something intense and exciting.  I needed something fun.  This would fill my surplus.
+
+What I needed, as it turns out, was to be <a href="http://www.crossfit.com/cf-info/what-crossfit.html" target="_blank">Crossfit</a>.  I reconnected with a friend from high school who had spent some time as a Navy Seal.  He was into this "Crossfit" thing, so I had to check it out.  I won't attempt to summarize for you, but do yourself a favor and check out that main website.  Crossfit is intense.  It's exciting and it's incredibly fun.
+
+I found a <a href="http://tjsgym.com" target="_blank">local crossfit gym</a> and signed up for group classes.  I've also converted half of my garage into a reasonable home gym, but the intensity in the classes is what it's all about!  During my first class, we did a <a href="http://www.crossfit.com/cf-info/excercise.html" target="_blank">Crossfit named workout</a>, and everyone was jotting down their times in a notebook.  A notebook.  The paper kind.  See, Crossfit workouts are timed, because slow workouts are less efficient and do much less for your body.  With timing being key, folks keep workout journals on paper, on the Crossfit forum or on their own blogs.
+
+Opportunity was knocking.  The thought of writing my workouts down in a notebook gave me the kindergarten willies, and using a forum or blog had their own set of problems.  What was my last time for <a href="http://media.crossfit.com/cf-video/Josh_Greg-Fran.wmv" target="_blank">Fran</a>?  How much have I improved in the last month?  It was all lost in paper or pagination.  Lame.
+
+Here I was, trying to fill my surplus by getting out of my editor, and my fitness choice led me right back in.  My wife was going out of town for a weekend, so I had two solid nights of hacking available.  Constraints are wonderful.  I jotted down some ideas during the week, checked out some graphing libraries and got a general idea of what I wanted to do.
+
+After two nights of hacking, the first version of <a href="http://statulo.us" target="_blank">statulo.us</a> went live!  I've <a href="http://statulous.blogspot.com/" target="_blank">added several features since</a>, and have accumulated a reasonably sized user base, primarily from my local gym.  The weekend project was such a testament to Rails, enabling a reasonably interesting web application, using graphs of user generated data, some RSS feeds and plenty of Crossfit-specific features.
+
+The best part, though, is that by giving back to the Crossfit community immediately after jumping in, I get back that much more from them.  The feedback on <a href="http://statulo.us" target="_blank">statulo.us</a> has been great, and has brought me closer to my trainers and fellow Crossfiters.
+
+This path of personal fitness has no end, and I'm looking forward to continuing my newly minted active lifestyle.   Especially now that I know it also involves programming!
+<h3>Check out <a href="http://statulo.us" target="_blank">statulo.us</a>, the free Crossfit-based fitness tracker.  Maybe you too will fill your surplus, and be all the better for it.</h3>

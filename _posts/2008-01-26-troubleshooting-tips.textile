@@ -1,0 +1,21 @@
+---
+layout: post
+title: Troubleshooting Tips
+---
+
+h1. {{ page.title }}
+
+Troubleshooting a software issue can be at once fun and frustrating.  We're elated when the problem is solved (or at least, understood), but the methodical process of troubleshooting can be as much familiar as frantic.
+
+Here are a few troubleshooting tips we all probably know, but need reminding of from time to time:
+
+# *Physical Layer First*
+When troubleshooting systems issues, it's wise to start with the bottom layer of  "the OSI model":http://en.wikipedia.org/wiki/OSI_model first.  Too many nightmares have concluded with "DOH, it wasn't plugged in!"
+# *Talk to the birds*
+It's easy to  get yourself all whirled up in a twist over some esoteric branch of the ever-growing tree of troubleshooting you're growing.  Stop.  Explain it to the little birdie on your shoulder.  I personally fire up an email to a respected colleague and start explaining the issue. Start at the beginning.  Think "what will they ask me to clarify?" and spell it out for them.  By the time you've got a page full of explaining done, you'll likely see  the error in your ways.  I've written hundreds of these emails and probably only ever had to send one or two.
+# *"When you hear hooves, think horses, not zebras"*
+Sure, we'd all love to have our issue turn out to be so complex that it took an understanding of solar flares to solve.  You're a genius, certainly.  It's much more likely however that your problem is more common in nature.  Troubleshooting may lead us to all sorts of potential possibilities, but the more simple answer is likely the cause.
+# *Yes, it may just be a bug*
+A friend of mine was working with a SOAP web service in Ruby recently and found himself with an issue.  Attributes  on some XML properties just went missing when converted with soap4r.  "It turned out to  be a known bug.":http://dev.ctor.org/soap4r/ticket/450  While this may seem obvious, sometimes when we feel less comfortable with a new (to us) technology it's easy to think that you're "just missing something".  Notice that this is listed at the end!  It doesn't hurt to search for known bugs when troubleshooting early on, but make sure you've tried the other steps too before giving up and moving on.
+
+Good Luck!

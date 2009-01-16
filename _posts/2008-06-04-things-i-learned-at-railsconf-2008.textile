@@ -1,0 +1,73 @@
+---
+layout: post
+title: Things I learned at RailsConf 2008
+---
+
+h1. {{ page.title }}
+
+There were about 2k people at "RailsConf 2008":http://en.oreilly.com/rails2008/public/content/home, and like most of them, I thought of posting my review of each of the presentations I saw and heard about.  Thankfully, the masses have spoken, and there are "lots of reviews for you to read elsewhere":http://www.google.com/search?hl=en&amp;q=RailsConf+2008&amp;btnG=Google+Search.  Also, if you want to check out some of the presentations themselves, O'Reilly is hosting "many of them online":http://en.oreilly.com/rails2008/public/schedule/proceedings.
+
+What I'd like to do instead is to document the things I learned at RailsConf, that stretch across presentations.  The first thing that I noticed were the themes that seemed to find their way into almost every session, lighting talk and hallway conversation.  There was a lot of focus on testing, deployment, automation, performance benchmarking, design (anti-)patterns and the social aspects of distributed source control management.  These are real topics, discussed in great detail by people with real experience to an impassioned audience. It was impossible not to get caught up in the energy and passion, two things that may seem at odds with the typical software conference.  Thankfully, RailsConf is anything but typical.
+
+h2. JRuby
+
+WIth all this talk of the various Ruby implementations, my colleagues and myself have been interested to learn more about JRuby.  I attended a few JRuby events (the "hackfest" on Thursday was great!) and got a much better understanding of JRuby and what sort of costs/benefits there may be in using it.
+
+The Good:
+* I was able to get a small Rails app running on JRuby in a few minutes.  It just works.
+* The availability of Java types from Ruby is astoundingly simple
+* Simple .war and .ear deployments can make for easy integration into a Java environment
+* Using JDBC drivers and JNDI is pretty sweet
+* For some applications, switching between Ruby and JRuby can be seamless.  Thoughtworks does dual-development on some projects (for reasons not explained)
+
+The "bad":
+* Exception handling in Java/JRuby projects is tricky.  Exceptions wrap either a Java or JRuby exception and you must unwrap and inspect upon rescuing them.
+* It is not uncommon to get Java stack traces in JRuby projects.  It would be nice if these were entirely hidden regardless of root cause.
+* Windows paths for file URIs is currently broken (I reported this bug during the hackfest, "JRUBY-2591":http://jira.codehaus.org/browse/JRUBY-2591)
+* The ease of integration for Java libraries can turn an otherwise clean and simple Rails project into a horrific beast of amalgamation.  While this is an implementation detail and not a problem of the project, I can see a Java team not wanting to follow "The Rails Way", and taking away any and all advantages of using Ruby and Rails by overusing Java.
+* JRuby is essentially on par with Ruby 1.9 in most performance benchmarks.  The JRuby team will be focusing on making Rails perform better on JRuby, but for the time being it does not bring significant performance improvements. 
+
+h2. Rails Hosting
+
+With Engine Yard as a major sponsor of the conference, and many startups opting for hosted solutions, this was a well worn topic, with a few key insights.
+* The golden ratio is 3 to 4 mongrels (or instances of your app) per CPU core.  Don't debate this, it's written in copper.
+* Cache, cache, cache.  Use the same file system across your app instances so they can share page cache.  "Engine Yard and others spoke highly of Red Hat's GFS system":http://www.redhat.com/gfs/.
+* (Almost) nobody needs database sharding.  It is a special use case, with lots of considerations.  If you don't understand it, you probably don't need it.
+
+h2. Building Software with a dynamic language
+
+Neil Ford had a "Design Patterns" in Ruby presentation, and Obie Fernandez had an interesting talk that showcased awful Rails code, which started to identify some anti-patterns.
+* The Gang of Four design patterns are all structural, in that they use objects to construct them.  In Ruby, many of these patterns are solved within the standard library, and in an elegant and simple manner.
+* Dynamic languages allow you to do things that you can't conceive of when working in static languages.  The mixin/unmix portion of his presentation was good on this point.
+* An interesting code smell for refactoring: If code looks visually similar, and differs only in whitespace, it's likely that you should refactor.
+* An obvious notion that _should_ go without saying: Know your tools.  Github's rss feeds on projects (like Rails) makes for an easy time keeping up with the direction of the project, on each commit.
+* OOP paradigms are still critical in Ruby and Rails projects.  A programmer without OOP experience will likely make for a terrible Rails programmer.  Thanks Obie for reiterating this point.  Don't get caught up in the "blog in 20 minutes" vision of what Rails is.
+* Beware of Helpers that try to do too much.  They can feel anti-OO and are usually the first to break down.
+
+h2. Scalability and Performance Monitoring
+
+* Scalability, on large and high-volume systems, is a never-ending battle of finding and reducing bottlenecks.  There is no single solution or architecture.  Understand how your app performs, and rely only on data, not hunches.
+* Someone else's benchmarks are as relevant to your application as pickles to ice cream.  Sure there is an edge case where they relate, but that's just gross.
+* It's essentially impossible to benchmark a framework.  However, it may be relevant to get lots of specific performance data from lots of Rails applications to determine some relationships.  I asked Koz about this during his presentation and he has already talked to New Relic about allowing their customers to share the framework-relevant performance data with the Rails core team.
+* Rely solely on real-world performance data in production when making scalability or performance-related adjustments to your system.  All else will be either time poorly spent, or will end up hurting you.
+* Trending is nice, but the unexpected hockey stick graphs can still happen.  Sometimes you just hit a wall (cache sizes, max IO nodes, etc.) that you never saw coming.
+* Understand the ratio of capacity to application instances.  If you are not getting close to linear growth, find out why.
+* New Relic offers some great real-time performance monitoring.  Their monitor points are extensible, so you can wrap your own stuff (SOAP calls, etc.) and have it monitored automatically
+
+h2. Testing
+
+There were several talks on testing, and the topic came up in many others.  It's nice to see a community so focused on testing from both TDD and BDD perspectives.
+* Josh Susser's obscure quote that summed up his presentation well: "De gustibus non est disputandum" or, There is no accounting for taste.  Josh Susser wrote test suites in all the top testing frameworks for Rails and noted that personal preference  and taste may be the only core difference.
+* Some testing frameworks (Rspec) influence code design to some degree, although all were capable of helping you evolve your API during the test cycle.
+* Each framework had similar levels of test code to test the same app.  None stood out as particularly terse or verbose in comparison to one another.
+* It is certainly possible and in some cases ideal to mix-and-match testing frameworks.  Using test/unit for unit tests and shoulda for functional  (behavioral) testing would work well.
+* "unit_record":http://unit-test-ar.rubyforge.org gem allows you to run unit tests without touching the database.  Huge speed improvement, but means you need to plan accordingly when dealing with models.
+* fixtures, when used for test data are evil and should be avoided.  Instead rely on a Factory pattern or Object Mother pattern which assumes reasonable defaults.
+* "unit_controller":http://unit-controller.rubyforge.org gem allows you to better separate controller tests from the view
+* "deep_test":http://deep-test.rubyforge.org gem for running tests in parallel.  Will sometimes cause problems, decent for individual developers, not for CI
+
+During the conference, I also got a better understanding of Phusion's "Passenger, a.k.a mod_rails":http://www.modrails.com/.  While I didn't attend either of their sessions, I met with one of their developers at breakfast.  They seem to have a great story for reducing the complexity of rails deployment, they leverage some of the great performance of Apache and can handle up to 20 instances of your app per Apache (+mod_rails) instance. 
+
+Both David and Kent Beck's keynote presentations were of an inspirational nature.  While David played role of "life coach", Kent Beck talked a lot about what the best perspective might be on "agile" development, and the various value propositions that make sense when selling ideas to the masses.  While I took several lessons away from these great presentations, it's pretty difficult to sum them up in writing.  I'm sure (better quality) videos of them both will be online soon, so you can see them for yourself.
+
+Overall, the conference far exceeded my expectations.  It was nice to meet and hang out with a lot of the Rails community, see where our collective heads are at and learn a lot along the way.

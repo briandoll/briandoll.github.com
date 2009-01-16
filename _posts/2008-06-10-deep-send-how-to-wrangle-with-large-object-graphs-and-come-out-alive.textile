@@ -1,0 +1,85 @@
+---
+layout: post
+title: Deep Send
+---
+
+h1. {{ page.title }}
+
+h3. or, How to wrangle with large object graphs and come out alive
+
+In a perfect world, all of our objects are small, orderly and well defined.  They encapsulate data that is semantically obvious and easy to work with.  And then... in an obvious homage to "Jack Handey":http://en.wikipedia.org/wiki/Jack_Handey, we attack that world with large, complex and ugly object graphs, mostly the result of monolithic integration technologies like SOAP.  
+
+Sure, with gems like "soap4r":http://dev.ctor.org/soap4r, the pain of dealing with SOAP is somewhat minimized, but at the end of the day, you're still going to have to look deep into the eyes of a huge object graph, and get at the delicate properties you so covet.
+
+What if we were able to reference deeply nested properties from within the bowels of these large object graphs, as easily as we could with neat and orderly objects?  How nice would it be not to have to repeat yourself while asking the object graph to cough up two properties buried thirty chained-methods deep?  
+
+h2. Deep Send
+
+This is so simple it feels like cheating.  The deep_send method could be attached somewhere high up in the SOAP hierarchy if you wish, but I like having it available everywhere.
+
+{% highlight ruby %}
+class Object  
+  def deep_send(chained_methods)
+    methods = chained_methods.split(".")
+    methods.inject(self) {|object, method| object.send(method)  }     
+  end  
+end
+{% endhighlight %}
+
+As you can see, deep_send works like the regular send method, but takes chained method calls as arguments.  Let's see how this might work in a sample SOAP client:
+
+{% highlight ruby %}
+class HugeNastySoapClient
+
+  # produces a magnificent cacophony of data 
+  # elements from all across the globe
+  def get_nasty_graph(secret_key)
+    ...
+  end
+
+  def get(secret_key, *method_chains)
+    huge_graph = get_nasty_graph(secret_key)
+    results = []
+    method_chains.each do |method|
+      results << huge_graph.deep_send(method)
+    end
+    rescue NoMethodError
+    ensure
+      return results
+    end
+  end
+
+end
+{% endhighlight %}
+
+In our example, we have a method appropriately called get_nasty_graph.  Let's assume this invokes a SOAP service method and returns all of it's enormous goodness.  We could write a million methods in this class to pull out a few related elements to make a reasonable API.  The problem with this is that you're always wrong.  There is always a reason to pull out three of these properties and two of those, and your API just won't accommodate.  If an object needs to use two different API methods to get all that data, it may result in two SOAP calls, which is surely no good.  Using that magic get method now allows us to construct our own method to pull out exactly what we want.  Nothing more, nothing less.
+
+h2. Encapsulate, you must!
+
+If we stopped here, we'd end up painting ourselves in a corner.  Requiring the users of your SOAP client to know about the deep recesses of your nasty object graph is just bad manners.  It's also a leaky abstraction, so stop it!
+
+{% highlight ruby %}
+class HugeNastySoapClient
+  NAME_ENTITY = "some.deep.reference.to.get.to.name"
+  FIRST_NAME = NAME_ENTITY + ".first_name"
+  LAST_NAME = NAME_ENTITY + ".last_name"
+end
+{% endhighlight %}
+
+Now that we've defined a few constants, the clients of our SOAP client can use our magic get method, without knowing how horrific it is to get at those name properties.
+
+{% highlight ruby %}
+class SimpleElegentPerfectClass
+  def get_full_name(secret_key)
+    now_elegant = HugeNastySoapClient.instance
+    first, last = now_elegant.get(secret_key, 
+                                  HugeNastySoapClient::FIRST_NAME,
+                                  HugeNastySoapClient::LAST_NAME)
+    first + " " + last
+  end
+end
+{% endhighlight %}
+
+h2. Gotcha!  Order thy calls!
+
+You may have noticed that <em>rescue NoMethodError</em> bit in our magic get method.  Choosing to implement that method in this way is not without it's faults (ha!).  If you passed in a method chain that resulted in a NoMethodError being raised, you'll need to decide what to do.  In this example, I've chosen to swallow it and return what I got so far.  This means that the order of your method chains is significant, if there is a higher likelihood that some of them will occasionally go missing.  Isn't SOAP marshaling awesome?  You may decide, of course, to rescue the error, call the authorities and raise the threat level to red instead.  Good luck with that.  

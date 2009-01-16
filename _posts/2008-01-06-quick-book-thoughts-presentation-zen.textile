@@ -1,0 +1,22 @@
+---
+layout: post
+title: Quick Book Thoughts - Presentation Zen
+---
+
+h1. {{ page.title }}
+
+I've been anticipating the release of "Presentation Zen":http://www.amazon.com/Presentation-Zen-Simple-Design-Delivery/dp/0321525655/ref=pd_bbs_sr_1?ie=UTF8&amp;s=books&amp;qid=1199680549&amp;sr=8-1 by "Garr Reynolds":http://www.presentationzen.com/ for a few months now.  My copy arrived on Friday, the first of three days without electricity due to a bit of a storm we've had out here in Northern California.
+
+The book was fun to read in all respects and the design of the book itself, along with the presentation samples inside, are truly elegant.
+
+From the review I posted to "Amazon":http://www.amazon.com/review/R1TP5I5NNSDOZD/ref=cm_cr_rdp_perm and "Shelfari":http://www.shelfari.com/books/3604846/Presentation-Zen-Simple-Ideas-on-Presentation-Design-and-Deliver:
+<blockquote>
+The evolving interconnectedness of our social and business communities relies heavily on our ability to communicate with one another. As some communication has become more ephemeral (email, IM), others have become slightly more formal (presentations), involving a larger and often diverse audience.
+
+Garr Reynolds has produced and incredibly beautiful book highlighting the virtues of a zen aesthetic as it applies to communication, and more specifically, presentations.
+
+This book brings a sense of mindfulness to the "art" of presenting, which covers the multiple stages of presentation from idea to stage. Reading it once was a joy, but I'm sure that I'll be reaching for this book as a source of inspiration and reference when embarking on a presentation of any kind.
+
+This book is a true gem, highly recommended.
+</br></br>
+</blockquote>

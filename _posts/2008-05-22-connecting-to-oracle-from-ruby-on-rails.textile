@@ -1,0 +1,98 @@
+---
+layout: post
+title: Connecting to Oracle from Ruby on Rails
+---
+
+h1. {{ page.title }}
+
+When Rails 2 was "initially announced":http://weblog.rubyonrails.org/2007/12/7/rails-2-0-it-s-done, we heard that commercial database adapters would be maintained outside of rails core.
+<blockquote>
+	The commercial database adapters now live in gems that all follow the same naming convention: activerecord-XYZ-adapter. So if you gem install activerecord-oracle-adapter, you’ll instantly have Oracle available as an adapter choice in all the Rails applications on that machine. You won’t have to change a single line in your applications to take use of it.
+
+That also means it’ll be easier for new database adapters to gain traction in the Rails world. As long as you package your adapter according to the published conventions, users just have to install the gem and they’re ready to roll.<br/><br/>
+</blockquote>
+
+While getting ActiveRecord to speak Oracle is available by way of just one gem, connecting to Oracle from rails can still be a touch difficult.  Here are some notes from my recent venture into Rails/Oracle land, where I came out victorious, if left feeling just a little dirty.
+
+*The Goal*
+I'll assume that the desired goal is to have an "application server", which hosts your Rails app, connect to a remote database server, running some recent version of Oracle (8i+).
+
+*Application Server*
+<ol>
+	<li> First, make sure you've got everything you need to run your Rails app.  Ruby, rubygems, Rails, necessary gems (vendor'd or otherwise).</li>
+	<li>Install the Oracle Client (or instant client) software for your hardware architecture.  
+Note: On Linux, the client requires over 1Gb of swap space to install.  (insert snide remark about how "fat" the Oracle database is here)  Here are some tips on "adding swap space to a UNIX system":http://www.redhat.com/docs/manuals/linux/RHL-9-Manual/custom-guide/s1-swap-adding.html.</li>
+	<li>Create a tnsnames.ora file on your app server with the connection information to your trusty, hardworking oracle database.  
+(/etc/tnsnames.ora is a nice (and default) spot on UNIX systems.)</li>
+	<li>Install the "ruby-oci8 gem":http://www.rubyforge.org/projects/ruby-oci8.
+On UNIX systems, you'll need to build the gem, which means you'll need a fairly complete development stack including make, (g)cc, headers, etc.  I'd love to find out if there is an easier way to build this gem so it could be deployed in app/vendor/gems!</li>
+	<li>Install the activerecord-oracle-adapter gem:
+> gem install activerecord-oracle-adapter --source http://gems.rubyonrails.org</li>
+	<li>Configure your rails environment(s) to use the oracle database adapter:
+production:
+  adapter: oracle
+  database: [your tns name]
+  username: [your user name]
+  password: [your password]</li>
+</ol>
+
+*Gotcha!*
+Rails migrations specify modifications to your schema in a ruby syntax.  The available column types defined in a rails migration will be translated into a database-specific type during the migration.  The table below maps the ruby column types to Oracle data types:
+
+<table border="0" cellspacing="5" cellpadding="0">
+<tr>
+<td><strong>Rails migration notation</strong></td>
+<td><strong>Oracle data type</strong></td>
+</tr>
+<tr>
+<td>:integer</td>
+<td>NUMBER(38,0)</td>
+</tr>
+<tr>
+<td>:float</td>
+<td>NUMBER</td>
+</tr>
+<tr>
+<td>:datetime</td>
+<td>DATE</td>
+</tr>
+<tr>
+<td>:date</td>
+<td>DATE</td>
+</tr>
+<tr>
+<td>:timestamp</td>
+<td>DATE</td>
+</tr>
+<tr>
+<td>:time</td>
+<td>DATE</td>
+</tr>
+<tr>
+<td>:text</td>
+<td>CLOB</td>
+</tr>
+<tr>
+<td>:string</td>
+<td>VARCHAR2(255)</td>
+</tr>
+<tr>
+<td>:binary</td>
+<td>BLOB</td>
+</tr>
+<tr>
+<td>:boolean</td>
+<td>NUMBER(1,0)</td>
+</tr>
+</table>
+
+*Fixtures*
+If you're using fixtures with an Oracle database, make sure the values in your YAML file can be translated appropriately into the corresponding Oracle data types.
+
+One example may be the translation of a bare Fixnum (eg. 100) into a column set to :text.  Since Oracle translates :text columns into CLOBs, the Fixnum in your fixture data will need to be coerced into a String.  FAIL!  In this case, quote the values in your fixtures (eg. "100").
+
+*Further Reading*
+* Obie Fernandez's article on "Connecting to Oracle from Ruby on Rails":http://www.oracle.com/technology/pub/articles/fernandez-rails-connections.htm (A little dated, thus this post)
+* "Oracle Instant Client":http://www.oracle.com/technology/tech/oci/instantclient/index.html
+* "Ruby on Rails with Oracle FAQ":http://www.oracle.com/technology/pub/articles/saternos-ror-faq.html
+* "Tips for optimizing Rails with Oracle":http://www.oracle.com/technology/pub/articles/mearelli-optimizing-oracle-rails.html

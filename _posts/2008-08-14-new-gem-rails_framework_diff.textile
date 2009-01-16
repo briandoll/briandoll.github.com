@@ -1,0 +1,28 @@
+---
+layout: post
+title: New gem - rails_framework_diff
+---
+
+h1. {{ page.title }}
+
+It started on twitter:
+<blockquote>
+It's amazing how hard it is to find problems when caused by developers incorrectly modifying framework-generated files. - "Chad Fowler":http://twitter.com/chadfowler/statuses/885401839
+<br/><br/>
+</blockquote>
+<blockquote>
+i've always wanted to write a rake task to diff framework-generated files against their generated default for that very reason. - "Brian Doll":http://twitter.com/briandoll/statuses/885448580
+<br/><br/>
+</blockquote>
+<blockquote>
+I would install that gem/plugin if you released it. - "Chad Fowler":http://twitter.com/chadfowler/statuses/885554743
+<br/><br/>
+</blockquote>
+
+I had been looking forward to writing another gem ever since reading the _Building a gem with BDD_ article in the initial issue of "The Rubyist":http://therubyist.com/.  In that article, "Jamie van Dyke":http://fearoffish.co.uk/ mentioned a gem called "Mr. Bones":http://codeforpeople.rubyforge.org/bones/ for creating gem skeletons.  It differs from other similar solutions in that it's just a generator and does not insert itself as a dependency on your gems.
+
+The problem is simple enough.  The rails command builds a project skeleton which includes many key files.  If those files are modified incorrectly, lots of badness can happen.  Since they are automatically included in all rails projects though, they can look innocuous when auditing or reviewing a rails project.  When they are the culprit, you've likely spent hours and hours reviewing everything else first.
+
+Now, with "rails_framework_diff":http://github.com/briandoll/rails_framework_diff you can quickly see a diff against the rails framework-generated defaults and those corresponding files in your project.  Nice and easy, nice and quick.
+
+I should also note that without "github":http://github.com/, not only would the process of releasing a new gem into the world take a whole lot longer, it certainly wouldn't be as fun.  This gem was conceived, developed and released on a major gem server in under two hours.  Awesome.

@@ -1,0 +1,13 @@
+---
+layout: post
+title: News traveling around the internets
+---
+
+h1. {{ page.title }}
+
+A few interesting tidbits came across the many diverse and often redundant news sources I pay attention to lately.  It occurred to me that there is somewhat of a natural flow to information these days.  First, some event occurs, then somebody tweets about it.. and so on it goes.  It takes a bit of time to jump from one medium to the next, and the accuracy tends to wane while the audience grows.
+
+Here is how I see it:
+<img src="/images/news.png">
+
+What do you think?

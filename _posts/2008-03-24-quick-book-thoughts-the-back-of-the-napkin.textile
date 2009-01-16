@@ -1,0 +1,18 @@
+---
+layout: post
+title: Quick Book Thoughts - The Back of the Napkin
+---
+
+h1. {{ page.title }}
+
+With a densely populated landscape of business books out there, it's nice to see something truly unique.  "Solving problems and selling ideas with pictures", reads the apt subtitle of this napkin-shaped, unassuming book that may finally be what you've been looking for.
+
+"Dan Roam":http://digitalroam.com/ has written a fun and frank book about ideating through business ideas using visual methods.  Dan focuses on the _communication_ aspect of problem solving, using simple yet surprisingly impactful techniques for expressing ideas in ways that ensure everybody "gets it".
+
+In the first two parts of The Back of the Napkin, we are  re-introduced to elements of drawings, charts and graphs.  While elemental, building from a basic foundation of shapes and defining the process of visual thinking allows each of us to see that we can and do think this way, and no, you don't have to draw well to pull it off!
+
+The second part of this book focus on the "tools and rules for good visual thinking".  Experienced visual communicators and newcomers alike will appreciate the lighthearted approach to this topic, while fans of "Edward Tufte":http://www.edwardtufte.com/tufte/ will surely appreciate some similarities of perspective.
+
+The Back of the Napkin really kicks into high gear in the third and fourth parts, Developing and Selling Ideas.  We've all seen a group of professionals get stuck going in circles when presented with a visual style that in no way fits the type of problem being discussed.  In _Developing Ideas_, we see what types of pictures are best for various problem types.  In the past, I've used this "Periodic Table of Visualization Methods":http://www.visual-literacy.org/periodic_table/periodic_table.html to pick an appropriate model, but like the rest of this book, Dan describes in simple terms how to solve a "How Much" problem, a "Where" and "Why" problem and so on.
+
+The Back of the Napkin shows us that simple drawings, be they on a napkin or a boardroom white board,  may very well be the most succinct, efficient and accessible way to solve problems and sell ideas.   You'll be solving the right problem, with the right visual tools, with everyone "on the same page".
