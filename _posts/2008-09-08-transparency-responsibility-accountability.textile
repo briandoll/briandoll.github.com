@@ -1,0 +1,10 @@
+---
+layout: post
+title: Transparency, Responsibility, Accountability
+---
+
+h1. {{ page.title }}
+
+"Kent Beck":http://www.google.com/search?hl=en&q=kent+beck speaking at RailsConf 2008.  I think this is the most interesting and poignant presentation of the year.
+
+<p><embed src="http://blip.tv/play/Ace1Roa8BA" type="application/x-shockwave-flash" width="320" height="270" allowscriptaccess="always" allowfullscreen="true"></embed> </p>

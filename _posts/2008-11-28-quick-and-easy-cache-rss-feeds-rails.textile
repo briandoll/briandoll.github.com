@@ -1,0 +1,73 @@
+---
+layout: post
+title: Quick and Easy - Cache RSS feeds in your Rails app
+---
+
+h1. {{ page.title }}
+
+Displaying a feed within your Rails app is pretty easy.  It turns out caching that RSS feed is pretty easy too.  I recently added cached RSS feeds to an app and had a few tiny hoops to jump through, so I thought I'd document them here for anyone else looking to solve the same problem.
+
+Caching is easy.  Cache invalidation is hard.  For an RSS feed, we'd have to ping the feed to determine if any data had changed.  Why bother?  Instead of fetching the RSS feed on every single page request, let's cache it for a fixed period of time.
+
+The "timed_fragment_cache":http://github.com/GeorgePalmer/timed_fragment_cache/tree/master plugin adds a duration option to the Rails cache method, allowing you to specify how long to cache a fragment of code.  So, get it!
+
+{% highlight bash %}
+> ./script/plugin install git://github.com/GeorgePalmer/timed_fragment_cache.git
+{% endhighlight %}
+
+To integrate that cache method into a page, it might look like this:
+
+{% highlight ruby %}
+<%- cache "statulous_blog", (Time.now + 60.minutes) do -%>
+  <%= render_rss_feed("http://example.com/rss.xml") %>
+<%- end -%>
+{% endhighlight %}
+
+The render_rss_feed helper method looks like this: 
+
+{% highlight ruby %}
+require 'rss/1.0'
+require 'rss/2.0'
+require 'open-uri'
+require 'socket'
+module ApplicationHelper
+ 
+  def render_rss_feed(url)
+    content = ""
+    open(url, 0) do |s| content = s.read end
+    feed = RSS::Parser.parse(content, false)
+    @link = feed.channel.link
+    @title = feed.channel.title
+    @items = feed.channel.items[0..4] # just use the first five items
+    render :partial => 'home/rss_view'
+  end
+ 
+end
+{% endhighlight %}
+
+
+And from there, pretty up that feed however you like.  Here I'm just using the link, title and date:
+
+{% highlight ruby %}
+<h3><a href='<%= @link %>'><%= @title %>:</a></h3>
+<small>The most recent 5 entries:</small><br/>
+<% @items.each do |item| %>
+  <li><strong><a href='<%= item.link %>'><%= item.title %></a>
+	</strong> - <small>(<%= item.date.strftime('%m/%d/%Y') %>)</small>
+<% end %>
+{% endhighlight %}
+
+h4. private method `gsub' called for #<StringIO:0x2575df8>
+
+If you are using Rails 2+ and you try to get fancy with that duration specification, using something like 30.minutes.from_now, you'll end up getting that gsub error.  Here is why:
+
+{% highlight ruby %}
+%ruby script/console
+Loading development environment (Rails 2.1.0)
+>> (Time.now + 30.minutes).class
+=> Time
+>> 30.minutes.from_now.class
+=> ActiveSupport::TimeWithZone
+{% endhighlight %}
+
+Note: 30.minutes.from_now.time will result in a Time class, and will work equally as well as (Time.now + 30.minutes).  It's up to you which of those two are more readable and intention revealing.

@@ -1,0 +1,83 @@
+---
+layout: post
+title: Train to not suck at life
+---
+
+h1. {{ page.title }}
+
+In an early edition of the "CrossFit Journal":http://journal.crossfit.com, Coach Glassman talks about the "foundations of CrossFit":http://www.crossfit.com/cf-download/Foundations.pdf (pdf):
+<blockquote>
+We have designed our program to elicit as broad an adaptational response as possible. CrossFit is not a specialized ﬁtness program but a deliberate attempt to optimize physical competence in each of ten recognized ﬁtness domains.<br/><br/>
+</blockquote>
+
+These fitness domains are:
+<blockquote>
+Endurance, Stamina, Strength, Flexibility, Power, Speed, Coordination, Agility, Balance, and Accuracy<br/><br/>
+</blockquote>
+
+It's no surprise that some CrossFit gym's use the _"Train to not suck at life"_ tag line, as these fitness domains are all critical aspects to our personal success, no matter what our aim.
+
+I've been thinking about success factors a lot since watching "Malcolm Gladwell's":http://en.wikipedia.org/wiki/Malcolm_Gladwell great presentation at PopTech, loosely based on the content of his new book, "Outliers":http://www.amazon.com/gp/product/0316017922?ie=UTF8&amp;creativeASIN=0316017922.  Watch this presentation, then ask yourself "what effects my own talent capitalization?"
+<div><object width="512" height="322" data="http://d.yimg.com/static.video.yahoo.com/yep/YV_YEP.swf?ver=2.2.30" type="application/x-shockwave-flash"><param name="allowFullScreen" value="true" /><param name="AllowScriptAccess" value="always" /><param name="bgcolor" value="#000000" /><param name="flashVars" value="id=10577117&amp;vid=10577117&amp;lang=en-us&amp;intl=us&amp;thumbUrl=&amp;embed=1" /><param name="src" value="http://d.yimg.com/static.video.yahoo.com/yep/YV_YEP.swf?ver=2.2.30" /><param name="flashvars" value="id=10577117&amp;vid=10577117&amp;lang=en-us&amp;intl=us&amp;thumbUrl=&amp;embed=1" /><param name="allowfullscreen" value="true" /></object></div>
+
+Now, Gladwell has made clear that we're "too focused on the individual":http://gladwell.com/outliers/index.html.  His book focuses on the environment around us, our culture, our birthplace and even our date of birth, which has enormous effects on how our talents are capitalized.  I do agree with Gladwell on these points, but as an individual myself (and you too, dear reader) it is always alluring to focus inward with an aim to do whatever it is we do, as well as we can do it.  While I've never read any "self-help" books before, I can see why they are so popular.  After watching that presentation, I couldn't stop thinking about how we could measure our performance in a more general sense.
+
+I'd bet that if we think hard enough, the primary issues that affect the capitalization of our own talents are weaknesses in several of those fitness domains.  CrossFit may imply that those domains are for physical fitness, but as any athlete will tell you, mental fitness is as important if not more so.
+
+Luckily for CrossFitters, improving fitness across those domains is easy.  Do your CrossFit workouts and you'll get more fit across the board.  It's also easy to track your fitness progress, which was the primary motivation for my building "statulo.us":http://statulo.us/.
+
+For thought workers, though, it may be hard at first to see how our mental fitness stacks up across these fitness domains.  Let's take a stab at describing how these terms could be applied to the average worker.
+
+h2. Endurance
+
+<blockquote>the power to withstand hardship or stress</blockquote>
+Tight deadline?  Fast approaching ship date? How well do you deal with the stress in your life?  How well do you endure the discomfort of useless but necessary(?) business meetings?
+
+h2. Stamina
+
+<blockquote>strength to resist fatigue and tiredness</blockquote>
+So much of corporate life can be tiring.  Cube dwelling zaps creativity, conference calls can quickly become white noise and idle chatter can challenge even the well rested.  How do you sustain your energy throughout the day?
+
+h2. Strength
+
+<blockquote>durability; determination; resolve; power; intensity; force</blockquote>
+Implementing change in any organization requires the strength to to encourage, to challenge and to lead.  When you find something worth fighting for, how much strength can you muster?
+
+h2. Flexibility
+
+<blockquote>susceptible of modification or adaptation</blockquote>
+Pragmatism.  Unyielding focus in a single direction, without input from others, will ultimately kill you.  Staying focused on your goals while being flexible about the details will always require less effort, and produces much better results.
+
+h2. Power
+
+<blockquote>the rate at which work is performed for a given period of time</blockquote>
+"I'm going to put my head down and just crank this out."  When all those pesky decisions have been made, the goal is in site, and its just time to get 'er done.  How do you build and sustain your power?
+
+h2. Speed
+
+<blockquote>the rate at which an object moves</blockquote>
+Nobody needs more red tape. Get moving!  <a href="http://www.bobdylan.com/#/songs/times-they-are-changin" target="_blank">Don't stand in the doorway, don't block up the hall.</a>
+
+h2. Coordination
+
+<blockquote>Harmonious interaction; synchronizing movement.</blockquote>
+You work with others, each of you depending on one another.  How well do you coordinate with your peers?  How well do you coordinate the work you do?
+
+h2. Agility
+
+<blockquote>moving quickly and lightly</blockquote>
+<a href="http://agilemanifesto.org/" target="_blank">I think we get this one.</a>
+
+h2. Balance
+
+<blockquote>equality of distribution</blockquote>
+You play many roles from day to day.  How well do you balance the demands placed against you with your desires as a person?  If you're stressed out, you're out of balance.
+
+h2. Accuracy
+
+<blockquote>the quality of being near to the true value</blockquote>
+After all that, did you create anything of value?  Were your aims true?  Was it worth it?
+
+h2. How do you rate?
+
+Precision would miss the point.  Every day may bring us something different, something new.  But that actually _is_ the point.  Diversity, that marrow of life, requires all of the above.  How do you handle it?  How do you rate?  How do you train to not suck at life?
