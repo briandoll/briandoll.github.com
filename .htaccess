@@ -1,0 +1,7 @@
+RewriteEngine On
+
+# An old wordpress url example:
+# http://emphaticsolutions.com/index.php/2008/12/13/train-to-not-suck-at-life/
+# needs to be routed to the new jekyll url:
+# http://emphaticsolutions.com/2008/12/13/train-to-not-suck-at-life.html 
+RewriteRule ^index\.php(.*)/$ http://www.emphaticsolutions.com$1.html
