@@ -1,5 +1,7 @@
 RewriteEngine On
 
+# redirect the old feed URL
+RewriteRule ^index\.php\/feed\/$ http://feeds.feedburner.com/EmphaticSolutions [L]
 # An old wordpress url example:
 # http://emphaticsolutions.com/index.php/2008/12/13/train-to-not-suck-at-life/
 # needs to be routed to the new jekyll url:
