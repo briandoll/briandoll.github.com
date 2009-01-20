@@ -1,0 +1,145 @@
+---
+layout: post
+title: Clean Eating, How I make it work
+---
+
+h1. {{ page.title }}
+
+h2. "But I already eat healthy!"
+
+I'm not sure when the hype hit you, but for me it came hard and fast somewhere around 2002.  I had come back from an adventurous year off traveling and had just moved in with my beloved, now wife, Brigid in North Beach, San Francisco.  While much of my nutrition in those days came from pint glasses and greasy bar food, when we ate at home, we tried to eat _healthy_ food.  
+
+*Whole grains* appeared in everything, the little green triangle showed up on lots of packaged foods, and we were sold.  We slowly began cooking more and eating out a little less.  Whole wheat pasta, with low fat turkey and sauce, was a staple.  No bread was purchased without at least 7 of the holy whole grains.  Rice?  Brown, please.  Breakfast?  Wheaties!  Every morning, and often as a snack.  
+
+In 2004 Brigid and I moved to Marin county and bought a house.  This certainly helped to dramatically cut down on those greasy bar meals, and far fewer pints of Guinness passed my lips.
+
+The next progression of my supposed healthy eating was based on a fear of _high fructose corn syrup_ and the like.  I'm a voracious reader, so Michael Pollan's "_The Omnivore's Dilemma: A Natural History of Four Meals_":http://www.amazon.com/Omnivores-Dilemma-Natural-History-Meals/dp/0143038583/ref=pd_bbs_sr_2?ie=UTF8&s=books&qid=1232228716&sr=8-2 and "_In Defense of Food: An Eater's Manifesto_":http://www.amazon.com/Defense-Food-Eaters-Manifesto/dp/1594201455/ref=pd_bbs_sr_1?ie=UTF8&s=books&qid=1232228716&sr=8-1 had been ingested as fast as they were printed.  I was, after all, starting to get concerned about my health.
+
+Strangely though, my health didn't seem to be improving.  As I became more and more watchful of fat intake and ensured my grains were as whole as possible, I actually weighed _more_ than I did when I was drinking pints of Guinness by the bakers dozen and choosing between fish-n-chips and shepherd's pie for dinner.
+
+It was Einstein who described insanity as ""_doing the same thing over and over again and expecting different results_"":http://www.quotationspage.com/quote/26032.html.  I was eating low-fat, whole grain foods for years expecting the results to be different from what I had repeatedly seen.  It didn't work for me, and it won't work for you, either.
+
+h2. Finding Crossfit
+
+Six weeks before my 31st birthday I was swimming laps in a pool in Lake Tahoe.  After swimming two lengths of the pool freestyle, I started sucking wind like I hadn't exercised in years.  Hmm.  That _may_ be because I hadn't exercised in years.  It was time for serious change, and I was looking anew for a solution.
+
+After lots of research I came to find "Crossfit":http://www.crossfit.com/.  I started doing the "Crossfit warmup":http://www.crossfit.com/cf-info/faq.html#General7 in my garage for a few days, reading the "discussion boards":http://board.crossfit.com/ online and started to get the general idea that fitness was a much broader and important concept than just thinking about health in general.  The degree that one may consider themselves healthy may be quantified by their distance away from death.  To consider oneself fit, well, that's a whole different story.  For probably the first time ever, I now aspired to be fit.
+
+I signed up for classes at "TJ's Gym":http://tjsgym.com/ and started showing to myself and others, just how unfit I had become.  My first few workouts would be recorded as DNF, or _did not finish_.  The scale, which I felt I now had to actually utilize after years of neglect, provided an even and round number for me to start off with.  On July 8th, 2008 I weighed 250#!  And so it began...
+
+h2. Zoning Paleo foods
+
+A few hard sweating weeks after my first class, TJ offered to chat with me about nutrition.  I was all over it.  I was going to really impress him, certainly, with my low-fat foods and my whole wheat pasta.  All summer I had gone to the farmers market every week to pick up my fruit and veggie box from "Full Belly Farm":http://www.fullbellyfarm.com/. Surely I was on the right track.
+
+There was this moment, before we got into the nutrition chat, that TJ talked about the big picture.  Eating well was a foundation of fitness.  You need quality foods in order to perform well.  He reached toward me, his arms floating a few inches from what had become my impressive gut, to say that the goal was to "turn this machine into a fat burning machine."  _This machine?_  Holy shit!  Images of my more youthful years flashed before me, a glimmering reminder of the times when I felt like a machine.  Powerful.  Unstoppable.  Ready for anything.  At that moment I decided that I would be dumb enough to believe that I could not only relive that feeling, but surpass it.
+
+I listened intently and started to get the message.  
+* Eat "zone portions":http://www.zonediet.com/ of "paleo foods":http://paleodiet.com/.  
+* Fat does not make you fat
+* Sugar, in its many forms, makes you fat
+* Grains, whole or otherwise, are just sugar in a brown wrapper
+* Obesity is one of many side effects of underlying disease, brought on by bad nutrition
+* Body composition change must come from nutrition
+* Don't expect that working out hard will balance out poor nutrition
+* Zone portions == the right quantity of foods
+* Paleo foods == quality foods
+
+h2. "How do I know what to believe?"
+
+I know what you're thinking.  This is yet another sales pitch on _the ultimate, easy, guaranteed, weight loss secret that will blow...you...away!_  Thankfully, no.  Let's look at what "paleo foods":http://paleodiet.com/ are: Meat, vegetables, fruit, nuts and seeds.  You couldn't turn that into a million dollar idea if you tried.  Boiled down to it's essence, the idea is to eat _real_ food.  Pollan had great ways of putting this in his book "_In Defense of Food: An Eater's Manifesto_":http://www.amazon.com/Defense-Food-Eaters-Manifesto/dp/1594201455/ref=pd_bbs_sr_1?ie=UTF8&s=books&qid=1232228716&sr=8-1.  _"If your great grandmother wouldn't recognize it as food, don't eat it!"_ 
+
+After all, how many millions of Americans have eaten just the way I did, as we're told from every magazine and TV commercial.  How many of those same people are over weight?  How many of them have high cholesterol?  High blood pressure?  Diabetes?  Cancer?  Exactly.
+
+During the first nutrition lecture at "TJ's Gym":http://tjsgym.com/, "Matt Barnes":http://mattbarnes.multiply.com/ gave us the do-it-yourself challenge to see how sugary our beloved whole wheat pastas or breads are.  Get a blood sugar test strip from your local pharmacy.  Chew on a bite of your favorite whole grain item for 30 seconds.  Insert the sugar test strip into your mouth.  Look at it and _freak out_.  Through the magic of saliva and pearly whites, you've just turned your _healthy_ whole grain super food into a mouthful of sugar.  Congratulations!  
+
+During that same nutrition lecture, Matt and TJ mentioned a book that aimed to investigate and summarize over 100 years of science on nutrition and diet.  The book is "Good Calories, Bad Calories":http://www.amazon.com/Good-Calories-Bad-Controversial-Science/dp/1400033462/ref=pd_bbs_sr_1?ie=UTF8&s=books&qid=1232232506&sr=8-1 by Gary Taubes.  If you read it, it will change your life.  (I read about 30 books a year, and this damn _nutrition_ book is in my top 5!)  If you want to opt out of this 640 page tome, but still get the message, here it is.  *Eat zone portions of paleo foods, or you'll die sooner than you should.*  I'm not meaning to be critical.  Reading the science, perspectives and hypothesis, I started to get scared.  Every chapter unveiled deeper and more disturbing things about the foods I had been eating so much of.  When you start to see how that bread, rice and pasta on the dinner plate equates to high cholesterol, diabetes, obesity and cancer, you start to see just how serious we need to consider the foods we eat. 
+
+h2. Where do you want to be?
+
+Hardcore clean eating takes work.  Eating perfect zone portions means measuring and weighing.  Eating a strict paleo diet means no dairy, no sugar and no cheap and easy carbs.  Finding grass fed beef is hard.  Eating salsa is nice, but without chips, it's hard.  Having a tough day at work is hard enough, but not consoling yourself with that routine glass of wine at home.. that's hard.  Even when we know the consequences, when we have a clear picture of what clean eating is, it can still be hard to stick to it.
+
+TJ has always offers up the 80/20 rule as a good guideline of where we should aim to be.  Eat clean 80% of the time.  That other 20% is up to you.  Over the long term, the most important factor to successfully implementing good nutrition in your life, is finding _your_ own balance.  How strict are you during that 80%?  What do you eat during that 20%?  
+
+Where do _you_ want to be?  What are _your_ performance goals?  Are you happy with your body composition?  Are those cheese and crackers worth it?  Once you know precisely where clean eating is on that nutrition curve, with bagels, pasta and french fries at the other end, you need to decide for yourself where you want to be on that curve.  Here's the obvious part: the closer you are to eating clean, the easier it will be to accomplish your goals.  Get too far away, and just like a paying the minimum balance on an maxed out credit card, you'll never get there.
+
+h2. My personal concessions
+
+Can you imagine how hard it would be to eat perfectly every day, with no deviations?  It wouldn't just be hard, it would be unmaintainable.  Eating perfectly for a month, then crashing and eating nothing but pizza and coke the next month won't get you anywhere (except maybe the bathroom).
+
+I started eating clean just after I started Crossfit.  Zone blocks were very confusing to me.  Instead of worrying about them too much, I focused on quality first.  I was _shocked_ how easily I transitioned from my morning Wheaties to eggs.  Rice in my Chinese and Indian dishes, to broccoli.  Lunchtime sandwiches to left over meat and veggies.
+
+I bought a food scale and new measuring spoons and measured my foods for about two weeks.  I didn't count daily blocks, but wanted to see what 4 oz. of chicken looked like.  What does a cup of broccoli look like?  How much is a teaspoon of olive oil?  After those two weeks, I stopped measuring and eyeballed everything.
+
+I continued to drink skim milk on occasion.  I also had cottage cheese and raw yogurt a few times a week.  I felt so full and satisfied by the meals I was eating, I never really felt to urge to eat a luxurious cheat meal.  My favorite "cheat" now, and probably forever, is still a pint of Guinness.  Every few weeks I'd go out with the guys, and like old times, toss back a handful or more.  The next day, I'd wake up a little soggy, and go on eating clean again.
+
+I started to equate non-paleo foods as interest to be paid back.  Was it worth it?  Sometimes it was.  As fall weather settled down into November, my wife made an incredible Squash Risotto.  I ate a big bowl of it and loved every bite.  On another memorable day in November, I watched as an 8 year reign of ignorance would be overturned in favor of science, humanity and humility.  The uncounted glasses of beer, scotch and vodka were all worth it in celebrating that night.  (If Californians cared for gay rights as much as they did for animal rights, it would have been a perfect night... but I digress...)
+
+In this recent nutrition challenge, I've gone strict paleo with no cheats.  I had fallen into the convenient trap eating _Think Thin!_ bars on the weekends, and my dairy intake was probably more than I wanted to admit.  Already I've been thrilled to see how easy it has been to cut that stuff out for a while.  When it's all over, I'll probably go back to having a drop of _real_ cream in my coffee, but I'm glad to have moved the "health" bars from every weekend to true food emergencies.
+
+The point is that I had come to a point where I could decide where on that curve of clean eating I wanted to be.  I knew what a "cheat" was, and I felt good about when and how often I had them.  I have found the foods that I will be eating for the rest of my life.
+
+h2. A day in the life
+
+After the second nutrition seminar at the gym, Michael showed off his food stuffs for the day to the 9:30 class.  I think this was a great way to see, in person, how one person does it.  To that end, here is a typical day in my world:
+
+__Note: If you want to see what other zone/paleo folks are eating regularly, befriend them on "statulo.us":http://statulo.us so you are a click away from their nutrition log!_
+
+* *Work schedule*
+I'm lucky enough to work from home.  I'll admit this has provided an enormous convenience to transitioning to clean eating.  I can cook at home frequently, and have plenty of time to shop since I don't spend any time commuting.  I've also found, however, that I require a lot less time in the grocery store.  I buy a cart full of great food every 4 days or so, and I'm never in the store for more than 15 minutes.
+
+* *Workout's at TJ's*
+I started out going to TJ's about twice a week for the first few months.  I ramped up to three times a week for a bit, and am now going 4x-5x per week.  I don't have a set schedule or class, and go equally to the 6AM, 9:30AM and 4PM classes.  
+
+* *7 AM Breakfast*
+I eat two eggs for breakfast every day.  I buy those super omega 3 eggs from Trader Joe's which are incredible.  If I'm going for spicy, I'll heat up some onion, mushroom, peppers, etc. in some olive oil first.  After cooking the eggs with the veggies, I'll add some sort of fresh salsa.  Other days I feel like something a little sweeter, so I'll use a teaspoon of coconut oil in the pan to cook the eggs in.  Adding ground flax is nice with the coconut oil, and them I'm nearly drowning in Omega 3.  Every other day or so, I'll also have some fruit with breakfast, typically an orange.
+
+* *11 AM Snack*
+If I'm returning from the 9:30 class, I'll typically have a smoothie.  I blend water, 2 scoops of whey protein powder and 2 cups of fruit (strawberries, blackberries, raspberries, mango, etc.).  This makes more than can fit in two pint glasses (you just know I have a lot of these at home, right?) and tastes like a dream.  
+Otherwise I'll have 2 oz of meat (left over chicken, steak or turkey burger) with an apple and some nuts or almond butter.  Peanut butter was very dear to me for years, but I've fallen hard and fast for almond butter and won't look back.  I typically have raw almond, cashew, macadamia and walnuts around.  I've recently started adding raw sunflower seeds into the mix too.
+
+* *1 PM Lunch*
+For convenience I often have leftovers from my previous dinner for lunch.  If I don't have much in the fridge, I'll use this time to cook extra food for later.  I always try to have a container of meat in the fridge for snacks or to incorporate into a quick lunch.  I have tuna on hand for 1-minute meals, but I may also grill up a few steaks, or boil a pound or two of chicken.  Boiled chicken, while not the sexiest way to cook a bird, seems to be the best way to keep chicken moist for a few days.  This is also a great time to put a turkey breast or two into the oven.  It cooks while I work, and it lasts days.
+
+* *4 PM Snack*
+This is a lighter snack, typically, and I often don't have any meat at this time.  Lately I've had an apple and some nuts to tide me over.  This is also the time I usually remember how little water I've had to drink that day, so I fill up a 1 liter bottle and start drinking.
+
+* *6:30 PM Dinner*
+A side effect of eating clean has been my interest in cooking. My wife and son (Blake - 2) get home around 5:30.  Now that we've been eating paleo dinners together for a few months, we've got a cache of recipes we cook often.  We toss around a few ideas and I begin the preparations.  I always make more food than we'll eat for dinner, to serve as lunch later.  This does sometimes make it hard to count blocks for things like cooking oils, I'll admit.  We both love Indian, Thai and Chinese food, so I'll make something like that and eat it over broccoli.  I've gathered an impressive amount of spices, and with some experimentation, I've found quite a few variations to keep it interesting.  Having recently found how good coconut milk can be, I've been cooking with that more often, and eating a lot of bok choi, too.
+
+* *9PM Snack*
+I'm often too full to need a snack at this hour, but when I do it's usually nuts and fruit.  A cup of grapes with 21 cashews is incredible.
+
+* *Sleep schedule*
+If I didn't know any better, I'd be up until midnight every night.  Fortunately I've convinced myself of the benefits of sleep and I'm getting a little more sleep now.  I may sleep from 10:30 to 5:20 (a little less than 7 hours) if I go to the 6 AM class, or 11:30 to 7 (7 and a half hours) on every other day.  I _should_ be getting more sleep, but that's where it is now.
+
+h2. The results are in!
+
+<div style="width:100%;">!/images/body.weight.graph.png!</div>
+
+(Interactive graph with notes, available "on statulo.us":http://statulo.us/share/graph/2856885981/2518667660)
+
+In 6 months of Zone/Paleo foods and Crossfit workouts, I've lost *52#*.  Currently at 198#, I'm happily in the under 200 pound club for the first time in a decade.  As you can see, this was no crash diet.  That is two pounds, _every single week_.  I put in consistent effort at 80+ percent, and that's what I got out of it.  Nice and simple.  It hasn't come cheap though!  While I now spend _less_ at the grocery store than I did before, I've had to buy a lot more clothes.  I started off wearing size 38" pants, which I had to try on, as not every pair fit me.  I now buy size 34" pants off the rack, knowing that they are all loose.  Goodbye XL, and hello size _medium_ shorts.  I'm sure soon enough I'll have to pick up a few pairs of size 32" pants when I get sick of always having to wear a belt.
+
+For a more embarrassing angle, here are some before and after pictures... or as I prefer to call them, before and during:
+
+!/images/6.month.paleo.plus.crossfit.jpg!
+
+In a few weeks we'll have the opportunity to have our body fat measured in the dunk tank, so I'm looking forward to having another metric to work on.  While the road so far has been incredibly rewarding, this is only the beginning of what I now know will be a lifetime of fitness.
+
+One thing that has surprised me though all of this, is that I have been able to improve my strength as my weight dropped.  I have the great coaches at TJ's to thank for constant guidance and advice on form and technique.  I struggled a few months ago on strength days, but I'm glad to say now that my Crossfit Total scores are higher now than ever before, at "705 [265# back squat, 105# shoulder press, 335# dead lift, on 12/30/08]":http://statulo.us/share/one/910192006
+
+h2. Making it work for you
+
+So that's my story so far.  If your considering clean eating and are struggling to get started, I hope that by sharing how I make it work, it makes it a little easier for you.  Everyone's habits and foods will be a little different.  What is important is finding how it can best work for you.
+
+I'll close with a few pointers that come with that same disclaimer that all of this does, in that these are just my opinions:
+* Dig deep and find out why you want to be fit.  Remember that every day.
+* Spend time reading up on preferred paleo foods.  Make a list of the stuff you like.  Don't pay any attention to the stuff you don't like.
+* Eat that stuff, and repeat.
+* If you feel like crap, eat more fat.
+* When you cheat, cheat well.  Find those off limits foods that you will cherish and savor.  (Guinness!)
+* Maintain a nutrition log ("on statulo.us!":http://statulo.us/).  Better yet, share your log and let friends keep tabs on you!
+* Spend time developing the habits of healthy eating and cooking.  Soon enough it will be second nature and will require very little thinking.
+* Paleo foods don't have to be boring!  Expand your cooking horizons, buy strange vegetables and spices and try stuff out.
+* Have fun!  The quality of your life requires it.
+
