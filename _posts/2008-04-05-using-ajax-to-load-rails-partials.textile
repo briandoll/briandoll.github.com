@@ -29,7 +29,7 @@ class SlowController < ApplicationController
     @query_results = some_model.find(:all)
     @type = "name_of_real_partial_to_load"
     @heavy_data = some_slow_method_call(@query_results)
-    render :partial =&gt; "load"
+    render :partial => "load"
   end
 end
 {% endhighlight %}
