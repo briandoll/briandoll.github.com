@@ -156,3 +156,16 @@ On January 24th, 2008 our gym had scheduled the "Body Fat Test Truck":http://bod
 * Resting metabolic rate: *2149*
 
 According to my back-of-the-napkin calculations, my body fat percentage before I started would have been around *33%*, which not surprisingly is in the *very poor* range.  That means that in 6 months, I've reduced my body fat by *68%*!
+
+h2. Update II, Cholesterol 
+
+I had blood panels taken several months before I started eating Paleo, and then 6 months into eating Paleo.  My most recent labs are quite good by any measure.  Since folks tend to assume that eating Paleo, with lots of good fats and typically lots of eggs, leads to bad cholesterol, here is evidence to the contrary.  
+
+|Metric|Pre-Paleo|Paleo|% Change|
+|Cholesterol|203|177|-13%|
+|Triglyceride|170|47|-72%|
+|HDL|38|57|+50%|
+|LDL|140|111|-21%|
+|VLDL| n/a |9| n/a |
+
+Not that I needed any more proof, but I'm certainly sticking to eating clean from now on.
