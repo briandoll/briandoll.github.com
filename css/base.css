@@ -30,7 +30,7 @@ body { 	background-color: silver;
 	
 }
 
-#personal-info, a {
+#personal-info {
 	text-align: right;
 	font-size: 100%;
 	font-style: italic;
@@ -43,6 +43,7 @@ body { 	background-color: silver;
 
 a {
 	color: #444444;
+	text-decoration: none;
 }
 
 hr {
