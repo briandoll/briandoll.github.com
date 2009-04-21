@@ -19,7 +19,7 @@ h2. "MacRuby & HotCocoa by Rich Kilmer":http://pivotallabs.com/users/edward/blog
 h2. "Sinatra - The Framework Within by Aaron Quint":http://pivotallabs.com/users/chad/blog/articles/780-gogaruco-09-sinatra-the-framework-within-aaron-quint
 
 * I realized I had marginalized Sinatra for no good reason.  Sinatra is really great for simple HTTP services
-* Adam's talk on "The power of the local web" was really interesting.  I like the idea of building HTTP services as a way of interacting with a system.  HTTP is a really flexible and well understood API for this.
+* Aaron's talk on "The power of the local web" was really interesting.  I like the idea of building HTTP services as a way of interacting with a system.  HTTP is a really flexible and well understood API for this.
 
 h2. "Building Custom Web Proxies in Ruby by Ilya Grigorik":http://pivotallabs.com/users/stevend/blog/articles/789-gogaruco-09-building-custom-web-proxies-in-ruby-ilya-grigorik
 
