@@ -71,6 +71,9 @@ h2 {
         /*16px via YUI Fonts CSS foundation*/
         font-size:123.1%; 		
 }
+h2 a {
+	text-decoration: underline;
+}
 h3 {
         /*14px via YUI Fonts CSS foundation*/
         font-size:108%;  

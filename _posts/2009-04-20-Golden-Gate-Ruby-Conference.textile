@@ -1,0 +1,82 @@
+---
+layout: post
+title: Golden Gate Ruby Conference
+---
+
+h1. {{ page.title }}
+
+"GoGaRuCo":http://gogaruco.com/ was a huge success by any measure.  "Josh Susser":http://blog.hasmanythrough.com/ first mentioned his idea for a local Ruby conference during a "San Francisco Ruby Meetup":http://www.meetup.com/sfruby/ a year ago or so.  This past weekend 200 rubyists gathered at the "Swedish American Hall":http://www.cafedunord.com/?page=directions ready for "18 presentations":http://gogaruco.com/schedule/ and lots of break time in between to hang out and hack.  
+
+"Pivotal Labs":http://pivotallabs.com/, a sponsor of the event, provided live video coverage ("video available soon":http://pivotallabs.com/gogaruco/talks) and live-blogged every talk.  Instead of rehashing each presentation, I wanted to collect my thoughts on the presentations that I liked the most.
+
+h2. "MacRuby & HotCocoa by Rich Kilmer":http://pivotallabs.com/users/edward/blog/articles/779-gogaruco-talk-macruby-hotcocoa
+
+* Great overview of this history of Ruby on OS X
+* Great overview of what each of the Ruby technologies are on the mac
+* I was really impressed with the current state of MacRuby and HotCocoa
+* I'd gladly consider HotCocoa to develop a native client app for the Mac after seeing the demo
+
+h2. "Sinatra - The Framework Within by Aaron Quint":http://pivotallabs.com/users/chad/blog/articles/780-gogaruco-09-sinatra-the-framework-within-aaron-quint
+
+* I realized I had marginalized Sinatra for no good reason.  Sinatra is really great for simple HTTP services
+* Adam's talk on "The power of the local web" was really interesting.  I like the idea of building HTTP services as a way of interacting with a system.  HTTP is a really flexible and well understood API for this.
+
+h2. "Building Custom Web Proxies in Ruby by Ilya Grigorik":http://pivotallabs.com/users/stevend/blog/articles/789-gogaruco-09-building-custom-web-proxies-in-ruby-ilya-grigorik
+
+* Described proxies as one of many transparent HTTP layers that are often present in between the client and the application server (firewall, load balancer, etc.). 
+* Had a huge *wow* moment when Ilya was explaining how they use their ruby duplex proxy to send production traffic to a production server _and_ a staging server.  No more simulated traffic, this is the real deal!
+* At "PostRank":http://www.postrank.com/, they deploy a proxy in front of a few servers and load balance across them all, meaning any overhead introduced by the proxy only applies to a portion of their requests.
+* With their duplex proxy, they can run post processors on the request and response data.  The two examples were response times and deltas of the response.
+* Ilya pulled this code out and "released it on github.":http://github.com/igrigorik/em-proxy/tree/master/  It's based on "EventMachine":http://rubyeventmachine.com/.  Ilya also has a great "writeup on EventMachine on his blog.":http://www.igvita.com/2008/05/27/ruby-eventmachine-the-speed-demon/
+* I talked to Ilya about wanting to add in a more generic API for post processors.  I'd love be able to hot-swap post processors at runtime, which could be really helpful when debugging production issues and testing solutions in a staging environment.
+
+h2. "Discussion Panel - Ruby Application Frameworks":http://pivotallabs.com/users/chad/blog/articles/791-gogaruco-09-discussion-panel-ruby-application-frameworks
+
+* This was a great panel and somehow the Pivotal guys were able to document much of the discussion.  Worth a read.
+
+h2. "Magic Scaling Sprinkles by Nick Kalen":http://pivotallabs.com/users/stevend/blog/articles/793-gogaruco-09-magic-scaling-sprinkles-nick-kalen
+
+* Nick gave a simple and solid presentation on age-old distributed computing techniques.  
+* He reminded everyone that these recommendations are computer science basics, and to reach for them, not a specific technology, when thinking about scalability.
+* I'd recommend reading the blog on this talk and checking out "the code used during the demo.":http://github.com/nkallen/gogaruco/tree/master (note: each step of the talk is kept in a different branch)
+* During the presentation, Nick used his tool "ss":http://github.com/nkallen/ss/tree/master, which is  _A cross between Awk, a spreadsheet, and a relational database. A command line 'language' for statistical analysis._  If, like Nick, you spend a lot of time analyzing log data for statistical information, you need to add this to your tool kit!
+
+h2. "Shoes - Programming for fun by Tim Elliot":http://pivotallabs.com/users/chad/blog/articles/799-gogaruco-09-using-shoes-to-create-better-iphone-apps-tim-elliott
+
+* It was great to meet Tim.  Besides being an incredibly nice guy, he has contagious passion for his work and his play, which came across in his presentation.
+* "Shoes":http://shoooes.net/ seems like a really neat environment to play around with.  Tim showed some quick examples of fun UI tricks in Shoes, but he also showed that it works really well for a majority of desktop application needs, too.
+
+h2. "Using Ruby to Fight AIDS by Jaqui Maher":http://pivotallabs.com/users/stevend/blog/articles/800-gogaruco-09-using-ruby-to-fight-aids-jacqui-maher
+
+* Highly recommended presentation!  The stats alone are shocking.
+* Really interesting to see what tools and techniques helped push this project forward
+** Git and github.  Centralized SCM made it virtually impossible to get help from people outside of Africa, and was still difficult within Africa.  Now lots of folks help via github.
+** "Peepcode screencasts":http://peepcode.com/ - Geoffrey Grosenbach sent a DVD to Africa of every Peepcode screencast
+* Ad-hoc networks FTW!
+* It's amazing to see an app like this being rolled out, providing such incredible impact right away.  It also really shows how much waste and inefficiencies exist in our crippled healthcare system in the US.
+
+h2. "Webrat - Rails acceptance testing by Brian Helmkamp":http://pivotallabs.com/users/chad/blog/articles/802-gogaruco-09-webrat-rails-acceptance-testing-evolved-bryan-helmkamp
+
+* Webrat is _awesome_.
+* If you really need browser specific tests, or need in-browser testing of JavaScript, Selenium is still recommended.  You can use them together, too.
+* With web forms, webrat shines when you have proper HTML forms, with good labels.  Webrat encourages proper HTML like TDD encourages better API design.
+* I asked some people about the ease that one might convert Selenium tests to webrat.  The consensus was that form-based pages could be converted relatively easily, where other pages may be less so.  Problem seems to be the often crufty Selenium tests.
+
+h2. "Lighting talks - various":http://pivotallabs.com/users/zach/blog/articles/803-gogaruco-09-lightning-talks
+
+* Observation: "Yehuda Katz":http://yehudakatz.com/ is not only a great programmer, he has helped nearly everyone at one time or another, with their own projects.  He gave a lightning talk on a common API for key/value stores called Moneta, but was mentioned by name in nearly every other talk.  Not just last year's Ruby Hero award winner, but everybody's hero all the time.
+
+h2. "Arduino is Rails for hardware hacking by Greg Bornstein":http://pivotallabs.com/users/chad/blog/articles/805-gogaruco-09-arduino-is-rails-for-hardware-hacking-greg-borenstein
+
+* Awesome demos of hardware hacking with Ruby.  Greg had lots of cool gadgets and it was hard not to get swept up into dreaming up your own hardware hackery.
+* While controlling hardware via software looks insanely fun, some tiny glitches showed how flakey some of the middle bits can be (MIDI and USB can both be a PITA).
+* Greg's library is a great example of using Ruby to create a clean and powerful API on top of a powerful but ugly one.
+
+h2. "Relational Modeling Framework by Nathan Sobo":http://pivotallabs.com/users/chad/blog/articles/806-gogaruco-09-relational-modeling-framework-nathan-sobo
+
+* Nathan's library "June":http://github.com/grockit/june/tree/master blew me away.  It's an event-driven relational framework in JavaScript.
+* The API is really elegant, pulled straight from traditional relational algebra.
+* "Grockit":http://grockit.com/ built a massively multi-player online game environment for learning.  The UI is all event-driven and feels really fast.  What seems like chaos to manage, seems simple with this framework.
+* There was a lot of live coding that helped bring the framework to life, so the video of this talk is highly recommended.
+
+Thanks again, GoGaRuCo!  I'm already anticipating next year's conference.
