@@ -11,7 +11,7 @@ h1. {{ page.title }}
 
 h2. "MacRuby & HotCocoa by Rich Kilmer":http://pivotallabs.com/users/edward/blog/articles/779-gogaruco-talk-macruby-hotcocoa
 
-* Great overview of this history of Ruby on OS X
+* Great overview of the history of Ruby on OS X
 * Great overview of what each of the Ruby technologies are on the mac
 * I was really impressed with the current state of MacRuby and HotCocoa
 * I'd gladly consider HotCocoa to develop a native client app for the Mac after seeing the demo
