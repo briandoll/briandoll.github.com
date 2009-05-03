@@ -1,0 +1,66 @@
+---
+layout: post
+title: Is there such a thing as free automated user acceptance testing?
+---
+
+h1. {{ page.title }}
+
+"User acceptance testing":http://en.wikipedia.org/wiki/Acceptance_testing#User_acceptance_testing is a big milestone in software development, regardless of the methodology in use.  At this stage, the customer (business analyst, system owner, client, etc.) is determining if the feature that's been developed actually matches their needs.  To perform acceptance testing on web-based applications, people tend to fire up their browser and click around until they feel confident that things are working as expected.
+
+Tests like these are very coarse grained.  Unlike a "unit test":http://en.wikipedia.org/wiki/Unit_testing, where specific small components are tested in isolation, an acceptance test requires all the various moving parts to work together perfectly.  Even when your unit test suite runs perfectly, that's no guarantee that the entire application stack is performing as expected.  However, when an acceptance test fails, you know something is wrong.  It also requires much more work to locate the exact issue, since there may be many moving parts that are working together in support of a particular feature.
+
+h2. Automate!
+
+So what would _automated_ user acceptance testing be?  For almost as long as there have been web browsers, there have been tools to "drive" web browsers programatically.  While there are many ways to crack this nut, we'll take a look at three popular ones:
+* "*Selenium*":http://seleniumhq.org/ - language agnostic, can test any website, has IDE for creating tests
+* "*Watir*":http://wiki.openqa.org/display/WTR/Project+Home - Ruby-based, can test any website
+* "*Webrat*":http://wiki.github.com/brynary/webrat - Ruby-based, tests a variety of ruby web frameworks
+
+h2. Webrat is awesome
+
+For proof, check out "Bryan Halmkamp's presentation on webrat from GoGaRuCo":http://www.brynary.com/2009/4/18/webrat-slides-from-gogaruco.  If you're building a web app in a ruby framework, and you're looking to build clean and fast acceptance tests, webrat wins.  The API is simple.  It works with any reasonable Ruby web framework.  It works with any reasonable ruby test framework.  It's faster than driving a GUI-based browser, because it doesn't use one.  Webrat is awesome and you should be using it right now.
+
+h2. Similarities between Selenium and Watir
+
+* Both support writing tests in Ruby
+* Both can drive a variety of GUI browsers
+* Both can be automated
+
+h2. But what about the cost?
+
+Each of these frameworks are open source, or free software, if you prefer.  However, both Watir and webrat come at the cost of developer time.  Shocking, isn't it?  Now before we get all feisty, let me say that I do believe that testing, especially testing first, saves you time and leads to a higher quality product.  No question.  _But..._ sometimes, behind that building over there, across the hall and in a shadowy room, applications can be built without any tests at all.  Call them legacy, call them late for dinner, but don't say they can't be tested.  The problem is, they don't have any developer time to spend.
+
+h2. The fantasy of free
+
+What if our business users were able to record all that clicking around they do, and save those as acceptance tests?  No developer time required!  We could automatically run those tests against our web application, and get immediate feedback!  Without a single developer hour spent, we could have automated user acceptance testing, which serves as coarse-grained regression testing too.  It could be _awesome,_ right? Let's see...
+
+h2. Selenium IDE + Selenium RC
+
+An advantage Selenium has over Watir and other similar competitors, is the "Selenium IDE":http://seleniumhq.org/projects/ide/.  As the story goes, a business user (ie. not a developer) can click around a website, free as a bird, and record their gestures as a test to be played back later.  These tests can be exported to a variety of languages, which could then be run in an automated fashion.
+
+h2. Bringing it all together
+
+# Business users install the Selenium IDE
+# They record their tests, saving them as HTML and exporting them to "Ruby Selenium RC", on a network drive somewhere
+## Saving the files as HTML allows the business team to run the tests locally, as well as edit the tests in the unimaginable case where the test is bad.
+# Tests are committed into a skeleton Rails app repository, which holds only these tests (in ./test/unit) 
+# CruiseControl.rb monitors the repository, running the tests when something changes
+# Selenium RC, running on the same server as CruiseControl.rb, executes the Selenium tests in the browser(s) of your choice
+# CruiseControl.rb sends out failure notifications to the team, when that blue moon of a failed test occurs ;)
+
+h2. Gotchas
+
+The first problem with this setup is that Selenium IDE exports these ruby tests in less than ideal ways.
+* They load "test/unit", not "test_helper"
+* They class names are *all* ExampleTest
+** Running _rake test:units_ will run all _unique_ test classes that are found in the test/unit directory, that end in "_test.rb"
+** If you have 10 unique file names, all of which hold classes called _ExampleTest_, running _rake test:units_ will run *one* of them, not all of them.
+* Often, due to a bug or user error with Selenium IDE, your tests will be set to run against "http://change-this-to-the-site-you-are-testing" rather than the site you're testing.
+
+To remedy these issues as best we can, we can add in step 3A to the process above.  We'll set up a rake task to run every few minutes to scrub the test files and prepare them to be used in our testing project.  (Yes, for a more robust solution, we should check return codes from our system calls.)
+
+<script src="http://gist.github.com/106123.js"></script>
+ 
+h2. So, was it worth it?
+
+If you need to automate UI testing for an application without soliciting time from developers or testers, this could work for you.  The fantasy of free however, is still likely to be a fantasy.  Sure, business users can open up the saved Selenium tests locally and run them to verify a failed test scenario, but at some point, a developer is going to have to get involved.  Additionally, without the perspective of a developer, or the almost-out-of-style job title of "tester", it's likely that the test suite will be incomplete and generate both false positives and false negatives.  In the right circumstance, however, this solution might be just good enough, free enough, and fast enough, to get that app out the door.
