@@ -71,3 +71,9 @@ Loading development environment (Rails 2.1.0)
 {% endhighlight %}
 
 Note: 30.minutes.from_now.time will result in a Time class, and will work equally as well as (Time.now + 30.minutes).  It's up to you which of those two are more readable and intention revealing.
+
+h4. Caution: Feed parsing is hard
+
+The best part about feed standards is that there are so many to choose from!  The code above is trivial, and will only handle feeds that fit that particular convention.  Since I'm consuming feeds that I am also responsible for creating, I can opt for this _simplest thing that could possibly work_ approach.  
+
+As soon as you start consuming several feeds, you'll start to see just how diverse these feeds can be.  Empty channels, posts without titles, non-unique identifiers... these are just the beginning.  I'd love to hear what robust feed parsers folks are using in Ruby.  The best feed parser I know of, and that some Rubists even use, is "Universal Feed Parser":http://www.feedparser.org/, a Python library with 3k unit tests.  Good luck!

@@ -33,7 +33,7 @@ First, lets get a simple array of our types:
 
 For each type, we’ll get a handle on the class with that name:
 
-{% highlight ruby %}types.each { |type| model = Object.const_get(type){% endhighlight %}
+{% highlight ruby %}types.each do |type| model = Object.const_get(type){% endhighlight %}
 
 We’ll execute our ActiveRecord statement
 
@@ -41,15 +41,15 @@ We’ll execute our ActiveRecord statement
 
 Get an array of the “name” property
 
-{% highlight ruby %}map = listing.map(&:name);{% endhighlight %}
+{% highlight ruby %}names = listing.map(&:name);{% endhighlight %}
 
 Now, we’ll create those instance variables on the object, the first being a comma-separated listing of the names:
 
-{% highlight ruby %}self.instance_variable_set("@" + type, map.join(", ")){% endhighlight %}
+{% highlight ruby %}self.instance_variable_set("@" + type, names.join(", ")){% endhighlight %}
 
 The second being a count of the elements:
 
-{% highlight ruby %}self.instance_variable_set("@" + type + "_count", map.length) }{% endhighlight %}
+{% highlight ruby %}self.instance_variable_set("@" + type + "_count", names.length) }{% endhighlight %}
 
 We could get into why we need those two variables (one for the list and another for the count), but I think this is a nice example of how to use instance_variable_set anyway. Ruby. Dynamic. Awesome.
 
@@ -57,12 +57,12 @@ The full snippet:
 
 {% highlight ruby %}
 types = ["Manufacturer", "Architecture", "Platform"]  
-types.each { |type|  
+types.each do |type|  
   model = Object.const_get(type)  
   listing = model.find(:all, :select =>"name")  
   type = type.downcase  
-  map = listing.map(&:name);  
-  self.instance_variable_set("@" + type, map.join(", "))  
-  self.instance_variable_set("@" + type + "_count", map.length)  
-}
+  names = listing.map(&:name);  
+  self.instance_variable_set("@" + type, names.join(", "))  
+  self.instance_variable_set("@" + type + "_count", names.length)  
+end
 {% endhighlight %}
