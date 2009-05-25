@@ -1,0 +1,40 @@
+---
+layout: post
+title: Always a student
+---
+
+h1. {{ page.title }}
+
+"You're like a student of this stuff", he said.  I thanked him, realizing that it was one of the greatest compliments I had ever received.  I never felt the urge to pursue an advanced degree; my associates degree in _visual communications_ was hardly a deep dive into academia.   Instead, I have always felt a constant need to learn on my own.  In a way, I'm a life-long student of everything that I find interesting.
+
+I'm always surprised, then, to meet people interested in a topic, but never actually learning much about it.  "I was never given the opportunity" or "My company never paid for that training course" are poor excuses.  The act of learning something can be different from person to person.  Some people can learn a lot just by reading, others learn best by seeing and doing.  Any way you slice it, you too can become an  "autodidact":http://en.wikipedia.org/wiki/Autodidact, you just need to have the right perspective on learning.
+
+h2. The beginner's mind
+
+bq. "In the beginner's mind there are many possibilities, in the expert's mind there are few.":http://en.wikipedia.org/wiki/Shoshin
+
+You might assume that when learning something new, it would be easy to have a beginner's mind.  Instead, we often get in our own way.  Our life experience provides a certain perspective, and it can be difficult to see something with fresh eyes. 
+
+You'll find "lots of pointers online":http://zenhabits.net/2008/09/how-to-live-life-to-the-max-with-beginners-mind/, suggesting ways to attain the beginners mind.  One method I find very useful is to assume an imaginary master is accompanying you on your learning journey.  Having to formulate your questions to this imaginary guide, allows you to clarify what it is you're looking to understand.  And like any zen master, your guide will help you find the answer on your own.  You can almost hear his response: "Good question!  How might we find that out?  Where should we look?"  Off you go, with a clear objective and back you'll come with an answer in hand.
+
+h2. Actively seeking learning opportunities
+
+"If I only had a chance to work on X some day. I'm sure I'd pick it up quickly!  Poor me!" Yes, poor you.  If only some magical external force brought the perfect opportunity to your doorstep.  As "Guy Kawasaki has said":http://www.istockphoto.com/article_view.php?ID=29:
+
+bq. You have to sit by the side of a river a very long time before a roast duck will fly into your mouth.
+
+Actively seek out learning experiences and you're bound to actually find one.  Want to improve your knife skills in the kitchen?  Volunteer at a soup kitchen.  Want to learn what it's like to run a small business?  Ask your local coffee shop owner to let you work with them for a few weekends.  Want to become a better writer?  Start writing, every single day.
+
+There is a lot to be learned just from those we surround ourselves with, both at home and at work.  But don't assume that because none of your friends are master cheese makers, that you will have no opportunity to learn how to run a fromagerie.  It is up to you to create opportunities to learn.  Get down to the closest dairy farm and start asking around.
+
+h2. Teaching as learning
+
+You have probably noticed this before.  A child asks you a question, or maybe just continues to probe you with "why?", and you find that by teaching them, you learn more too.  Seeing even the most familiar subject through the eyes of a true beginner provides an opportunity to enrich your understanding.  By teaching someone something, often using more basic language and focusing on the essence of a subject, you can appreciate the subject matter all the more.
+
+So why not teach more?  You can seek teaching experiences, even for topics you don't know.  Yet.  Talking to "Ilya Grigorik":http://www.igvita.com/ at RailsConf earlier this month, he mentioned the inspiration for his talk on "building a 'mini Google' in Ruby":http://en.oreilly.com/rails2009/public/schedule/detail/7966 was simply to learn more about the technology and math behind Google.  Deciding to present on this topic gave him a great opportunity to learn about it, both in his preparation and in the act of presenting.  With "meet up's":http://meetup.com/ happening all over the country on every topic imaginable, we all have countless opportunities to teach on a regular basis.
+
+h2. Staying coachable
+
+Learning something new can be challenging.  Even more challenging, however, is to continually improve your understanding of things you already know.  As we pass some level of proficiency, it is easy to slip into assumed mastery.  "I already know that", you might say, without really listening.  Any topic worth knowing is immensely deep.  None of us needed to be taught to breathe, yet a whole world of meditation opens up when we learn to breathe deeply and deliberately.
+
+Good athletes are often said to be very "coachable".  They listen to their coaches and peers, but more importantly, they act on it.  Stepping outside their comfort zone to try out a new technique, they may begin to see the errors in their usual form.  Stay coachable.  Listen to your teachers, your peers and your friends.  Try things out and see things from a new perspective.  You might just learn something.
