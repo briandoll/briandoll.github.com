@@ -159,7 +159,7 @@ According to my back-of-the-napkin calculations, my body fat percentage before I
 
 h2. Update II, Cholesterol 
 
-I had blood panels taken several months before I started eating Paleo, and then 6 months into eating Paleo.  My most recent labs are quite good by any measure.  Since folks tend to assume that eating Paleo, with lots of good fats and typically lots of eggs, leads to bad cholesterol, here is evidence to the contrary.  
+I had blood panels taken several months before I started eating Paleo, and then 6 months into eating Paleo.  My most recent labs are quite good by any measure.  Since folks tend to assume that eating Paleo, with lots of good fats and typically lots of eggs, leads to bad cholesterol, here is evidence to the contrary.
 
 |Metric|Pre-Paleo|Paleo|% Change|
 |Cholesterol|203|177|-13%|
@@ -169,3 +169,17 @@ I had blood panels taken several months before I started eating Paleo, and then 
 |VLDL| n/a |9| n/a |
 
 Not that I needed any more proof, but I'm certainly sticking to eating clean from now on.
+
+h2. Update III, Body Fat 6 months later
+
+On June 27th, 2009 our gym had scheduled the "Body Fat Test Truck":http://bodyfattest.com/ to be around again for appointments.  Here's the data:
+
+* Weight: *182#*
+* Body fat: *9.9%*
+* Weight of body fat: *18.15#*
+* Lean body mass percentage: *90.1%*
+* Weight of lean body mass: *163.85#*
+* Muscle Mass (x .63): *103.23#*
+* Percent body fat above *95th percentile*, in the *very healthy range*
+
+This means that in eleven months, I've lost *68#*.  Since my muscle mass has certainly gone up, that means I lost over 70# of pure fat.
