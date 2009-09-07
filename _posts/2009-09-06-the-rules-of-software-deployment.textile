@@ -1,0 +1,81 @@
+---
+layout: post
+title: The rules of software deployment
+---
+
+h1. {{ page.title }}
+
+Any sufficiently complex software application will require a well thought-out deployment strategy.  While a basic deployment strategy is quite suitable for a basic application, many applications require careful orchestration of interdependent systems to make for a successful release.  For example, a web application may need to consider: source code, configuration files, content management data, application data, user data, cached data, search indexes, content delivery networks, background jobs, system monitoring tools, external services and APIs, as well as the user experience during the release process.
+
+No matter how seemingly simple or complex your application is, there are a number of rules that should be followed.  These rules apply regardless of language, release schedule, SCM, deployment toolset or infrastructure.
+
+h2. The rules
+
+h4. Have a common language for each type of release
+
+_There is more than one type of release?_ Most likely, yes.  If you think there is only one type of release, try asking your business partners what they think.  Do they always want the content management data released along with your source code?  Do you need to coordinate with them when a particular set of changes should be released?  The important rule is not how many release types you have, but that the technology and business teams are using the same words to describe them.
+
+h4. All release activity is documented in an issue tracking system
+
+No matter how frequently or how un-ceremonial you are about your releases, its best to track all release activity in a central place.  This will help ensure everyone has the same understanding and expectations for each release.  Who requested it?  When is it scheduled to go live?  Which software version is being deployed?  Are we deploying our database content with this release?  Who approved the release?  Who is doing the deployment?  Is it done yet?  Is it?  IS IT?
+
+h4. Absolutely everything must be in version control
+
+Obviously all software and configuration should reside in your "software configuration management system":http://en.wikipedia.org/wiki/Software_configuration_management.  I'm also advocating that you store all your sensitive data there too, using encrypted files.  Storing sensitive data (database passwords, encryption passwords, etc.) within encrypted files in your SCM system allows that data to be versioned, backed up and kept in a convenient location along with the rest of your application.  There are countless methods that allow a privileged user to decrypt the files during the release process, by prompting for the passphrase.
+
+h4. Each environment has a single, well-defined responsibility
+
+Which environment do your business users use to verify a software release?  Where might you test system performance prior to a production release?  Which environment verifies that all tests are passing?  The only incorrect answer to these types of questions is "it depends".  If you verify production releases on a "staging" environment, then that is what it is for.  In that case, never allow software, configuration or data changes to reside in that environment unless they are part of the next release.  Confusion in any form will eventually lead to a bad release.
+
+h4. A software version is represented by an SCM tag
+
+A "tag" represents a single point in time in your SCM system.  Since everything is in version control, your tag represents everything you need to build that version of your software.  Many deployment tools use a timestamp by default to refer to a specific exported copy of a software product.  This is _insane_.  We should instead refer to a tangible, unchanging artifact that we can resurrect at will.  Is commit _x_ included in that release?  What is the sate of file _y_ in that release?  When you refer to an SCM tag as your release version, these questions are easy.  When you refer to a timestamp, that was generated on what machine, using what timezone with what amount of drift... you're lost.  For Rails folks, both "Capistrano":http://capify.org and "Vlad the deployer":http://rubyhitsquad.com/Vlad_the_Deployer.html can be coerced into using tags regardless of the SCM system in use.
+
+If your team separates the responsibilities of development from release management, ensure that it is the developers responsibility for tagging a release, and specifying which tag should be included in a release.  Even in the pristine dream-world where everything on trunk can be released at will, a development team needs to be aware of exactly what is included in a release in order to support and troubleshoot it.  Having a developer perform the gesture of tagging reenforces their responsibility of the software being released.
+
+h4. Every step of the release process is scripted and can be run by anyone with sufficient privileges
+
+The requirements for deploying to production should include access privileges, not system domain knowledge.  While there is a lot of system domain knowledge necessary to perform a successful release, that information should be maintained within the release scripts themselves.  Which hosts are included in a production release?  Which hosts are included in a staging release?  What is the process for updating the CDN?  Database migrations?  In what order do these steps get performed?  All of the answers need to be included in your release scripts.  
+
+The only arguments that should be necessary to pass into your deploy scripts are the environments your acting on, and the version of software you're looking to deploy.  If you do have different types of deploys, make sure those are scripted as well.  Even if you only _occasionally_ need to release a new version without database content changes, make sure that type of release is supported and documented so you can do it reliably and effortlessly each time.
+
+h4. Plan for failure
+
+It can be temping to call your release process complete once you've had a few successful releases in a row.  Unfortunately you have only just begun.  No amount of shouting "Failure is not an option!" will keep failures at bay.  Instead, plan for failure, and build processes to support you during those stressful times.
+
+Rolling back to the previous release version should be a single command and only take a few moments.  Caches gone funky?  Make sure you can flush them all with a single command.  Some CDN files seem out of date?  Rebuild your CDN content from scratch with a single command.
+
+h4. Don't treat servers like your laptop; _nuke and pave!_
+
+A good TDD practice is to constantly ask yourself (or better yet, your pair), do you have a test for that?  Any manual change to a server should prompt a similar question.  _How could I automate that?_  This isn't to fetishize automation, but to give you complete freedom to change your systems at will.  The moment you have a configuration change that does not reside in your SCM, a service enabled by hand, etc., your infrastructure owns you.  Every change from that moment on is brittle and you've just invited failure to the party.
+
+Embracing a _nuke and pave_ attitude forces you to trust your processes and think of your servers as providing a set of services, not a cozy place to get work done.  Nuke and pave means that when a server is acting strangely, you can kill it and redeploy to a brand new instance without worry.  Nuke and pave means every service can be constructed from bare metal up, in an automated fashion.
+
+Managing deltas is a suckers game, and will quickly lead to an unknown state.  Imagine the pain involved in performing a long list of system patches, system configuration changes and upgrades on every single production instance.  Now imagine shutting down an outdated production VM and starting up the new, patched and upgraded VM and deploying to it.  The latter provides a known state, faster and provides rollback capability.
+
+h2. A sample software deployment workflow
+
+# A developer tags a release in the SCM system (productname-113)
+# A developer creates an issue in the issue tracking system (issue-567)
+** The issue is assigned to the deployer
+** The type of release is identified
+** The software version is identified (productname-113)
+# The deployer exports a copy of the application from the SCM system, based on the given tag
+# The new version of the software is pushed out to each server in the appropriate environment
+** Push to /apps/productname/productname-113
+# The deployer enables the new version by repointing the symlink to the latest version
+** /apps/productname/current should now point to /apps/productname/productname-113
+# The deployer restarts the environment as necessary (restarting apache, etc.)
+
+Once the version is vetted by the appropriate parties, this version may progress out to production.
+
+# The product owner updates the release issue (issue-567) to indicate that this release is ready for production
+** They may also specify a specific time when this release should occur
+# The deployer copes the approved version (productname-113) from the staging environment to each of the production environments
+** Push to /apps/productname/productname-113
+** By releasing from staging to production, we make it much harder to release a version to production without going through the approval process.
+# The same symlink and restarting processes occur, and you're live!
+
+h2. Your release process is an important part of your application
+
+I'd love to hear what important rules you have to add to the list.  No matter how "killer" your next feature is, it won't do much good if you can't release it.  The rules stated here are a good place to start no matter where you are in your path toward automation. Chris Wanstrath recently "wrote about improvements he made to to the deploy process for github.com":http://github.com/blog/470-deployment-script-spring-cleaning showing how efficient your workflow can be using git.  Imagine how fast you can get things done when you know your deploy process only takes 14 seconds!
