@@ -1,0 +1,26 @@
+---
+layout: post
+title: Allowing multiple failed assertions per test
+---
+
+h1. {{ page.title }}
+
+h3. One assertion per test
+
+This is a very common TDD guideline. Jay Fields posted "a good summary of why he feels one assertion per test is a good practice":http://blog.jayfields.com/2007/06/testing-one-assertion-per-test.html.  If you read closely, however, you can see that the main reasons Jay doesn't like multiple assertions per test is that the feedback provided from the test suite is usually poor.
+
+There are circumstances, however, where you may choose to make multiple assertions per test.  Personally, I use "shoulda":http://www.thoughtbot.com/projects/shoulda in my Ruby projects.  One feature I really love are the nested contexts.  The way these work, however, is that each context in your scope have their setup methods run in order, prior to executing each should statement.  In some testing scenarios, you may find that you're setup blocks are taking a good amount of time to run.  If you were to have similar assertions in one test, you can speed up that test class quite a bit.
+
+h3. The goal
+
+Let's make it possible to have multiple assertions per test, while keeping the feedback actionable.
+
+* All assertions in the test should be run
+* All assertion failures should be reported
+* Each assertion should report actionable feedback
+
+h3. A solution
+
+I've implemented "_*assert_each*_":http://gist.github.com/197818 as a way to specify a list of assertions that meet our goals.  Add this to your test_helper.rb and enjoy!
+
+<script src="http://gist.github.com/197818.js"></script>
