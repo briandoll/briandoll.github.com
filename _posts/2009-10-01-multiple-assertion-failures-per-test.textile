@@ -21,6 +21,6 @@ Let's make it possible to have multiple assertions per test, while keeping the f
 
 h3. A solution
 
-I've implemented "_*assert_each*_":http://gist.github.com/197818 as a way to specify a list of assertions that meet our goals.  Add this to your test_helper.rb and enjoy!
+I've implemented "assert_each":http://gist.github.com/197818 as a way to specify a list of assertions that meet our goals.  Add this to your test_helper.rb and enjoy!
 
 <script src="http://gist.github.com/197818.js"></script>
