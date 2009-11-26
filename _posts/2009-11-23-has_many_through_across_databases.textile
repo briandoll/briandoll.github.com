@@ -1,0 +1,45 @@
+---
+layout: post
+title: has_many :through across multiple databases in Rails
+---
+
+h1. {{ page.title }}
+
+h3. A tale of two databases
+
+Web applications usually start out so simply, yet so few of them stay that way for long.  Some applications grow to utilize multiple databases, for instance.  Perhaps your an eCommerce site that has a different database for your catalog and transactional data.  "In Rails, we can do this pretty easily.":http://jonathansng.com/ruby-on-rails/multiple-database-connections-with-rails/
+
+h3. Joining forces
+
+Now your Rails app is happily working with two databases.  It won't be long now before you wonder how nice it could be to relate data between those two disparate databases.  _If_ your databases are on the same database host, you can achieve this by prefixing all of your tables with your database name.  Here is an example on how to do this with ActiveRecord:
+<script src="http://gist.github.com/239853.js?file=has_many_through_across_databases.rb"></script>
+
+h3. Joining forces... over the cloud!
+
+How can we make this harder on ourselves?  What if our databases are not on the same host, but instead are separated by thousands of miles, across the _CLOUD!!!_
+
+<img src="http://emphaticsolutions.com/images/dbs_across_the_CLOUD.png">
+
+h3. Introducing... St. Elsewhere
+
+St. Elsewhere is a Ruby gem that implements the basic relationship API methods for ActiveRecord associations for use when your databases are on different hosts.
+
+For example:
+<script src="http://gist.github.com/243240.js?file=gistfile1.rb"></script>
+
+h3. Known inefficiencies
+
+has_many_elsewhere is certainly much less efficient than a comparable has_many relationship. has_many :through relationships use SQL JOINs which while efficient, do not work across multiple database connections. St. Elsewhere implements much of the same resulting API methods in code, using less efficient SQL.
+
+h3. Installation
+
+> gem install st-elsewhere
+Or contribute on github: "github.com/briandoll/st-elsewhere":http://github.com/briandoll/st-elsewhere
+
+h3. Roadmap
+
+Currently st-elsewhere is implemented as a basic ruby module that implements some of the basic functionality of has_many :through relationships in ActiveRecord. A much more robust implementation would be to create an ActiveRecord association proxy, like HasManyThroughAssociation, that emulates the same API and could be integrated into the standard has_many class method. I will likely be waiting for Rails 3 to be released (and thus the new base ORM implementation) before attempting the association proxy route.
+
+h3. Thanks
+
+Thanks to James Reynolds for the great name and thanks to Tanner Donovan for patches and being the first production customer.
