@@ -1,0 +1,122 @@
+---
+layout: post
+title: Lean Software Engineering - My progression toward Kanban
+---
+
+h1. {{ page.title }}
+
+<div id="post-date">{{ page.date | date(page.date,'%B %Y') }}</div>
+
+h3. In the beginning, there was...
+
+_Nothing_.  That's right.  I'll bet that long before many of us suffered "the waterfall model":http://en.wikipedia.org/wiki/Waterfall_model we first suffered from the lack of any process at all.  As a maker of things, having no defined process can feel wonderful and free at first.  In hindsight, many have called this "cowboy coding":http://en.wikipedia.org/wiki/Cowboy_coding but it's actually worse than that.  Cowboy coding sounds romantic.  A man or woman on their horse, acting on any whim that strikes them, as hedonistic as they want to be.  In reality, having no process, no schedule, and basically no rules leads to nothing more than horse shit.  No maker wants that.
+
+h3. Waterfall, Rational Unified Process, Six Sigma, etc.
+
+For longer than I've been alive, it was thought that big software systems required big processes.  They come in many flavors and are each as painful as the others.  There are plenty of horror stories on why heavyweight processes are bad models for building systems so I wont bother recounting them. There are common themes that emerge from systems build with heavyweight processes though.  They take a long time.  There is little customer interaction for months or years.  Worse still, the system delivered is rarely ever the one that is actually needed.  I was never satisfied with a project I developed using these models, and unfortunately, our business partners weren't completely satisfied either.
+
+h3. Extreme Programming (Don't we all want to be extreme?)
+
+In 1999, I was lucky enough to be working with "Todd Jonker":http://www.linkedin.com/pub/todd-jonker/1/48/360, who attended "OOPSLA '99":http://www.sigplan.org/oopsla/oopsla99/ where everyone was buzzing about two things.  First was "Kent Beck's":http://en.wikipedia.org/wiki/Kent_Beck new book, "Extreme Programming Explained":http://www.amazon.com/Extreme-Programming-Explained-Embrace-Change/dp/0321278658/ref=sr_1_1?ie=UTF8&s=books&qid=1260050840&sr=1-1.  The second was this "editable website" idea by Ward Cunningham, that he called a "wiki.":http://c2.com/cgi/wiki Todd's enthusiasm was hard to resist and soon enough we started taking baby steps in the direction of extreme programming.
+
+Unfortunately XP was like a bright shiny object to our relatively fresh-faced team and we failed to really grasp what a fundamental change this would be for our company, our clients and even our team culture.  In some ways, I think we're all still trying to grasp the essence of XP.  "The rules of extreme programming":http://www.extremeprogramming.org/rules.html set a new model for how software was built, what the teams looked like and how they interact.
+
+In fact, I've had entire projects change drastically for the better, just by focusing on one single XP rule.  In '97 I worked for a consultancy in New York City developing "multimedia applications", back when we shipped CD-ROMs frequently and only occasionally got to drop a Perl script in <code>cgi-bin</code>.  We worked for some large clients, usually working with one of their project managers for client interaction.  A few days before our "gold master":http://en.wikipedia.org/wiki/Golden_master was due, the president of the company stopped by to check in.  It was awful.  The game of telephone between their sales team, their project manager and our office was showing through.  With the president deciding to take the afternoon off, we suddenly had an "on site customer":http://www.extremeprogramming.org/rules/customer.html  In the next few hours, we got an incredible amount of work done, and the best part of course, is that it was exactly what they wanted.  Weeks had been wasted and everybody knew it.  From that point on, we always arranged for frequent customer interaction including all-day sessions which always paid off.
+
+h3. The marketing blitzkrieg of "Agile"
+
+Fast forward ten years and "Agile" had become a major buzzword not just in software development communities, but in business communities as well.  Promises of better, cheaper, and faster were impossible to resist and "agile coaches" popped up everywhere.  From San Francisco startups to century-old corporate enterprises, everyone was "agile".  Beyond the buzzword, though, nobody could agree on what being agile really meant.
+
+At RailsConf 2008, "Kent Beck spoke about Extreme Programming and "Agile" development":http://emphaticsolutions.com/2008/09/08/transparency-responsibility-accountability.html.  In his keynote, he points out how so many are missing the essence of what extreme programming was all about: _transparency, responsibility and accountability._ You can't go wrong focusing on that.  Kent was a great speaker, and his refocusing on those three tenets was really encouraging.
+
+h3. Scrum
+
+My first experience with "scrum":http://en.wikipedia.org/wiki/Scrum_(development) was in the context of a fairly large development organization within a major financial institution.  I was really impressed with how much work the various development teams could accomplish, given the fairly bureaucratic environment they were working in.  Scrum brings some fairly specific and rigorous processes to agile development that appeals to the sensibilities of project managers.  For developers used to working in waterfall or similar processes, this can be blast of fresh air.
+
+h3. Thinking Lean
+
+After a few years of working in a scrum environment, it started to feel too formal.  I had the feeling that we were fulfilling the ceremony of scrum, while missing the essence of extreme programming.  Iteration planning meetings, retrospectives and even some story jams felt not only like work, but work that wasn't immediately benefiting our customers.  The payoff of some of this effort was there, but each iteration still contained a lot of "process work" within each team, for each project.  When every developer essentially throws away any productivity every other Monday to deal with the process of how you deliver customer value, "wasteful" is an understatement.  In defense of scrum practitioners in large enterprise environments, however, scrum provides enough busy work for project managers that it can be legitimized, where other less-formal processes may not be.
+
+My first exposure to "lean" software development was in the book <a href="http://www.amazon.com/gp/product/0321150783?ie=UTF8&tag=emphaticsolut-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=0321150783">Lean Software Development: An Agile Toolkit by Mary Poppendieck.</a><img src="http://www.assoc-amazon.com/e/ir?t=emphaticsolut-20&l=as2&o=1&a=0321150783" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />  In this book, Mary introduces common lean manufacturing practices like "_The Toyota Way_":http://en.wikipedia.org/wiki/The_Toyota_Way and draws similarities to how we could develop software in a similar manner.  Her ideas were inspiring and it was hard for me to see strict scrum processes as anything but a little wasteful.  While the concept of "lean software development":http://en.wikipedia.org/wiki/Lean_software_development was alive and well, unfortunately I didn't feel like I had an idea of how to implement it.  
+
+h3. Kanban: lean manufacturing meets software engineering
+
+Earlier this year I had a great conversation with "Joe Arnold":http://joearnold.com/, Director of Engineering at "Engine Yard":http://www.engineyard.com about their software development team and process.  While rambling on about the potential wastefulness of scrum and how I had been looking for practices that could lead to real-world lean software development, Joe mentioned "Kanban":http://en.wikipedia.org/wiki/Kanban.  After a ten-second introduction leaving me with "you should check it out", I was hooked.
+
+The "lean software engineering blog":http://leansoftwareengineering.com/ by "Corey Ladas":http://leansoftwareengineering.com/2007/04/12/about-the-authors/ was and still is an incredible resource, both as an introduction to Kanban in general as well as specific adaptations to help serve software development teams.  If you're curious, this is a great "comparison of Kanban vs. Scrum":http://www.infoq.com/news/2009/05/kniberg-kanban-v-scrum, and for a more lighthearted comparison, "Scrum vs. Kanban: FIGHT!":http://lizkeogh.com/2009/09/16/scrum-vs-kanban-fight/
+
+Not long after I started reading up on Kanban, Corey Ladas released <a href="http://www.amazon.com/gp/product/0578002140?ie=UTF8&tag=emphaticsolut-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=0578002140">Scrumban - Essays on Kanban Systems for Lean Software Development</a><img src="http://www.assoc-amazon.com/e/ir?t=emphaticsolut-20&l=as2&o=1&a=0578002140" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />.  This book is _awesome._  Corey illustrates the key points of Kanban, from a quick review of queue theory to a variety of specific workflows.  While Corey doesn't prescribe a specific workflow, he leaves you with a deep appreciation for Kanban practices and you'll quickly be able to identify the right workflow for your team or project.
+
+h3. My first Kanban board
+
+As luck would have it, as soon as I discovered Kanban, I was also "starting a new job":http://www.linkedin.com/in/briandoll.  In no time at all, I found myself with a great team, eager to experiment with new processes and workflows, and strong management support.  With post-it notes in hand, we quickly built our first Kanban board:
+
+!http://emphaticsolutions.com/images/physical.kanban.board.jpg!
+
+Our approach:
+* Business Value Stream along the X axis
+* Development workflow along the Y axis
+* Workflow: 
+** Backlog - Managed in a bug tracker
+** Next Actions - Can't stop using GTD phrases!
+** User Stories - Ensure the story or stories are testable and define what "done" means
+** Test _then_ Code - Test driven development, pairing optional
+** Business Green Light - Get business sign-off on that specific token
+** Ready to Ship - Committed to trunk and ready for final review on a staging environment
+** Current release - Features that were just recently released to production
+** Previous Release - The penultimate release tokens.  We discovered it was great to have two release of tokens on the board that represents one week of releases in our twice-per-week release schedule.
+* Tokens are typically small "minimum marketable features":http://www.netobjectives.com/glossary/7#letterm
+* Tokens can optionally be given a swag estimate by the developer that picks the token
+* A developer adds their initials to a token that they are working on and reports any issues during our morning standup
+* A red mark underlines a blocked token
+* A date is written in bold red on the token for any token that must ship by a certain date (atypical)
+* We ship twice per week, and ship whatever is in the "ready to ship" phase of our process
+
+After several months of using this approach we all felt like we needed to make some improvements.  After all, even XP recommends "Fixing XP when it breaks":http://www.extremeprogramming.org/rules/fixit.html.
+
+Some things were working well:
+* We were shipping more business value per week than any of us have done before
+* We responded to shifting priorities with grace, and delivered the most relevant value each release
+* Software releases are non-events
+* Who is working on X is a glance away
+* Our board quickly answered "Where in our value stream are we spending our time this week?"
+* If our business partners wanted to immediately prioritize a particular feature, they could easily see which tokens would be affected
+* Since our morning standup centered around our Kanban board, it was easy to ensure the board and the team were updated with any blocking issues, re-prioritization or deadlines
+
+Some things needed to be improved:
+* Identifying which value stream a particular token belonged in became tedious and wasn't providing value
+* Ideally stories would be defined before a token can appear in Next Actions. Having a separate phase for User Stories wasn't providing much value, and would often cause confusion as to who was working on a token, a developer or a business partner.
+* Prioritizing tokens for the Next Actions phase was taking a lot of time within our development team, and we were often wrong about overall priorities
+* Our Kanban board was in the CIO's office where we held our standups.  While it was easy for the development team to see and use, it was not easy for our business partners to interact with
+* Lastly, everyone on our team has _unique_ handwriting.  Between our own unique chicken scratch and our terse token names, it was becoming difficult to say with any certainty what some tokens were going to deliver
+
+h3. A virtual Kanban board: AgileZen in action
+
+After we identified our problem spots, I set off to find an online tool to replace our beloved physical Kanban board. "Pivotal Tracker":http://www.pivotaltracker.com/ came immediately to mind.  I had used it in a work scenario before as well as on a personal project.  After catching up with the current state of Tracker, it hit me that this tool had an problem we were unlikely to overcome.  Pivotal Tracker is a very sophisticated tool, enabling a dizzying array of process refinements.  What it isn't is Simple and Simple is what we needed.  More than just a developer tool, we needed a virtual Kanban board that our development team and business partners could use.
+
+A small startup from Ohio called Enkari has a product aptly called "Zen":http://agilezen.com/ and it's exactly what we were looking for.  Zen is an online Kanban board that provides just enough features to be extremely useful without being prescriptive on how you use it.  "Take the tour of Zen to see what it's all about.":http://agilezen.com/tour
+
+Now that we're using "Zen":http://agilezen.com/ for our virtual Kanban board, we're seeing even more improvement:
+* All of our business partners can check in to see exactly what is being worked on and by whom
+* We simplified our workflow: 
+** Backlog: An unlimited list of tokens in approximate business priority
+** Next Actions: Tokens in specific business priority that are ready to act on, limited to 10 tokens
+** Design/Test/Develop: Developer-owned phase, limited to 10 tokens
+** Ready to Ship: committed code.  When the code has been released to staging and approved, it is marked as "Ready"
+** Shipped: an archive of released tokens, in reverse order of when they were released
+* Instead of categorizing tokens according to our customer value stream, we color code them by requesting business group (Marketing, Customer Service, etc.).
+* Re-prioritizing can be performed by our business users directly, so our business partners can discuss among themselves what the sorting order should be, without any involvement from the development team
+* No physical board can be in a convenient location for all users.  The simple fact that Zen is an online tool means we're all seeing the same board at all times.
+* Also, everyone's handwriting is the same on the internet!
+* The UI draws great attention to blocked tasks, tasks with quickly approaching deadlines, and overburdened WIP limits
+* We started using the tool within our development team and our business partners were immediately able to work in it with us, prioritize their work and get status information without any help
+
+While we have loved using Zen so far, there are a few areas we already see that the tool could be improved:
+* Zen allows you to use any scheme to indicate a token's size.  You can use numerical values or t-shirt sizes, for example.  A downside of this is that all performance metrics are gathered by token, not by token value.  For example, a velocity report would be ideally described as a total number of points delivered vs. the number of tokens.
+* Color-coding is a great way to segment tokens.  It would be great to label the colors with your usage of them, within a specific project.  (Ie. Green = Marketing)
+* Tags will be very useful soon (they have limited functionality in the app at the moment).  Auto-completing tags as we type them would also be useful, to make sure we use the same terms all the time
+* Zen has a slick UI, but it is not using any push technology to ensure you have a recent copy of your board.  If you have not refreshed your browser window and another team member modifies a token, you will not see those changes until you refresh.  The only real-life scenario where this has bit us before is when two developers attempt to move a token, one back to the backlog and another forward.  In this scenario, the last one in wins.
+
+h3. Reflecting on development process: sharpening the saw
+
+Steven Covey talked about "sharpening the saw":https://www.stephencovey.com/7habits/7habits-habit7.php in his book <a href="http://www.amazon.com/gp/product/0743269519?ie=UTF8&tag=emphaticsolut-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=0743269519">The 7 Habits of Highly Effective People</a><img src="http://www.assoc-amazon.com/e/ir?t=emphaticsolut-20&l=as2&o=1&a=0743269519" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />.  It's great to develop a process and workflow that seems to work for you and your team, but that's not enough.  You are not the only customer of your software development process.  How do your business partners feel your delivering?  How often are you reflecting on the effectiveness of your processes and your tools?  How often do you sharpen your saw?  Developing software systems requires many different disciplines and no two projects or teams are the same.  Spending time focusing on how you deliver value can dramatically increase your effectiveness and reduce unnecessary work, which reduces frustration.  No matter where you end up, you'll likely be happier than where you are now.
