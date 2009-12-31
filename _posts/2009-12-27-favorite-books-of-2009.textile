@@ -1,0 +1,68 @@
+---
+layout: post
+title: My favorite books from 2009
+---
+
+h1. {{ page.title }}
+
+<div id="post-date">{{ page.date | date(page.date,'%B %Y') }}</div>
+
+It looks like I made my way through about 35 books in 2009.  I've never actually evaluated how much I've read before, but it felt like a fairly good year for page turning.  Some books were pretty forgettable without the help of browsing through my Amazon order history, but a few really stood out as major influences throughout the year.  
+
+So here they are... my favorite books from this year:
+
+h2. Software Engineering
+
+I read a lot of "work" books this year, primarily on "Ruby":http://www.ruby-lang.org/en/.  While they each served some purpose, they were all fairly forgettable.  None of the books on language, programming technique or software design influenced how I work or write code.  I'm not sure what that means. Instead, I found these two books very influential in how I think of the craft of software engineering.
+
+<a href="http://www.amazon.com/gp/product/0060891548?ie=UTF8&tag=emphaticsolut-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=0060891548">*On Writing Well, 30th Anniversary Edition: The Classic Guide to Writing Nonfiction*</a><img src="http://www.assoc-amazon.com/e/ir?t=emphaticsolut-20&l=as2&o=1&a=0060891548" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+
+Writing good software requires great communication and this is _the_ best book I've ever read on writing well.  You could read this entire book imagining the author talking about how to write good _code_ rather than good nonfiction and get a wealth of advice you'd do well for accepting.  Aspiring for clear and concise communication helps in all aspects of life, and I found lots of specific tidbits that did help in how I think about programming.
+
+<a href="http://www.amazon.com/gp/product/0578002140?ie=UTF8&tag=emphaticsolut-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=0578002140">*Scrumban - Essays on Kanban Systems for Lean Software Development*</a><img src="http://www.assoc-amazon.com/e/ir?t=emphaticsolut-20&l=as2&o=1&a=0578002140" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+
+"I've mentioned this book before":http://emphaticsolutions.com/2009/12/05/lean-software-engineering-a-progression-toward-kanban.html, but Scrumban has been the most useful book I've ever read on managing the process of developing a product and team.  Corey Ladas includes the right balance of theory and practice, while never dictating a specific technique or workflow.  This book provided the blueprint for the workflow "we use now.":http://www.sheetmusicplus.com
+
+h2. The making of Awesome
+
+I really don't know how to categorize these books, but they all seem related in some way.  If you're interested in adding more Awesome to your world, settle into these...
+
+<a href="http://www.amazon.com/gp/product/0385530609?ie=UTF8&tag=emphaticsolut-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=0385530609">*Sway: The Irresistible Pull of Irrational Behavior*</a><img src="http://www.assoc-amazon.com/e/ir?t=emphaticsolut-20&l=as2&o=1&a=0385530609" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+
+This book is both awesome and frustrating.  I would consider myself a very logical person, espousing emotional decision-makers and priding myself on a logical and unbiased approach to problem solving.  Wrong.  We're all hackable and chapter after chapter you learn just how easy it is to sway the most data-driven thinker.
+
+<a href="http://www.amazon.com/gp/product/0316017922?ie=UTF8&tag=emphaticsolut-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=0316017922">*Outliers: The Story of Success*</a><img src="http://www.assoc-amazon.com/e/ir?t=emphaticsolut-20&l=as2&o=1&a=0316017922" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+
+I love Malcolm Gladwell and this is likely his best work so far.  How well do we capitalize our available talents, as a group or even within ourselves?  Outliers is full of fun stories and offers just enough pop-science to get you interested in the research he cites.
+
+<a href="http://www.amazon.com/gp/product/055380684X?ie=UTF8&tag=emphaticsolut-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=055380684X">*The Talent Code: Greatness Isn't Born. It's Grown. Here's How.*</a><img src="http://www.assoc-amazon.com/e/ir?t=emphaticsolut-20&l=as2&o=1&a=055380684X" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+
+Buy this book now!  This book discusses new neurological research thought to be the physical embodiment of skill within our brains.  The author first identifies techniques for acquiring skills that are based on this scientific approach.  Later in the book we explore talent 'hot beds', what makes them, how they survive and what makes great coaches so great.
+
+<a href="http://www.amazon.com/gp/product/0307465357?ie=UTF8&tag=emphaticsolut-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=0307465357">*The 4-Hour Workweek by Tim Ferris*</a><img src="http://www.assoc-amazon.com/e/ir?t=emphaticsolut-20&l=as2&o=1&a=0307465357" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+
+I can't explain why, but I've put off this book for years.  I've heard Tim speak, I've occasionally read his blog and generally agree with his positions, while appreciating his showmanship.  I recently picked up the latest edition of this book and am blown away.  Tim isn't telling us anything particularly new, but his passion and optimism are hard to resist.  I'm really looking forward to the projects that I'll be kicking off after soaking this in.
+
+"*Radio Lab*":http://www.wnyc.org/shows/radiolab/
+
+Radio Lab, as its name implies, is not a book but a radio program.  They tend to cover math, science and ethics from a variety of perspectives.  The sound design alone is quite captivating and the storytelling is unbelievable.  I fell hard and fast for Radio Lab this year and have started ticking off back episodes on my commute.  Give it a shot and you'll be hooked.
+
+h2. Physical Performance
+
+This is a relatively new category of reading for me, but since starting "Crossfit":http://www.crossfit.com/ I've been more interested in learning more about movement and other aspects of human performance.
+
+<a href="http://www.amazon.com/gp/product/074325144X?ie=UTF8&tag=emphaticsolut-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=074325144X">*Chi Running*</a><img src="http://www.assoc-amazon.com/e/ir?t=emphaticsolut-20&l=as2&o=1&a=074325144X" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+
+Crossfit typically recommends the "pose method":http://athletics.wikia.com/wiki/Pose_Method of running.  I was then turned onto "ChiRunning":http://www.chirunning.com/shop/home.php which seemed to be a similar style, with a deeper appreciation for movement and the spirit of running.  I'm no real fan of running, actually, but after having read this book I have a stronger connection to running and have even enjoyed it this year.  I took one of their running clinics in San Francisco as well, which was really helpful.
+
+<a href="http://www.amazon.com/gp/product/0307266303?ie=UTF8&tag=emphaticsolut-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=0307266303">*Born to Run: A Hidden Tribe, Superathletes, and the Greatest Race the World Has Never Seen*</a><img src="http://www.assoc-amazon.com/e/ir?t=emphaticsolut-20&l=as2&o=1&a=0307266303" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+
+Another running book?  This was a really fun read.  It's a really interesting story very well told and really difficult to put down.
+
+<a href="http://www.amazon.com/gp/product/0976805421?ie=UTF8&tag=emphaticsolut-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=0976805421">*Starting Strength (2nd edition)*</a><img src="http://www.assoc-amazon.com/e/ir?t=emphaticsolut-20&l=as2&o=1&a=0976805421" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+
+Ah, now we're back to the good stuff!  If you do any weight training, you should read this book.  Mark Rippetoe has an incredible approach to breaking down each movement and building a straightforward program for building strength.
+
+h2. How about you?
+
+What were the most interesting or influential for you this year?
