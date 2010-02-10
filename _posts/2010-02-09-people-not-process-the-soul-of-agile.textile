@@ -1,0 +1,33 @@
+---
+layout: post
+title: People, not process, is the soul of "agile"
+---
+
+h1. {{ page.title }}
+
+<div id="post-date">{{ page.date | date(page.date,'%B %Y') }}</div>
+
+I've been guilty of it myself.  I even "wrote about it recently":http://emphaticsolutions.com/2009/12/05/lean-software-engineering-a-progression-toward-kanban.html.  Working in an "agile" environment seems to bring out the tinkerer in all of us.  Not only do we get to devise new and interesting techniques in the software we build, but with a focus on "agile" methodologies, we get to tweak and shape and adjust and hone the _process_ of _how_ we build our software too.  In a sense, "agile" is an excuse to for endless "yak shaving":http://catb.org/esr/jargon/html/Y/yak-shaving.html.
+
+h2. _Individuals and interactions over processes and tools_
+
+As proponents, evangelists and practitioners, we've not only read this line over and over, we've probably shouted it a few times, too.  We get to abhor one set of processes and tools in favor of building new processes and tools that seemingly favor individuals and their awe-inspiring interactions.  After all, we are _tool makers_ so it seems rather obvious, really.
+
+But what does it really mean?  Can we justify all this talk about process?  All this focus on the next awesome tool?  I'll bore you to death with why I think "kanban is the right process for ongoing software development":http://emphaticsolutions.com/2009/12/05/lean-software-engineering-a-progression-toward-kanban.html without a moments hesitation, but is that really the secret sauce?
+
+h2. _Individuals and interactions over processes and tools_
+
+I love kanban.  I love test-driven development.  I love dynamic languages. I love expressive domain modeling.  I love modeling function after a users desired behavior.  These are all implementation details.  They enable us but they miss the bigger point.
+
+A software team is made up of uniquely minded, smart and energetic _individuals_.  A team's _interactions_ are the life force of their success. A team is most productive, most focused and delivers the best products when they themselves are the focus.  When their interactions are primary, and the tools and processes are secondary.
+
+Paul Graham wrote "_The other half of 'Artists Ship'_":http://paulgraham.com/artistsship.html in which he states: _One of the differences between big companies and startups is that big companies tend to have developed procedures to protect themselves against mistakes._  He goes on to describe just what a grave mistake it is for smaller companies to follow suit, developing processes and procedures to "protect themselves" at an incredibly high cost.  Beyond the initial cost of developing a process, building out a new tool or other means of not shipping you may devise, the cost of these processes are incalculable.  You pay for them every single day, in every missed opportunity.
+
+h2. "agile" is about culture
+
+The best "process" you can employ is the trust and reliance in one another.  Your team is smarter, and more efficient when each member owns their collective success, rather than relying on adding to the onion of processes every time there is a misstep.
+
+Bugs happen.  Bugs you can't imagine testing for.  Bugs you can't imagine _how_ you'd test for.  Software systems don't exist in a vacuum and our pal Murphy can show up at any turn.  No matter how precise your process, no matter how powerful your tools, it's your team, your individual ideas, your gut feelings, your lunchtime conversations, your debates over coffee and your banging on the executives door.... it's _you_ that drives your success and it's you that makes "agile" work.
+
+
+_I'm continually inspired and impressed with my team at "Sheet Music Plus":http://www.sheetmusicplus.com/, who inspired this post._
