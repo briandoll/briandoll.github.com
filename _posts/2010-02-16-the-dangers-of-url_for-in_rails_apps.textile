@@ -9,12 +9,12 @@ h1. {{ page.title }}
 
 In a great post about "named routes in Rails, path vs. url":http://www.viget.com/extend/rails-named-routes-path-vs-url/, Viget Labs ponders which variant is best used.
 
-Most often we use foo_path which when used in Rails URL helpers will generate a relative path, where foo_url generates a full URL.  In most cases the path makes most sense, but not always.
+Most often we use foo_path, which when used in Rails URL helpers will generate a relative path, where foo_url generates a full URL.  In most cases the path makes most sense, but not always.
 
 h3. Prerequisites to coax the url_for dragons out of hiding
 
 # A web server that is listening to any incoming request by IP (rather than by hostname)
-# A Rails app that generating some links with full URL named routes
+# A Rails app that is generating some links with full URL named routes
 # Cached pages that store content that includes those full URLs
 
 Can you see where this is going yet?
@@ -22,7 +22,7 @@ Can you see where this is going yet?
 {% highlight ruby %}
 # to take Viget's example
 map.resources :doohickeys
-link_to 'index of doohickeys', doohickeys_url  
+link_to 'index of doohickeys', doohickeys_url
   # => <a href="http://www.example.com/doohickeys">index of doohickeys</a>
 {% endhighlight %}
 
@@ -35,10 +35,10 @@ One man's casual bug is another man's security exploit, right?  Let's modify our
 <pre>
  # /etc/hosts
  # map the target website's IP to your favorite web destination
- 10.0.0.10  emphaticsolutions.com
+ 10.0.0.0  emphaticsolutions.com
 </pre>
 
-Now, when we visit the target website, those URLs look like this:
+Now, when we visit the target website with our own domain, those URLs look like this:
 
 {% highlight ruby %}
 map.resources :doohickeys
@@ -46,13 +46,13 @@ link_to 'index of doohickeys', doohickeys_url
   # => <a href="http://emphaticsolutions.com/doohickeys">index of doohickeys</a>
 {% endhighlight %}
 
-If the target application is caching content that includes these links, and you're lucky enough to hit an uncached section of the site, you've just injected your own hostname into the target's website links for other users to see and click on.
+If the target application is caching content that includes these links, and you're lucky enough to hit an uncached section of the site, you've just injected your own hostname into the target's website content for other users to see and click on.  Your directing clicks on their site, back to yours.
 
-h3. Lots of stars must align
+h3. Many stars must align
 
-Sure, there are a lot of ifs that have to pan out for this issue to be exploitable.  That doesn't make the issue any less real.  One solution to this would be to include a configuration option that is defined per environment, to identify the desired hostname for a given app. I think this solution works for most applications, and if you don't use the configuration, you'll get the existing behavior.
+Sure, there are a lot of variables that have to pan out for this issue to be exploitable.  That doesn't make the issue any less real.  One solution to this would be to include a configuration option that is defined per environment, to identify the desired hostname for a given app.  Think of it as the canonical hostname that should be used unless you explicitly set one when generating a URL.  I think this solution works for most applications, and if you don't use the configuration, you'll get the existing behavior.
 
-Another solution is to configure Apache to use a specific hostname for both http and https URLs:
+Another solution is to configure your web server to use a specific hostname for both http and https URLs.  Here is that configuration for Apache:
 
 <script src="http://gist.github.com/306100.js?file=apache.force-hostname-within-vhost.conf"></script>
 
