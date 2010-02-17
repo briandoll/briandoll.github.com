@@ -1,0 +1,60 @@
+---
+layout: post
+title: The dangers of url_for in Rails applications
+---
+
+h1. {{ page.title }}
+
+<div id="post-date">{{ page.date | date(page.date,'%B %Y') }}</div>
+
+In a great post about "named routes in Rails, path vs. url":http://www.viget.com/extend/rails-named-routes-path-vs-url/, Viget Labs ponders which variant is best used.
+
+Most often we use foo_path which when used in Rails URL helpers will generate a relative path, where foo_url generates a full URL.  In most cases the path makes most sense, but not always.
+
+h3. Prerequisites to coax the url_for dragons out of hiding
+
+# A web server that is listening to any incoming request by IP (rather than by hostname)
+# A Rails app that generating some links with full URL named routes
+# Cached pages that store content that includes those full URLs
+
+Can you see where this is going yet?
+
+{% highlight ruby %}
+# to take Viget's example
+map.resources :doohickeys
+link_to 'index of doohickeys', doohickeys_url  
+  # => <a href="http://www.example.com/doohickeys">index of doohickeys</a>
+{% endhighlight %}
+
+Where did _www.example.com_ come from?  Let's take a look.  In both "Rails 2.3.5":http://github.com/rails/rails/blob/v2.3.5/actionpack/lib/action_controller/url_rewriter.rb#L173 and "Rails 3 beta":http://github.com/rails/rails/blob/6f247347a11c7f59c510dd3ff8ee94628bc1df8b/actionpack/lib/action_controller/url_rewriter.rb#L12, if we have not explicitly passed in a :host option, we get @request.host_with_port.  So, no matter what hostname you used to resolve the app, that hostname will be used to generate full URLs.
+
+h3. Exploiting url_for
+
+One man's casual bug is another man's security exploit, right?  Let's modify our local hosts file:
+
+<pre>
+ # /etc/hosts
+ # map the target website's IP to your favorite web destination
+ 10.0.0.10  emphaticsolutions.com
+</pre>
+
+Now, when we visit the target website, those URLs look like this:
+
+{% highlight ruby %}
+map.resources :doohickeys
+link_to 'index of doohickeys', doohickeys_url  
+  # => <a href="http://emphaticsolutions.com/doohickeys">index of doohickeys</a>
+{% endhighlight %}
+
+If the target application is caching content that includes these links, and you're lucky enough to hit an uncached section of the site, you've just injected your own hostname into the target's website links for other users to see and click on.
+
+h3. Lots of stars must align
+
+Sure, there are a lot of ifs that have to pan out for this issue to be exploitable.  That doesn't make the issue any less real.  One solution to this would be to include a configuration option that is defined per environment, to identify the desired hostname for a given app. I think this solution works for most applications, and if you don't use the configuration, you'll get the existing behavior.
+
+Another solution is to configure Apache to use a specific hostname for both http and https URLs:
+
+<script src="http://gist.github.com/306100.js?file=apache.force-hostname-within-vhost.conf"></script>
+
+
+So what do you think?  Should Rails provide a configuration option to specify an app's hostname, or is that outside the scope of what the app should be concerned with?
