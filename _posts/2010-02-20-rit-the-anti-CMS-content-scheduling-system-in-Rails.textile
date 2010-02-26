@@ -11,7 +11,7 @@ You have a web app.  Your marketing folks would like to update some site content
 
 If you're building a cute little website for the bakery down the street that needs to occasionally update prices, go get yourself that fancy CMS.  If you'd like a Rails-based CMS, go ahead and use "Radiant":http://radiantcms.org/.  As they say, _Radiant is a no-fluff, open source content management system designed for small teams._  
 
-Keep that _small teams_ part in mind, though.  If that bakery website gets any real traffic, you're going to serve somewhere between one to two pages a year.  Radiant is so slow, you're better off hand-type HTML directly into the serial port of your 28.8 modem.  Radiant also makes your web app it's bitch.  If _your_ web app wants to use some Radiant content (they call them 'snippets'), you put _your_ web app _inside_ Radiant's extensions directory.  How does that make you feel?  Now you have a Radiant app and you have more than two problems.
+Keep that _small teams_ part in mind, though.  If that bakery website gets any real traffic, you're going to serve somewhere between one to two pages a year.  Radiant is so slow, you're better off hand-typing HTML directly into the serial port of your 28.8 modem.  Radiant also makes your web app it's bitch.  If _your_ web app wants to use some Radiant content (they call them 'snippets'), you put _your_ web app _inside_ Radiant's extensions directory.  How does that make you feel?  Now you have a Radiant app and you have more than two problems.
 
 h2. What do you really need?
 
