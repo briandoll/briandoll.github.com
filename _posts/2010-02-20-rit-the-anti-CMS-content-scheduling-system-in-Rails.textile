@@ -1,0 +1,40 @@
+---
+layout: post
+title: Rit. - The anti-CMS content scheduling system in Rails
+---
+
+h1. {{ page.title }}
+
+<div id="post-date">{{ page.date | date(page.date,'%B %Y') }}</div>
+
+You have a web app.  Your marketing folks would like to update some site content.  You need a content management system, right?  Probably not.
+
+If you're building a cute little website for the bakery down the street that needs to occasionally update prices, go get yourself that fancy CMS.  If you'd like a Rails-based CMS, go ahead and use "Radiant":http://radiantcms.org/.  As they say, _Radiant is a no-fluff, open source content management system designed for small teams._  
+
+Keep that _small teams_ part in mind, though.  If that bakery website gets any real traffic, you're going to serve somewhere between one to two pages a year.  Radiant is so slow, you're better off hand-type HTML directly into the serial port of your 28.8 modem.  Radiant also makes your web app it's bitch.  If _your_ web app wants to use some Radiant content (they call them 'snippets'), you put _your_ web app _inside_ Radiant's extensions directory.  How does that make you feel?  Now you have a Radiant app and you have more than two problems.
+
+h2. What do you really need?
+
+Your web app needs fresh content.  There are really only two questions you need to answer for each piece of content.  _Where_ should the content appear and _when_ should it show up?
+
+The 'where' question focuses on context.  The marketing copy on your 'Sale' page might show up below the headline but before your product listing.  Your last-minute holiday shipping guide might show up on your homepage, just below your nav bar.
+
+The 'when' question is even more critical.  Most real-world applications need more than just a single version of published content.  If you're introducing a sale on Monday morning at 8AM EST, how do you make sure those 10 pieces of content are updated at exactly that time?  How do you update that last-minute holiday shipping guide every single day for two weeks, at noon?  _When_ you release fresh content is as important as where it goes.
+
+h2. Solving 'where' and 'when' quickly
+
+"We":http://www.sheetmusicplus.com/ needed a way to allow our marketing team to update site content where they wanted, and when they wanted, without any involvement from our technical team.  We distilled our issues down to their essence and set out to find a solution.
+
+Unfortunately, the more CMS systems you find, the more you see how lacking they all are.  If you're building a mini brochure site, go for it.  If you are building a web app with Rails, you probably don't need a CMS to go along with it.  You need fresh content.  You need to schedule that content, and have it show up where you want it.  What you need, is Rit.
+
+h2. Introducing Rit.
+
+Rit. is not a content management system.  You don't build site templates in Rit.  You don't build 'pages' in Rit.  You author content in Rit, and you schedule exactly when you want that content to show up.  That's it.
+
+Rit. was designed in about a day by "Kasima Tharnpipitchai":http://www.linkedin.com/pub/kasima-tharnpipitchai/8/7b4/7a2 and I, and developed by Kasima in about a month.  It does exactly what we want, very efficiently, and it might just be what you need, too.  This work was sponsored by my employer, "Sheet Music Plus":http://www.sheetmusicplus.com/, and is being "released today as an open-source product":http://github.com/briandoll/Rit.
+
+"Rit.":http://github.com/briandoll/Rit is a simple content scheduler.  We pulled our terminology from "prepress printing":http://en.wikipedia.org/wiki/Prepress, and built a scheduling system that allows you to create multiple editions of content that will display exactly when you want.  You can schedule individual pieces of content, or group them into scheduled events.  To help convey how the scheduler works, the "README":http://github.com/briandoll/Rit has ASCII art.  Seriously, what more could you want?
+
+I'll be managing patches through github, so fork away and submit pull requests.  Thanks to "Sheet Music Plus":http://www.sheetmusicplus.com/ for agreeing to release this great project, and a million thanks to Kasima, who is one of the strongest developers I've ever had the pleasure of working with.
+
+"*Check out the README to learn more about Rit.*":http://github.com/briandoll/Rit
