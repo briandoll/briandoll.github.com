@@ -4,6 +4,6 @@ title: Brian Doll - emphatic solutions
 ---
   <table border="0">
     {% for post in site.posts %}
-      <tr><td align="right">{{ post.date | date(post.date,'%B %Y') }}</span></td><td> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></td></tr>
+      <tr><td align="right" class="date">{{ post.date | date(post.date,'%B %Y') }}</span></td><td class="index-post-links"> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></td></tr>
     {% endfor %}
   </table>

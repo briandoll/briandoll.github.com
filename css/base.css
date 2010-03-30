@@ -5,21 +5,23 @@ http://developer.yahoo.net/yui/license.txt
 version: 2.5.1
 */
 
-body { 	background-color: silver;
-	font: 16px "Georgia", sans-serif;
+body {
+	background-color: silver;
+	font-family: "museo-1", "Georgia", serif;
+	font-weight: 500;
+	font-size: 16px;
 }
 
 #title a {
-	font-size: 250%;
-	font-weight: bold;
-	font-style: italic;
+	font-family: "museo-2";
+	font-size: 36px;
+	font-weight: 700;
 	color: #FF4500;
 	text-decoration: none;
 }
 
 #subtitle {
-	font-size:150%;
-	font-style: italic;
+	font-size: 24px;
 	color: #777777;	
 }
 
@@ -27,14 +29,24 @@ body { 	background-color: silver;
 	width: 780px;
 	margin: 0px auto 0px;
 	padding: 0px;
-	
+	font-weight: 500;
+	color: #333333;
 }
 
 #personal-info {
+	font-size: 16px;
 	text-align: right;
-	font-size: 100%;
-	font-style: italic;
 	text-decoration: none;
+}
+
+.date {
+	font-size: 12px;
+	font-weight: 500;
+}
+
+.index-post-links {
+	font-size: 18px;
+	font-weight: 500;
 }
 
 #icons {
@@ -42,7 +54,7 @@ body { 	background-color: silver;
 }
 
 a {
-	color: #444444;
+	color: #111111;
 	text-decoration: none;
 }
 
@@ -52,55 +64,56 @@ hr {
 
 #bio {
 	color: #555555;
-	font-size: 80%;
+	font-size: 14px;
 }
 
 #ft {
-	font-size: 80%;
 	text-align: center;
 	color: #777777;
+	font-size: 12px;
 }
 
 /* base.css, part of YUI's CSS Foundation */
 h1 {
-        /*18px via YUI Fonts CSS foundation*/
-        font-size:138.5%; 
-		color: #222222;
+	font-size: 24px;
+	font-weight: 700;
+	color: #1C7DB2;
 }
+
 h2 {
-        /*16px via YUI Fonts CSS foundation*/
-        font-size:123.1%; 		
+	font-size: 20px;
+	font-weight: 700;
+	color: #1C7DB2;
 }
 h2 a {
-	text-decoration: underline;
+
 }
 h3 {
-        /*14px via YUI Fonts CSS foundation*/
-        font-size:108%;  
 }
 h1,h2,h3 {
         /* top & bottom margin based on font size */
         margin:1em 0;
-		font-style: italic;
 }
-h1,h2,h3,h4,h5,h6,strong {
-        /*bringing boldness back to headers and the strong element*/
-        font-weight:bold; 
-		color: #444444;
+
+strong {
+	font-weight: 700;
 }
+
 abbr,acronym {
         /*indicating to users that more info is available */
         border-bottom:1px dotted #000;
         cursor:help;
 } 
+
 em {
-        /*bringing italics back to the em element*/
-        font-style:italic;
+        font-weight: 700;
 }
+
 blockquote,ul,ol,dl {
         /*giving blockquotes and lists room to breath*/
         margin:1em;
 }
+
 ol,ul,dl {
         /*bringing lists on to the page with breathing room */
         margin-left:2em;
