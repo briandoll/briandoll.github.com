@@ -7,21 +7,21 @@ version: 2.5.1
 
 body {
 	background-color: silver;
-	font-family: "museo-1", "Georgia", serif;
+	font-family: "Liberation Mono", "Lucidia Grande", Helvetica;
 	font-weight: 500;
-	font-size: 16px;
+	font-size: 14px;
 }
 
 #title a {
-	font-family: "museo-2";
-	font-size: 36px;
+	font-family: "Liberation Mono", "Lucidia Grande", Helvetica;
+	font-size: 32px;
 	font-weight: 700;
 	color: #FF4500;
 	text-decoration: none;
 }
 
 #subtitle {
-	font-size: 24px;
+	font-size: 20px;
 	color: #777777;	
 }
 
@@ -34,7 +34,7 @@ body {
 }
 
 #personal-info {
-	font-size: 16px;
+	font-size: 14px;
 	text-align: right;
 	text-decoration: none;
 }
@@ -44,9 +44,16 @@ body {
 	font-weight: 500;
 }
 
+.index-date {
+	font-size: 12px;
+	font-weight: 500;
+	margin-left: 30px;
+}
 .index-post-links {
 	font-size: 18px;
 	font-weight: 500;
+	margin-top: 20px;
+	margin-left: 20px;
 }
 
 #icons {
@@ -85,15 +92,29 @@ h2 {
 	font-weight: 700;
 	color: #1C7DB2;
 }
+
+.talk-title {
+	font-size: 14px;
+	font-weight: 700;
+	color: #1C7DB2;
+}
+
 h2 a {
 
 }
+
 h3 {
 }
+
 h1,h2,h3 {
         /* top & bottom margin based on font size */
         margin:1em 0;
 }
+
+.title-no-margin {
+	margin: 0 0 0 0;
+}
+
 
 strong {
 	font-weight: 700;
