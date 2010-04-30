@@ -10,10 +10,18 @@
 	<link rel="Shortcut Icon" href="/images/favicon.ico" type="image/x-icon" />
 	<link rel="stylesheet" href="/css/base.css" type="text/css" media="screen, projection" />
 	<link rel="stylesheet" href="/css/syntax.css" type="text/css" media="screen, projection" />
+	<link rel="stylesheet" href="/css/boastful.css" type="text/css" media="screen" title="boastful css" charset="utf-8">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="/js/jquery.boastful.js"></script>
+    <script>
+    $(document).ready(function() {
+      $('#boastful').boastful({
+        //location: 'http://emphaticsolutions.com/2010/02/20/rit-the-anti-CMS-content-scheduling-system-in-Rails.html'
+      });
+    });
+    </script>
 </head>
-
 <body>
-
   <div id="doc" class="yui-t7">
           <div id="hd">
                   <span id="title"><a href="/">emphatic solutions</a></span>
