@@ -1,0 +1,34 @@
+---
+layout: post
+title: Twitever - A workflow for Twitter and Evernote
+---
+
+h1. {{ page.title }}
+
+<div id="post-date">{{ page.date | date(page.date,'%B %Y') }}</div>
+
+I fell in love with <a href="http://evernote.com/">Evernote</a> as soon as I started using it.  Like any nerd, I come across a dizzying amount of information during a typical day.  I would often find a really interesting article or blog post I wanted to read at inconvenient times.  Evernote let me stash away all this great information into what they refer to our "online brain" and come back to it later.  I can search it, tag it or find stuff by date.  It's awesome.
+
+For me, the primary source for finding great stuff to read online comes from <a href="http://twitter.com/briandoll">Twitter</a>.  I'd see posts from people throughout the day, linking to something that sounded interesting.  I would click on the link, opening it in my browser, and use an Evernote browser plugin to create a note from that webpage and stick it into Evernote.
+
+This had several downsides, however.  First, It takes a few steps.  If I don't have time to read the article, I might not want to break from whatever I'm doing to open up the document and get it into Evernote right then and there either.  Secondly, I had lost the context.  I'd read a great article a few days later and forget where the link came from.  Who posted this link to Twitter?  Who can I chat with about it?  The last issue with this is that I often read Twitter from my phone.  The whole tweet to browser to Evernote plugin to Evernote workflow on a phone is just not going to happen.
+
+h2. Introducing Twitever
+
+<a href="http://github.com/briandoll/twitever">Twitever brings the flow-of-awesome that is Twitter to the remember-it-for-later of Evernote.  Check it out on Github.</a>
+
+h3. The Twitever workflow
+
+1. See a tweet that has a link to something you might want to read later
+2. Mark that tweet as a Favorite
+3. Whenever it's convenient, run twitever.rb on your mac, which downloads your twitter favorites and adds linked pages to Evernote
+
+h3. Tweet to Note
+
+To keep the twitter context in mind, notes added to Evernote from Twitever will have the original tweet as the name of the note.
+
+h3. Enjoy!
+
+While this is essentially a quick hack, it's already been incredibly convenient and useful for me.  Feel free to fork the project and spiff if up if you like.
+
+Note: I should mention this is Mac only.  If you use Windows, I'm sorry.  Really, really sorry.
