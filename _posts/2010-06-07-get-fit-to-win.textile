@@ -1,0 +1,65 @@
+---
+layout: post
+title: Get Fit to Win!
+---
+
+h1. {{ page.title }}
+
+<div id="post-date">{{ page.date | date(page.date,'%B %Y') }}</div>
+
+"Ignite":http://ignite.oreilly.com/ is an intense, addicting and inspired format of sharing ideas in a very short time.  The tagline for any Ignite event is: "Inspire us, but be quick about it!"
+
+I was honored to have "my proposal":http://igniterailsconf.com/speakers/365 selected for the first annual "IgniteRailsConf":http://www.igniterailsconf.com/ event this year.  I wanted to share with my fellow nerds that physical fitness is important, is not out of reach for anyone, and to help inspire them toward their own fitness goals.
+
+"I've written about my path to fitness before":http://emphaticsolutions.com/2009/01/12/clean-eating-how-I-make-it-work.html, but this time I wanted to share _why_ I think fitness is so important.
+
+<div style="width:425px" id="__ss_4428255"><strong style="display:block;margin:12px 0 4px"><a href="http://www.slideshare.net/briandoll/get-fit-to-win" title="Get Fit to Win">Get Fit to Win, Ignite RailsConf 2010</a></strong><object id="__sse4428255" width="425" height="355"><param name="movie" value="http://static.slidesharecdn.com/swf/ssplayer2.swf?doc=getfittowin-100607065420-phpapp01&rel=0&stripped_title=get-fit-to-win" /><param name="allowFullScreen" value="true"/><param name="allowScriptAccess" value="always"/><embed name="__sse4428255" src="http://static.slidesharecdn.com/swf/ssplayer2.swf?doc=getfittowin-100607065420-phpapp01&rel=0&stripped_title=get-fit-to-win" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="425" height="355"></embed></object><div style="padding:5px 0 12px"></div></div>
+
+h3. Note: Video of this presentation will be included as soon as it's available
+
+h2. Resources
+
+The feedback from this presentation has already been great.  I had a great time talking with several people afterwards about their own weightloss, or their own path to fitness.  To help answer some of the questions I got after my talk, here are some resources that might help.
+
+h4. "Robb Wolf":http://robbwolf.com/
+
+Formerly a research biochemist, Robb is a nutrition expert and strength and condition coach.  His blog, seminars and weekly Q&A podcasts are incredible.  When Robb says jump, I ask how high.
+
+h4. "The Paleo Diet":http://paleodiet.com/definition.htm
+
+Paleo eating follows the idea that humans are just not evolutionarily fit to eat garbage.  Sugar, in all its forms, is garbage.  Grains and dairy are nothing but sugar.  As I noted in my presentation, eat real food: meat, vegetables, fruit, nuts and seeds.  *Body composition changes come directly from nutrition.*  If you want to lose weight, eat right.  Yes, it is actually that simple.
+
+h4. "Crossfit":http://www.crossfit.com/cf-info/what-crossfit.html
+
+While I've been Crossfitting for two years now, I still find it hard to describe in a sentence.  Check out that link and get addicted!
+
+h4. "TJ's Gym":http://tjsgym.com/
+
+In July 2008 I got the idea that I was sadly out of shape and needed a big change.  That big change came from eating well and being intensely active.  TJ's Gym is where it happens.
+
+h2. Getting ready for an Ignite Talk
+
+Speaking at an event like Ignite really requires some practice.  Distilling an idea into 20 slides, each with exactly 15 seconds of content and making the whole thing cohesive is quite a task.  I've been geeked out on the ideas of presenting for a while now, so here are some resources that have helped.
+
+h4. "Presentation Zen by Garr Reynolds":http://www.amazon.com/gp/product/0321525655?ie=UTF8&tag=emphaticsolut-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=0321525655
+
+A simple, direct and inspiring book on presentation design and concept
+
+h4. "Confessions of a Public Speaker by Scott Burkun":http://www.amazon.com/gp/product/0596801998?ie=UTF8&tag=emphaticsolut-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=0596801998
+
+Great stories and techniques on the mechanics of presenting
+
+h4. "The Story Factor by Annette Simmons":http://www.amazon.com/gp/product/0465078079?ie=UTF8&tag=emphaticsolut-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=0465078079
+
+How humans relate to information via story, and how to tell better stories.  I learned in this book that telling stories with lots of seemingly extraneous details actually makes your stories more relatable.  In my presentation I included lots of tidbits about my experience and my children, to make my story feel more relatable to the audience.
+
+h4. "The Talent Code by Daniel Coyle":http://www.amazon.com/gp/product/055380684X?ie=UTF8&tag=emphaticsolut-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=055380684X
+
+Great book on the neuroscience of talent and learning.  I used various "deep practice" techniques from this book to rehearse my presentation.
+
+h3. Tweetable Quotes
+
+In the age of social media, we have even more reason to consider nailing a distilled essence of our presentation concept in short, memorable phrases.  Ideally you want to deliver a core idea that's short enough to remember and short enough to tweet.  This is _exactly_ what I was after, thanks Chad!
+
+<style type='text/css'>.bbpBox{#FFFFFF;padding:0px;}</style><div id='tweet_15587799246' class='bbpBox' style=''><p class='bbpTweet' style='background:#fff;padding:10px 12px 10px 12px;margin:0;min-height:48px;color:#000;font-size:16px !important;line-height:22px;-moz-border-radius:5px;-webkit-border-radius:5px;'>"real food doesn't have an ingredient list. Real food IS an ingredient." - <a href="http://twitter.com/briandoll" target="_new">@briandoll</a> <a href="http://search.twitter.com/search?q=%23igniterailsconf" target="_new">#igniterailsconf</a><span class='timestamp' style='font-size:12px;display:block;'><a title='Sun Jun 06 23:31:25 ' href='http://twitter.com/chadfowler/status/15587799246'>Sun Jun 06 23:31:25 </a> via <a href="http://itunes.apple.com/app/twitter/id333903271?mt=8" rel="nofollow">Twitter for iPhone</a></span><span class='metadata' style='display:block;width:100%;clear:both;margin-top:8px;padding-top:12px;height:40px;border-top:1px solid #fff;border-top:1px solid #e6e6e6;'><span class='author' style='line-height:19px;'><a href='http://twitter.com/chadfowler'><img src='http://a3.twimg.com/profile_images/892071631/chadfowler.com_normal.png' style='float:left;margin:0 7px 0 0px;width:38px;height:38px;' /></a><strong><a href='http://twitter.com/chadfowler'>Chad Fowler</a></strong><br/>chadfowler</span></span></p></div> <!-- end of tweet -->
+
