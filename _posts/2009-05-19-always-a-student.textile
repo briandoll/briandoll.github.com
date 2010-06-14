@@ -3,8 +3,6 @@ layout: post
 title: Always a student
 ---
 
-h1. {{ page.title }}
-
 "You're like a student of this stuff", he said.  I thanked him, realizing that it was one of the greatest compliments I had ever received.  I never felt the urge to pursue an advanced degree; my associates degree in _visual communications_ was hardly a deep dive into academia.   Instead, I have always felt a constant need to learn on my own.  In a way, I'm a life-long student of everything that I find interesting.
 
 I'm always surprised, then, to meet people interested in a topic, but never actually learning much about it.  "I was never given the opportunity" or "My company never paid for that training course" are poor excuses.  The act of learning something can be different from person to person.  Some people can learn a lot just by reading, others learn best by seeing and doing.  Any way you slice it, you too can become an  "autodidact":http://en.wikipedia.org/wiki/Autodidact, you just need to have the right perspective on learning.

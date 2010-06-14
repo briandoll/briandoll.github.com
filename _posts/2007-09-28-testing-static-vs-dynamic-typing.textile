@@ -3,8 +3,6 @@ layout: post
 title: Testing - Static vs. Dynamic Typing
 ---
 
-h1. {{ page.title }}
-
 Cedric Beust recently wrote an article entitled "Continuous Tax":http://beust.com/weblog/archives/000462.html where he describes the term "Continuous Tax" to be "dead-on" in describing what it's like to work with dynamically typed languages.
 
 This topic interests me for a variety of reasons but mostly because Cedric is quite authoritative in the world of software testing, what with the "framework":http://testng.org/doc/ and the "book":http://beust.com/weblog/archives/000459.html and all.

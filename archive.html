@@ -1,0 +1,9 @@
+---
+layout: default
+title: Brian Doll - emphatic solutions
+---
+
+{% for post in site.posts %}
+  <div class="index-post-links"><a href="{{ post.url }}">{{ post.title }}</a></div>
+  <div class="index-date">{{ post.date | date(post.date,'%B %Y') }}</div>
+{% endfor %}

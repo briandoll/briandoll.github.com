@@ -3,8 +3,6 @@ layout: post
 title: New gem - rails_framework_diff
 ---
 
-h1. {{ page.title }}
-
 It started on twitter:
 <blockquote>
 It's amazing how hard it is to find problems when caused by developers incorrectly modifying framework-generated files. - "Chad Fowler":http://twitter.com/chadfowler/statuses/885401839

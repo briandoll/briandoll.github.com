@@ -3,8 +3,6 @@ layout: post
 title: Deep Send
 ---
 
-h1. {{ page.title }}
-
 h3. or, How to wrangle with large object graphs and come out alive
 
 In a perfect world, all of our objects are small, orderly and well defined.  They encapsulate data that is semantically obvious and easy to work with.  And then... in an obvious homage to "Jack Handey":http://en.wikipedia.org/wiki/Jack_Handey, we attack that world with large, complex and ugly object graphs, mostly the result of monolithic integration technologies like SOAP.  

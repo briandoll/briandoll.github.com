@@ -3,10 +3,6 @@ layout: post
 title: Rit. - The anti-CMS content scheduling system in Rails
 ---
 
-h1. {{ page.title }}
-
-<div id="post-date">{{ page.date | date(page.date,'%B %Y') }}</div>
-
 You have a web app.  Your marketing folks would like to update some site content.  You need a content management system, right?  Probably not.
 
 If you're building a cute little website for the bakery down the street that needs to occasionally update prices, go get yourself that fancy CMS.  If you'd like a Rails-based CMS, go ahead and use "Radiant":http://radiantcms.org/.  As they say, _Radiant is a no-fluff, open source content management system designed for small teams._  

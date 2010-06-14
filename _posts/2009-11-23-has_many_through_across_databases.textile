@@ -3,8 +3,6 @@ layout: post
 title: has_many :through across multiple databases in Rails
 ---
 
-h1. {{ page.title }}
-
 h3. A tale of two databases
 
 Web applications usually start out so simply, yet so few of them stay that way for long.  Some applications grow to utilize multiple databases, for instance.  Perhaps your an eCommerce site that has a different database for your catalog and transactional data.  "In Rails, we can do this pretty easily.":http://jonathansng.com/ruby-on-rails/multiple-database-connections-with-rails/

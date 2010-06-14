@@ -3,8 +3,6 @@ layout: post
 title: Blocks, Closures and The Ruby Way
 ---
 
-h1. {{ page.title }}
-
 I recently attended my first "Ruby Meetup":http://ruby.meetup.com/6/calendar/6597195/ here in San Francisco.  One of the talks, given by "Bala":http://ruby.meetup.com/6/members/3936949/ was on "Blocks" in Ruby.
 
 Let me first say that I have somewhat of a crush on Ruby right now.  I haven't been this excited about hacking at some code in ages.  Ruby is a dynamic language, letting me do things I used to do in Perl, but in a way that seems clean and concise.  I won't dare talk ill of Perl, but I'm betting you know what I mean.

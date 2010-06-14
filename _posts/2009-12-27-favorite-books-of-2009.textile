@@ -3,10 +3,6 @@ layout: post
 title: My favorite books from 2009
 ---
 
-h1. {{ page.title }}
-
-<div id="post-date">{{ page.date | date(page.date,'%B %Y') }}</div>
-
 It looks like I made my way through about 35 books in 2009.  I've never actually evaluated how much I've read before, but it felt like a fairly good year for page turning.  Some books were pretty forgettable without the help of browsing through my Amazon order history, but a few really stood out as major influences throughout the year.  
 
 So here they are... my favorite books from this year:

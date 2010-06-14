@@ -3,8 +3,6 @@ layout: post
 title: Quick Book Thoughts - Presentation Zen
 ---
 
-h1. {{ page.title }}
-
 I've been anticipating the release of "Presentation Zen":http://www.amazon.com/Presentation-Zen-Simple-Design-Delivery/dp/0321525655/ref=pd_bbs_sr_1?ie=UTF8&amp;s=books&amp;qid=1199680549&amp;sr=8-1 by "Garr Reynolds":http://www.presentationzen.com/ for a few months now.  My copy arrived on Friday, the first of three days without electricity due to a bit of a storm we've had out here in Northern California.
 
 The book was fun to read in all respects and the design of the book itself, along with the presentation samples inside, are truly elegant.

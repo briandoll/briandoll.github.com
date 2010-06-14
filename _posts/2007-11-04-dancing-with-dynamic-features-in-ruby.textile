@@ -3,8 +3,6 @@ layout: post
 title: Dancing with dynamic features in Ruby
 ---
 
-h1. {{ page.title }}
-
 I was working on a "browse" page recently for a rails-based web application.  The page was not all that uncommon, requiring a listing of categories with a long list of subcategories.  Without getting into much detail, I'll note that each of these top-level types are represented by different models.
 
 A particular "bad smell" emerged when seeing some repetitious code in a controller:

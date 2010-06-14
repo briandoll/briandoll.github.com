@@ -3,8 +3,6 @@ layout: post
 title: Golden Gate Ruby Conference
 ---
 
-h1. {{ page.title }}
-
 "GoGaRuCo":http://gogaruco.com/ was a huge success by any measure.  "Josh Susser":http://blog.hasmanythrough.com/ first mentioned his idea for a local Ruby conference during a "San Francisco Ruby Meetup":http://www.meetup.com/sfruby/ a year ago or so.  This past weekend 200 rubyists gathered at the "Swedish American Hall":http://www.cafedunord.com/?page=directions ready for "18 presentations":http://gogaruco.com/schedule/ and lots of break time in between to hang out and hack.  
 
 "Pivotal Labs":http://pivotallabs.com/, a sponsor of the event, provided live video coverage ("video available soon":http://pivotallabs.com/gogaruco/talks) and live-blogged every talk.  Instead of rehashing each presentation, I wanted to collect my thoughts on the presentations that I liked the most.

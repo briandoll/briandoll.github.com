@@ -3,8 +3,6 @@ layout: post
 title: Passing by Value, Reference and somewhere in between
 ---
 
-h1. {{ page.title }}
-
 I had recently run into what one might call an anti-pattern in a code base I was recently working in, and wanted to refresh my memory on exactly how java deals with object parameters that are modified within the method body. To be totally honest, the code (similar to the first code snippet below) was so strange to me because I had never ever seen that (anti-)pattern before. It’s likely an artifact left over from a C programmer that may have forgotten the language differences.
 
 This discussion is often had, but usually leaves the participants more confused than when they started. Java passes by value, right? Or is it reference? What is it with primitives again? Oh man, forget it.

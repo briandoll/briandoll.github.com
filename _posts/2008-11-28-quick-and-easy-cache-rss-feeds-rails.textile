@@ -3,8 +3,6 @@ layout: post
 title: Quick and Easy - Cache RSS feeds in your Rails app
 ---
 
-h1. {{ page.title }}
-
 Displaying a feed within your Rails app is pretty easy.  It turns out caching that RSS feed is pretty easy too.  I recently added cached RSS feeds to an app and had a few tiny hoops to jump through, so I thought I'd document them here for anyone else looking to solve the same problem.
 
 Caching is easy.  Cache invalidation is hard.  For an RSS feed, we'd have to ping the feed to determine if any data had changed.  Why bother?  Instead of fetching the RSS feed on every single page request, let's cache it for a fixed period of time.

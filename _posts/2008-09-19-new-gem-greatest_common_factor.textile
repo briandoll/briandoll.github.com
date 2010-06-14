@@ -3,8 +3,6 @@ layout: post
 title: New gem - greatest_common_factor
 ---
 
-h1. {{ page.title }}
-
 Ruby already provides the ability to find the greatest common factor (gcf) of two integers.  What if we could determine the greatest common factor across a whole array of integers?  Now we can.
 
 I've just released "greatest_common_factor on github.":http://github.com/briandoll/greatest_common_factor/tree/master

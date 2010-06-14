@@ -3,8 +3,6 @@ layout: post
 title: statulo.us - how getting fit somehow still involves programming
 ---
 
-h1. {{ page.title }}
-
 First, "David Heinemeier Hansson":http://loudthinking.com/ spoke of "the surplus":http://railsconf.blip.tv/#1170044.  Spend it on yourself, he said.  Invest in you.
 
 What does that mean to you?  How do you interpret that? Jamis got into woodworking.  Somebody else is playing the banjo.  The ukulele perhaps?  "Get out of your editor", David said, and I somehow quickly forgot about that part.

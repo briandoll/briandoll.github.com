@@ -3,8 +3,6 @@ layout: post
 title: Software Engineering Book Recommendations
 ---
 
-h1. {{ page.title }}
-
 I always find it fascinating what books people prefer on various topics. I put together the following list of books I really enjoy, broken down by category. Please feel free to add to the list, or to comment on the selections.
 
 h3. People, Projects and surviving them both

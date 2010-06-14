@@ -3,7 +3,6 @@ layout: post
 title: Train to not suck at life
 ---
 
-h1. {{ page.title }}
 
 In an early edition of the "CrossFit Journal":http://journal.crossfit.com, Coach Glassman talks about the "foundations of CrossFit":http://www.crossfit.com/cf-download/Foundations.pdf (pdf):
 <blockquote>

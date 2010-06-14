@@ -3,10 +3,6 @@ layout: post
 title: Twitever - A workflow for Twitter and Evernote
 ---
 
-h1. {{ page.title }}
-
-<div id="post-date">{{ page.date | date(page.date,'%B %Y') }}</div>
-
 I fell in love with <a href="http://evernote.com/">Evernote</a> as soon as I started using it.  Like any nerd, I come across a dizzying amount of information during a typical day.  I would often find a really interesting article or blog post I wanted to read at inconvenient times.  Evernote let me stash away all this great information into what they refer to our "online brain" and come back to it later.  I can search it, tag it or find stuff by date.  It's awesome.
 
 For me, the primary source for finding great stuff to read online comes from <a href="http://twitter.com/briandoll">Twitter</a>.  I'd see posts from people throughout the day, linking to something that sounded interesting.  I would click on the link, opening it in my browser, and use an Evernote browser plugin to create a note from that webpage and stick it into Evernote.

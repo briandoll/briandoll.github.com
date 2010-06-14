@@ -3,8 +3,6 @@ layout: post
 title: Leaky abstractions, seepage of a dangerous kind
 ---
 
-h1. {{ page.title }}
-
 <small>(This is an excerpt from an article I wrote at my day job.  Specifics about team members and the projects at hand have been removed.)</small>
 
 *What are leaky abstractions?*

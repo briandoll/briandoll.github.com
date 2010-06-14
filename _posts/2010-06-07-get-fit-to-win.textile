@@ -3,10 +3,6 @@ layout: post
 title: Get Fit to Win!
 ---
 
-h1. {{ page.title }}
-
-<div id="post-date">{{ page.date | date(page.date,'%B %Y') }}</div>
-
 "Ignite":http://ignite.oreilly.com/ is an intense, addicting and inspired format of sharing ideas in a very short time.  The tagline for any Ignite event is: "Inspire us, but be quick about it!"
 
 I was honored to have "my proposal":http://igniterailsconf.com/speakers/365 selected for the first annual "IgniteRailsConf":http://www.igniterailsconf.com/ event this year.  I wanted to share with my fellow nerds that physical fitness is important, is not out of reach for anyone, and to help inspire them toward their own fitness goals.

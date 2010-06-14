@@ -3,8 +3,6 @@ layout: post
 title: Connecting to Oracle from Ruby on Rails
 ---
 
-h1. {{ page.title }}
-
 When Rails 2 was "initially announced":http://weblog.rubyonrails.org/2007/12/7/rails-2-0-it-s-done, we heard that commercial database adapters would be maintained outside of rails core.
 <blockquote>
 	The commercial database adapters now live in gems that all follow the same naming convention: activerecord-XYZ-adapter. So if you gem install activerecord-oracle-adapter, you’ll instantly have Oracle available as an adapter choice in all the Rails applications on that machine. You won’t have to change a single line in your applications to take use of it.

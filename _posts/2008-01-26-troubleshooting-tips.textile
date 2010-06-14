@@ -3,8 +3,6 @@ layout: post
 title: Troubleshooting Tips
 ---
 
-h1. {{ page.title }}
-
 Troubleshooting a software issue can be at once fun and frustrating.  We're elated when the problem is solved (or at least, understood), but the methodical process of troubleshooting can be as much familiar as frantic.
 
 Here are a few troubleshooting tips we all probably know, but need reminding of from time to time:

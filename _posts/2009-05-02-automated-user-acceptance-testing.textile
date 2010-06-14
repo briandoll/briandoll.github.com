@@ -3,8 +3,6 @@ layout: post
 title: Is there such a thing as free automated user acceptance testing?
 ---
 
-h1. {{ page.title }}
-
 "User acceptance testing":http://en.wikipedia.org/wiki/Acceptance_testing#User_acceptance_testing is a big milestone in software development, regardless of the methodology in use.  At this stage, the customer (business analyst, system owner, client, etc.) is determining if the feature that's been developed actually matches their needs.  To perform acceptance testing on web-based applications, people tend to fire up their browser and click around until they feel confident that things are working as expected.
 
 Tests like these are very coarse grained.  Unlike a "unit test":http://en.wikipedia.org/wiki/Unit_testing, where specific small components are tested in isolation, an acceptance test requires all the various moving parts to work together perfectly.  Even when your unit test suite runs perfectly, that's no guarantee that the entire application stack is performing as expected.  However, when an acceptance test fails, you know something is wrong.  It also requires much more work to locate the exact issue, since there may be many moving parts that are working together in support of a particular feature.

@@ -3,10 +3,6 @@ layout: post
 title: Lean Software Engineering - My progression toward Kanban
 ---
 
-h1. {{ page.title }}
-
-<div id="post-date">{{ page.date | date(page.date,'%B %Y') }}</div>
-
 h3. In the beginning, there was...
 
 _Nothing_.  That's right.  I'll bet that long before many of us suffered "the waterfall model":http://en.wikipedia.org/wiki/Waterfall_model we first suffered from the lack of any process at all.  As a maker of things, having no defined process can feel wonderful and free at first.  In hindsight, many have called this "cowboy coding":http://en.wikipedia.org/wiki/Cowboy_coding but it's actually worse than that.  Cowboy coding sounds romantic.  A man or woman on their horse, acting on any whim that strikes them, as hedonistic as they want to be.  In reality, having no process, no schedule, and basically no rules leads to nothing more than horse shit.  No maker wants that.

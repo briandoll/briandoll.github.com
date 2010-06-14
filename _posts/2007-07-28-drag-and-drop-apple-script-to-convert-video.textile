@@ -3,8 +3,6 @@ layout: post
 title: Drag and drop AppleScript to convert video
 ---
 
-h1. {{ page.title }}
-
 My parents were kind enough to get us a "JVC Everio digital video camera":http://www.jvc.com/presentations/everio_g/ after our son was born. The camera has incredible picture quality, loads of features and fits in the palm of your hand. We shot loads of video of his first few weeks and soon enough it came time to make our first DVD to send to friends and relatives.
 
 It turns out the Everio cameras create .mod files, which are similar to MPG files, but.. um.. aren't. I'm guessing this was a way to avoid paying royalties for MPG compression, but this does leave a little bit of leg work for the user. (And *no*, you can't just rename them to .mpg, I have no idea why most websites suggest that as they are not compatible.)

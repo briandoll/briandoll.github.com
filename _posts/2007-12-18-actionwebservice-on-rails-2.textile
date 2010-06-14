@@ -3,8 +3,6 @@ layout: post
 title: ActionWebService on Rails 2
 ---
 
-h1. {{ page.title }}
-
 Well, I can't just say _nothing_ about the recent release of Rails 2 _(.0.2)_, right?
 
 One of the apps I'm working on uses a SOAP web service.  I know, how old skool.  As you have likely read, "ActionWebService (AWS) has been ousted from rails core.":http://weblog.rubyonrails.org/2007/12/7/rails-2-0-it-s-done

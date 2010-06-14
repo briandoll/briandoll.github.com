@@ -3,8 +3,6 @@ layout: post
 title: Supporting unique headers per SOAP request in soap4r
 ---
 
-h1. {{ page.title }}
-
 "soap4r":http://dev.ctor.org/soap4r is a SOAP implementation in Ruby.   If you're writing a SOAP client in Ruby (with or without Rails), soap4r is great.  Until it isn't.  Since this is a rather specific use case that I'm solving for, I'll assume that you have some experience using soap4r.
 
 *Headers*

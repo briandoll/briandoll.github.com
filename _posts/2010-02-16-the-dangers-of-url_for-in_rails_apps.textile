@@ -3,10 +3,6 @@ layout: post
 title: The dangers of url_for in Rails applications
 ---
 
-h1. {{ page.title }}
-
-<div id="post-date">{{ page.date | date(page.date,'%B %Y') }}</div>
-
 In a great post about "named routes in Rails, path vs. url":http://www.viget.com/extend/rails-named-routes-path-vs-url/, Viget Labs ponders which variant is best used.
 
 Most often we use foo_path, which when used in Rails URL helpers will generate a relative path, where foo_url generates a full URL.  In most cases the path makes most sense, but not always.

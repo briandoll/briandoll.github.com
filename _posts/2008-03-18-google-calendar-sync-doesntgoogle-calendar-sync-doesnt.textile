@@ -3,8 +3,6 @@ layout: post
 title: Google Calendar Sync Doesn't
 ---
 
-h1. {{ page.title }}
-
 Many folks were near jubilation when Google "announced Google Calendar Sync":http://googleblog.blogspot.com/2008/03/google-calendar-sync.html.  It's a windows application that lives in the dock that handles the chaos involved in syncing two calendars, not to mention dealing with Exchange.  Unfortunately, for business users the _hoorah!_ did not last very long.
 
 Users will need to pay special attention when reading the "known issues":http://www.google.com/support/calendar/bin/static.py?page=known_issues.cs to find:

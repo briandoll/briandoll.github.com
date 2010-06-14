@@ -3,10 +3,6 @@ layout: post
 title: People, not process, is the soul of "agile"
 ---
 
-h1. {{ page.title }}
-
-<div id="post-date">{{ page.date | date(page.date,'%B %Y') }}</div>
-
 I've been guilty of it myself.  I even "wrote about it recently":http://emphaticsolutions.com/2009/12/05/lean-software-engineering-a-progression-toward-kanban.html.  Working in an "agile" environment seems to bring out the tinkerer in all of us.  Not only do we get to devise new and interesting techniques in the software we build, but with a focus on "agile" methodologies, we get to tweak and shape and adjust and hone the _process_ of _how_ we build our software too.  In a sense, "agile" is an excuse to for endless "yak shaving":http://catb.org/esr/jargon/html/Y/yak-shaving.html.
 
 h2. _Individuals and interactions over processes and tools_

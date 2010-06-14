@@ -3,7 +3,6 @@ layout: post
 title: Clean Eating, How I make it work
 ---
 
-h1. {{ page.title }}
 
 h2. "But I already eat healthy!"
 

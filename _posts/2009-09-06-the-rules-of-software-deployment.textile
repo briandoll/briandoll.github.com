@@ -3,8 +3,6 @@ layout: post
 title: The rules of software deployment
 ---
 
-h1. {{ page.title }}
-
 Any sufficiently complex software application will require a well thought-out deployment strategy.  While a basic deployment strategy is quite suitable for a basic application, many applications require careful orchestration of interdependent systems to make for a successful release.  For example, a web application may need to consider: source code, configuration files, content management data, application data, user data, cached data, search indexes, content delivery networks, background jobs, system monitoring tools, external services and APIs, as well as the user experience during the release process.
 
 No matter how seemingly simple or complex your application is, there are a number of rules that should be followed.  These rules apply regardless of language, release schedule, SCM, deployment toolset or infrastructure.
