@@ -9,15 +9,17 @@ body {
 	background-color: silver;
 	font-family: "Liberation Mono", "Lucidia Grande", Helvetica;
 	font-weight: 500;
-	font-size: 14px;
+	font-size: 15px;
+	line-height: 133%;
 }
 
 #title a {
 	font-family: "Liberation Mono", "Lucidia Grande", Helvetica;
 	font-size: 32px;
-	font-weight: 700;
+	font-weight: 500;
 	color: #FF4500;
 	text-decoration: none;
+	line-height: 150%;
 }
 
 #subtitle {
@@ -37,6 +39,7 @@ body {
 	font-size: 14px;
 	text-align: right;
 	text-decoration: none;
+	line-height: 100%;
 }
 
 .date {
@@ -58,6 +61,7 @@ body {
 
 #icons {
 	text-align: right;
+	margin-top: 10px;
 }
 
 a {
@@ -83,14 +87,14 @@ hr {
 /* base.css, part of YUI's CSS Foundation */
 h1 {
 	font-size: 24px;
-	font-weight: 700;
+	font-weight: 500;
 	color: #1C7DB2;
 }
 
 .big-index {
 	color: #FF4500;
 	font-size: 24px;
-	font-weight: 700;
+	font-weight: 500;
 }
 
 h1 a {
@@ -99,7 +103,7 @@ h1 a {
 
 h2 {
 	font-size: 20px;
-	font-weight: 700;
+	font-weight: 500;
 	color: #1C7DB2;
 }
 
@@ -109,13 +113,13 @@ h2 a {
 
 .talk-title {
 	font-size: 14px;
-	font-weight: 700;
+	font-weight: 500;
 	color: #1C7DB2;
 }
 
 .links {
 	font-size: 14px;
-	font-weight: 700;
+	font-weight: 500;
 }
 
 h2 a {
@@ -136,7 +140,7 @@ h1,h2,h3 {
 
 
 strong {
-	font-weight: 700;
+	font-weight: 500;
 }
 
 abbr,acronym {
@@ -146,7 +150,7 @@ abbr,acronym {
 } 
 
 em {
-        font-weight: 700;
+        font-weight: 500;
 }
 
 blockquote,ul,ol,dl {
