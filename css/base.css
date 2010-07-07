@@ -11,6 +11,7 @@ body {
 	font-weight: 500;
 	font-size: 15px;
 	line-height: 133%;
+	color: #666666;
 }
 
 #title a {
@@ -65,7 +66,7 @@ body {
 }
 
 a {
-	color: #111111;
+	color: #000000;
 	text-decoration: none;
 }
 
