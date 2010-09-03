@@ -1,0 +1,48 @@
+---
+layout: post
+title: What kind of maker are you?
+---
+
+Software Developer.  Programmer.  Software Architect.  Code Monkey.  Many names are given to the things we do, but in the simplest terms, we make things.  Digital things, web things, social things, interactive things.  We make things that people use.  We make things of value.
+
+h3. So, what do you do?
+
+Responding to a blog post entitled "So, what do you do?":http://blog.scoutapp.com/articles/2010/08/24/so-what-do-you-do, "Derek Sivers":http://sivers.org/blog recently explained that when he ran CDBaby, he would say "I help musicians."  That is the value in the work he was doing at the time. Helping musicians.  Not managing a warehouse.  Not deploying code to a dozen servers.  Not A/B testing the signup form.  Derek built a great business helping musicians.  Every detail in the work he did was applied to that end.  As you may know, he was "more than a little successful at it":http://sivers.org/trust.
+
+h3. Transparency, Responsibility and Accountability
+
+When "Kent Beck spoke at RailsConf in 2008":http://emphaticsolutions.com/2008/09/08/transparency-responsibility-accountability.html, he talked about the origins of XP and what we now call Agile. He talked about how many folks got caught up in the weeds paying more attention to some stated technique than the value of their output.  A maker, according to Kent, should be transparent, responsible and accountable.  I would add that what we're responsible for and accountable for, is producing maximum value.  Being responsible for implementing strict rules on how your team develops software is missing the point.  Those practices exist solely to help you produce more value as efficiently as possible.  That is the goal.
+
+h3. Stop estimating and start shipping
+
+Recently someone asked the Hacker News community "what techniques they use for software estimating":http://news.ycombinator.com/item?id=1646510.  This was my reply:
+
+bq. How about doing it the other way around? How much value do you think a certain feature is worth? How much time should you spend producing that feature, as relative to its value? Then, figure out a way to ship a viable implementation in that amount of time.<br/>
+There are many techniques for estimating how long software development tasks will take primarily because they all suck. Estimating takes time, and is almost always wrong. Some people even advocate figuring out how off your estimates are, to improve your future estimates, so you can be a better estimator. What?<br/>
+I think it's best to stop estimating and start shipping.
+
+"Some good dialogue followed":http://news.ycombinator.com/item?id=1647736 and I promised to expand on what I meant.
+
+h3. The factory worker model for commodity products
+
+The "industrial revolution":http://en.wikipedia.org/wiki/Industrial_Revolution was kind of a big deal.  We could produce mass quantities of things at a reasonable level of quality.  That's great for cookie-cutter products, and still is.  For this work, estimating is key.  How big should the factory be?  What are the output goals?  How many workers on the assembly line?  How much steel to order this month?
+
+When you produce a commodity product the factory model works well.  Someone else had the ingenious idea of making a baking sheet specifically for cupcakes.  They studied the market.  The studied the consumer.  They chose the materials.  They designed the product.  The factory worker produced the commodity product as quickly as possible for as little money as possible.
+
+h3. The thought worker model for value products
+
+In his latest book "Linchpin":http://www.amazon.com/gp/product/1591843162?ie=UTF8&tag=emphaticsolut-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=1591843162 Seth Godin draws a great distinction between the old a new model of work.  Instead of laboring a day's work for a day's wages, the new model focuses on being indispensable by way of providing incredible value.  Creativity, new ideas, focusing on the value, not the slog of the day-to-day.
+
+Toyota's "5 Whys":http://en.wikipedia.org/wiki/5_Whys is useful for more than just troubleshooting. You can use that question-asking technique to uncover the core value of a feature request.  Let's say you're being asked to build (or worse, estimate how long it would take to build) a feature to allow users to upload photos.  What's that all about?  Why are users uploading photos?  Who are they ultimately for?  How will they be accessed?  What's the value?
+
+Once you've understood the value, it's time to iterate.  Attempting to implement every edge of your idea at once is a failure in the making.  Keep that core value in mind.  What is the smallest feature you could ship right now that satisfies the essence of that value?  This is thought work.  This is indispensable work.  This is the art of making things that provide value.  Build it small, ship it, gather feedback, and iterate.  Do the most valuable task next.  Very soon, you'll have another idea of value, and you'll call your current feature "good enough".
+
+Understanding the value of your product/service and continually increasing that value is the ultimate level of work for a maker of things.
+
+h3. What kind of maker are you?
+
+Factory work can be artistic.  Making hand-crafted furniture takes incredible craftsmanship and artistic talents.  This work, however, still falls into the model of factory labor.  Estimating how long that custom chair will take to build is a big part of the job.
+
+Thought work isn't free of laborious tasks.  Even the best ideas still need to actually be implemented before they are valuable.
+
+So what kind of maker are you?  I'm a thought worker.  Every time I felt my work slipping into that of the factory, I knew it was time to move on.  The factory is just no place for me.
