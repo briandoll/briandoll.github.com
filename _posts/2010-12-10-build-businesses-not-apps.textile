@@ -1,0 +1,44 @@
+---
+layout: post
+title: Engineers &mdash; build businesses not apps
+---
+
+h3. Hey, I had that idea years ago!
+
+It's happened to you a dozen times, at least.  You had an "aha!" moment.  You told that friend of yours over pints one night.  You may have even built a prototype.  What you didn't do is build that business.
+
+Earlier this month, "Ebay purportedly paid 75M to buy Milo.com":http://venturebeat.com/2010/12/02/ebay-milo-e-commerce/, a "local shopping" site that "got seed funding in November of 2008":http://www.crunchbase.com/company/milo.  Guess what?  In May of 2008, I had that idea too.
+
+h3. The epiphany
+
+Anticipating the summer months ahead, I was planning on buying a replacement pair of Reef sandals online.  While I was picking out my pair, my wife and I decided to order takeout. I drove a mile or so down the street, parking a half block from the restaurant.  Walking along the sidewalk I noticed several pairs of Reef sandals, the same ones I was looking to buy online, were on display at a local skate shop.  Instant gratification!  Supporting a local retailer!  Perfect!
+
+h3. Some quick history
+
+My family has been running local businesses for several generations.  My great-great grandfather owned a bar and restaurant not far from where I grew up.  My grandfather started a grocery store business in the '50s that my father took over in the 70's.  I grew up working at the family grocery store, which had also spawned a diner and laundromat in town.  I'm very familiar with the ongoing decline of local businesses.  My understanding of how grocery stores worked, as well as the systems that run them, proved quite valuable when I started building online commerce systems in the late '90s.  The idea of building an eCommerce app that got more people to shop locally was really appealing on many levels.
+
+h3. The prototype
+
+Like most programmers, the first thing I did was to start building.  The primary feature of this type of app is search, and it needed to account for location and odd product names.  For example, the Reef sandals I was going to buy need to also show up for a search on "flip flops", etc.  In one night I grabbed a zip-code list, found a library online to do searches by geo-location w/ specified distances. I populated the app with a dozen or so products, and got the search feature working reasonably well.
+
+I launched the prototype of "FindNearBuy.com":http://findnearbuy.com/ that same night.  It was an exhilarating feeling.  I had been working with Ruby/Rails for several months by then, but this was one of my first ideas that went from concept to live app so quickly.
+
+h3. Now what do I do?
+
+By the end of that first night, I was eager to talk to some local merchants to get my neighborhood online.  I started documenting how that conversation would go.  What benefits there were to the merchant, what information I'd need, and how frequently I'd need it.  I started to build out what I thought would be the formula for ROI for these merchants.  They pay me a monthly fee, I send them more paying customers.  I wondered how I'd price this, and how I might account for small, low-margin shops vs. larger more established businesses.  Do I price this on the number of SKUs?  Annual revenue?  To get up and running in the first few stores, I had a lot of legwork ahead, not to mention a business model I couldn't quite nail down.
+
+h3. Giving up
+
+I spoke with a few shop owners that week and none of them were interested.  They were uneasy at the idea that I'd be grabbing their QuickBooks (or whatever) inventory data on a regular basis.  They were constantly being harassed by someone who thought they could help them run their business better, but who always came with their hands out.  The friction for getting a small business online was high, and the value was most certainly going to be very low for a while.  I gave up.
+
+h3. Building a business worth $75M, not just building an app
+
+While Milo.com bills itself as local shopping, they only have inventory for huge national chains available online.  Their business doesn't achieve what I had hoped for FindNearBuy.com, but they probably also saw the writing on the wall.  Get the giant retailers first, where there is huge impact with a single business integration.  They didn't just build an app.  They built a business.  They understood their customers and their partners.  They built relationships.  They built value.
+
+In contrast, I built an app and only saw a flicker of the long struggle it would be to make good of this business opportunity and I quit.  I failed this idea, quite willingly, because all I really wanted to do was build an app.
+
+h3. Focus on value
+
+I still love to tinker.  I've built a dozen apps like FindNearBuy since then.  I've never built a business.  Every time I get excited about an idea, I jump into the code first.  Inevitably, I'll launch a prototype and immediately see the great chasm in front of me between this app and any potential customers.
+
+I'm not suggesting anyone stop building prototypes.  I'm not suggesting we don't explore the idea of an application through its development.  However, *the next time you have that "aha" moment, think first of the value you can create and the app will follow.*  The app, it turns out, really is the easy part.
