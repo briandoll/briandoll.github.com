@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Engineers &mdash; build businesses not apps
+title: Engineers - build businesses not apps
 ---
 
 h3. Hey, I had that idea years ago!

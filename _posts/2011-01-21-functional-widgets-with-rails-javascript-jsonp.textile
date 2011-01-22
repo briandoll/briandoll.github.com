@@ -1,0 +1,63 @@
+---
+layout: post
+title: Functional Widgets with Rails, JavaScript and JSONP
+---
+
+h3. What's a widget?
+
+<img src="/images/wireframe.jpg" style="float:right; margin:10px;"/> I have no idea.  I'm sure the cool kids have a better name for it these days, but we'll just call 'em widgets for now.  When we draw a wireframe of a web app with a box around some bit of functionality, we tend to refer to that thing as a 'widget'.
+
+Taking this a step further, while a widget is often thought of as a discreet piece of functionality, we also tend to think of it as being portable.  That lovely little widget is just so great, let's share it with the world!  Can't we just "drop that in" to another website?  Yes we can!
+
+h3. JavaScript widgets
+
+Rendering the HTML content of our widget on a separate "consuming" web application is typically done with JavaScript. If our widget includes only static content, it's very simple to render that content remotely.  Ilya Grigorik's post on <a href="http://www.igvita.com/2007/06/05/creating-javascript-widgets-in-rails/">Creating JavaScript Widgets in Rails</a> demonstrates this technique, essentially wrapping each line of HTML output in a call to <code>document.write</code>.
+
+h3. Functional Javascript widgets
+
+What if our widgets actually do stuff?  How can we build fully-functional widgets with Rails that can be consumed by other websites?  Here's one way to do it...
+
+<h4>1. Create the feature that you want to 'widgetize' with Rails</h4>
+
+Let's say you'd like to support CRUD actions on content for your awesome home-grown blog app.  Create your model, controller, view(s) and routes as usual.  Don't forget your tests.  Set up some nice model validation and build your forms The Rails Way.  Don't forget to use the <code>route_url</code> route name instead of the <code>route_path</code> name in the form actions, since we'll be interacting with this form from a different host eventually.
+
+<h4>2. AJAX, baby!</h4>
+
+I prefer jQuery over Prototype, so I'd suggest using the <a href="https://github.com/indirect/jquery-rails">jquery-rails</a> gem in addition to the latest version of <a href="http://www.jquery.com">jQuery</a>.
+
+Rails has made it very convenient to create RESTful <strike>widgets</strike> services.  However, as soon as we want to interact with a RESTful service using AJAX, we have to come up with our own pattern for our views.  We often want to send back content to be rendered as HTML.  We'll also need a way to communicate success or failure along with specific error messages we may want to render in the widget.  Additionally, we often need to redirect our users to new pages after they complete a certain step.
+
+<a href="http://paydrotalks.com/">Peter Bui</a> wrote <a href="https://github.com/paydro/js_message">js_message</a> that solves this pattern nicely.  Her's a quick example:
+
+<script src="https://gist.github.com/780331.js?file=controller.rb"></script>
+
+<script src="https://gist.github.com/780331.js?file=js_message_example.js"></script>
+
+<h4>3. Cross-domain JSON with JSONP</h4>
+
+JSONP is an awesome hack.  Here is a <a href="http://stackoverflow.com/questions/3839966/can-any-one-explain-me-what-is-jsonp-in-layman-terms?tab=votes#tab-top">great explanation of what JSONP is</a> on Stack Overflow.  Now that we know what it is, Kevin Chiu shows us how to use <a href="http://kevinchiu.org/archives/jsonp-in-rails-3">JSONP in a Rails3 controller</a>.
+
+We're now using JSONP, but we're still getting these strange <a href="http://en.wikipedia.org/wiki/Same_origin_policy">same origin policy errors</a>.  No worries! Here's how we can <a href="http://blog.jetthoughts.com/2010/12/22/allow-multiple-access-control-requests-for-rails/">allow multiple access control requests in Rails</a>.
+
+This is great, we've got a widget that pulls content in asynchronously across domains.  Unfortunately, the content we're getting is just JSON.  We want HTML!
+
+<h4>4. Square peg in a round hole</h4>
+
+Let's render our erb template <em>to a string</em>, then wrap it in a tasty JSON envelope!  We'd have to take care of quotes and newlines though, to make it JSON safe...
+
+Example:
+<script src="https://gist.github.com/790915.js?file=some_controller.rb"></script>
+
+(Hat tip to <a href="http://www.jsonlint.com/">JSON Lint</a> for testing my JSON output)
+
+<h4>5. Finally, the widget view</h4>
+
+<script src="https://gist.github.com/791610.js?file=widget.js.erb"></script>
+
+Then all the consuming web app needs to do in order to render your awesome widget, is drop in this JavaScript file:
+
+<script src="https://gist.github.com/791610.js?file=widget_on_consuming_site.html"></script>
+
+<h4>6. Profit!</h4>
+
+Now you've got fully functional widgets in Rails that you can let other web applications drop into their site.  Surely it won't be long before the cash starts rolling in.
