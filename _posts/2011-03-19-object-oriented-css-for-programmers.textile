@@ -1,0 +1,58 @@
+---
+layout: post
+title: Object-oriented CSS Heuristics for Programmers
+---
+
+I've been holding in a deep, dark secret that could easily get me kicked out of "Blue Bottle":http://www.bluebottlecoffee.net/ or "Philz":http://www.philzcoffee.com/ during the late morning rush.  <em>I don't know how do write quality CSS.</em>  That's right.  I built my first website in 1995 and have been making things on the web professionally since 1997, but like many engineers I know, I've been "cargo culting":http://en.wikipedia.org/wiki/Cargo_cult CSS for about as long as that's been possible.
+
+h4. Where do I find "best practices" for developing coherent & cohesive CSS???
+
+I recently took this secret to <strike>my therapist</strike> "twitter":http://twitter.com/#!/briandoll/status/48812621943672832 and saw that I wasn't alone.  15 years ago we were building HTML by hand with <code><font size="2"></code> tags.  Now we have Rails.  Let that sink in a bit.  That's an insane amount of progress.  BUT... Look at the CSS for virtually every big web app and the CSS is a disaster.  There's a mix of naming conventions, no organization, loads of repetition and probably hundreds if not thousands of lines of styles that are not even used anymore.  So... how do we do it right?  You can find a CSS snippet for a 3D spinning logo on fire on a thousand websites right now, but where are folks taking about building coherent, cohesive and maintainable CSS?  How can we apply the practices of regular programming to CSS?
+
+h4. Enter: Object-Oriented CSS
+
+Nicole Sullivan, aka "stubbornella":http://www.stubbornella.org/, "wrote about":http://www.stubbornella.org/content/2009/02/28/object-oriented-css-grids-on-github/ her "oocss framework":https://github.com/stubbornella/oocss in 2009 and has been whacking sense into folks ever since (and probably long before). Be sure to read "the original OOCSS blog post that started it all":http://www.stubbornella.org/content/2009/02/28/object-oriented-css-grids-on-github/ and check out "Nicole's presentations, all of which are pure gold.":http://www.slideshare.net/stubbornella/presentations  (And many, many thanks to "Brent Miller":http://twitter.com/foliosus/ for turning me on to this!)
+
+Of the "10 Best Practices":http://www.slideshare.net/stubbornella/object-oriented-css/19 highlighted in the original presentation, these three had the biggest effect on me:
+* Separate structure and skin
+* Separate container and content
+* Extend objects by applying multiple classes to an element
+* (*Bonus #4!) Use classes for style. Save <code>id</code>s for JavaScript.
+
+h4. Object-Oriented Design Heuristics
+
+Once we purposefully design CSS in an object-oriented fashion, suddenly a whole new world opens up.  We're no longer jamming in long CSS rules with repetitive styles.  We're creating unique, small classes that can be composed to style our elements.  Hey, that sounds like real programming!  Let's do this!
+
+"Object-Oriented Design Heuristics":http://www.amazon.com/Object-Oriented-Design-Heuristics-Arthur-Riel/dp/020163385X is one of my favorite programming books.  Inside the cover the author lists about a hundred heuristics for object-oriented programming.  If you're looking for the 1996 winner of the "best index" award, this is it. Here are a few of the heuristics from the book, applied to OOCSS.
+
+h4. A class should capture one and only one key abstraction
+
+This is a more specific goal than the best practices listed above.  To me, this means creating different classes to handle style behavior that isn't always going to be used together.  The anti-pattern version of this though is to have loads of tiny classes that do very little and elements that need a dozen classes to work right.  Herein lies the art of good OOCSS.
+
+h4. Do not create god classes in your system
+
+Similar to the earlier statement, we shouldn't see classes with a large number of styles specified.  I wonder what a good rule of thumb is?  How many lines does a CSS class need to be before it's too big?
+
+h4. Model the real world whenever possible
+
+Semantic names! Now that we're not cluttering our classes with dozens of styles, we can name them well.  Think first of the "user" of your CSS.  When someone is reading the markup, they see a list of class names styling an element.  How easily can they visualize where and what an element will render like by reading those names?
+
+h4. Minimize the number of classes with which another class collaborates
+
+I'd argue that we should work hard to break this rule.  We are composing classes (collaborating) as a rule.  We should aim to limit the number of classes necessary to achieve a desired style, however.
+
+h4. A class must know what it contains, but it should never know who contains it
+
+This is huge.  This specifically relates to separating structure and skin.  Classes should be portable.
+
+h4. Inheritance should be used only to model a specialization hierarchy
+
+Related: "Choose composition over inheritance".  Think of it this way: The DOM represents inheritance, while custom classes are used in composition.
+
+h4. Factor the commonality of behavior as high as possible in the inheritance hierarchy
+
+Great rule for CSS.  Leverage that "cascading" effect of CSS.  Place common styles as high up in the inheritance hierarchy (DOM), and override when necessary.
+
+h3. Submit your own rules for OOCSS!
+
+I'd love to hear your object-oriented rules for creating good, maintainable CSS.  Add them in the comments, email me or copy me on twitter "@briandoll":http://twitter.com/briandoll
