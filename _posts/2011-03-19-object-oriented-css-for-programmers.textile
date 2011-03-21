@@ -53,6 +53,13 @@ h4. Factor the commonality of behavior as high as possible in the inheritance hi
 
 Great rule for CSS.  Leverage that "cascading" effect of CSS.  Place common styles as high up in the inheritance hierarchy (DOM), and override when necessary.
 
+h3. Classes over IDs
+
+I'm calling out bonus point #4 from above for a second time because it's really important.  Nicole says we shouldn't use IDs to style elements because an ID is supposed to refer to a single instance, and our goal of OOCSS is reusability and composition.  There is an even more plain reason to use classes instead of IDs, however.  An element may have zero or one IDs assigned to it, but an element can have many classes.  Compose styles out of several classes and keep your IDs to actually identify a single element, most notably when you need to grab it with JavaScript.
+
 h3. Submit your own rules for OOCSS!
 
-I'd love to hear your object-oriented rules for creating good, maintainable CSS.  Add them in the comments, email me or copy me on twitter "@briandoll":http://twitter.com/briandoll
+I'd love to hear your object-oriented rules for creating good, maintainable CSS.  Add them in the comments, "email me":mailto:brian@emphaticsolutions.com or copy me on twitter "@briandoll":http://twitter.com/briandoll and I'll add them to this post.
+
+
+*Note:* I'm aware of "Saas (SCSS)":http://sass-lang.com/ and "Compass":http://compass-style.org/, but for the purposes of clarity around OOCSS, this post is aimed at bare CSS.  I know lots of folks love CSS generator frameworks, I guess I'm just not there yet personally.
