@@ -4,17 +4,15 @@ title: Brian Doll - emphatic solutions
 ---
 
 <div>
-  <div class="big-index">Latest writing:</div>
-  {% for post in site.posts limit: 7 %}
-  <div class="index-post-links"><a href="{{ post.url }}">{{ post.title }}</a></div>
-  <div class="index-date">{{ post.date | date(post.date,'%B %Y') }}</div>
+  <h1>Writing:</h1>
+  {% for post in site.posts %}
+    <div class="index-listing">
+      <a href="{{ post.url }}" class="index-title">{{ post.title }}</a>
+      <span class="index-date">{{ post.date | date(post.date,'%B %Y') }}</span>
+    </div>
   {% endfor %}
 </div>
 
-<div class="index-post-links">
-  <h2><a href="/archive.html">The Treasure Trove: Archive of less-recent musings &gt;&gt;</a></h2>
-</div>
-
-<div class="index-post-links">
-	<h2><a href="/talks.html">List of all recent talks &gt;&gt;</a></h2>
+<div>
+	<h1><br/><a href="/talks.html">List of recent talks &gt;&gt;</a></h1>
 </div>
