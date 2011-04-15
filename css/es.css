@@ -138,3 +138,11 @@ table {
 .talk-title {
   font-size: 1.2em;
 }
+
+.boastful {
+  width: 50px;
+}
+
+.boastful img {
+  display: inline;
+}
