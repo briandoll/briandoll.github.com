@@ -146,3 +146,7 @@ table {
 .boastful img {
   display: inline;
 }
+
+.boastful_content {
+  text-align: left;
+}
