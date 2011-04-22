@@ -32,8 +32,13 @@ h3 {
 
 h4 {
   margin-top: 20px;
+  color: #084B8A;
 }
 
+h5 {
+  color: #084B8A;
+}
+  
 code {
  color: #333; 
 }
@@ -149,4 +154,8 @@ table {
 
 .boastful_content {
   text-align: left;
+}
+
+.indent {
+  margin-left: 30px;
 }

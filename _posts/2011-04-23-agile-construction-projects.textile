@@ -1,0 +1,56 @@
+---
+layout: post
+title: Agile Construction Projects
+---
+
+<span class="subtitle">This article was originally written on May 25th, 2007</span><br/>
+
+How is it that a 30 year old construction company can defeat a clichéd image of a slow moving, deadline-missing, tax-eating machine to that of an industry-leading, lean and fast infrastructure development firm? By adopting agile methodologies, probably without even knowing it.
+
+<h4>The Collapse</h4>
+First, let's get some incredible facts out of the way. On April 29th 2007, a gasoline tanker truck took a bit of a spill here in the bay area and turned an incredible amount of liquid into an incredible amount of flame.  Twenty-six days later everything was back to normal.
+
+<div class="line indent">
+  <div class="unit size1of2"><img src="/images/flames.jpg"></div>
+  <div class="unit size1of2"><img src="/images/fixed.jpg"></div>
+</div>
+
+<h4>Typical Construction Management</h4>
+
+I don't know about the rest of you, but about mid-way through my commute we've got a bit of a construction project going on. You know the drill, there is a sign posted next to this construction that marks "October 2006" as the completion date and there they are, about 20 construction workers doing their thing. It's May 2007 by the way, and the overpass they are working on has a wooden external frame, which I'm guessing isn't their final design. Let's call this "typical" of construction management projects.
+
+<h4>Agile for Construction Projects?</h4>
+In stark contrast, we have the now soon-to-be infamous "I-580 / 880 Emergency Repair" project, run by <a href="http://www.ccmyers.com/">C.C. Myers</a>. In reading the <a href="http://www.sfgate.com/cgi-bin/article.cgi?file=/c/a/2007/05/25/MNG6EQ1IDG1.DTL">article</a> I started seeing very familiar concepts appear. Now I'm not sure if Michael Cabanatuan or anyone at C.C. Myers has ever heard of agile or not, but they certainly act like it. Let's take a look.
+
+<h5>Individuals and interactions over processes and tools</h5>
+<ul>
+  <li>Within hours – some say it was closer to 15 minutes – Myers had workers on the site of the maze collapse.</li>
+  <li>Workers wrote a message on the side of the girders in chalk: "To the people of Oakland, California, from Stinger Welding, Coolidge, Arizona," and the trucks rolled off with two drivers in each rig.</li>
+</ul>
+
+<h5>Working software over comprehensive documentation</h5>
+<ul><li>"They had a design roughed out within hours – once they figured out where it happened and what it looked like," said Rick Land, Caltrans' chief engineer.</li>
+<li>In another example, instead of requiring the contractor to wait for detailed construction drawings to be approved, Caltrans agreed to let the work start while they were being reviewed. It was a risk for both the contractor and Caltrans, Land said, but was a relatively safe bet "because the work was so straightforward." It ended up saving about five days.
+</li></ul>
+  
+<h5>Customer collaboration over contract negotiation</h5>
+<ul><li>"Caltrans came in and put good people in our shop," Douglas said. "If there were any problems, we could go to them and get immediate answers. Usually (done by phone, fax or email), it takes weeks. It was a breath of fresh air to have a government agency come in and perform like that."</li>
+<li>"C.C. Myers was very good at coordinating things. They eliminated the transitions, the waiting time," he said, mentioning the importance of flexibility on the job.</li></ul>
+
+<h5>Responding to change over following a plan</h5>
+When Caltrans mentioned a willingness to be flexible when it awarded the job, some critics feared it would mean lower standards and inferior quality. In fact, UC Berkeley civil engineering professor Abolhassan Astaneh said Thursday he was not convinced that four concrete columns supporting 580 or 880 could withstand a major earthquake. Instead, they should have been demolished and replaced, he said. But Land and Peter Strykers, Caltrans senior engineer, said multiple tests were performed on both the surviving structures and the new construction, and they are confident of its safety. Relying on Testing over a professors guesstimations? TDD in action!
+
+<h5>Time for new traditions</h5>
+Customers, banking executives as well as the commuting moms on their way to drop the kids off at the pool, all expect high quality in a timely fashion. The basic tenets of the agile manifesto are proven ways for people to execute change, no matter what you call them.
+
+I just wish somebody would tell the guys working on the overpass on my way to work!
+
+<h5>Quick Facts:</h5>
+<ul>
+  <li><strong>26</strong> : Days I-580 was closed</li>
+  <li><strong>17</strong> : Days it took C.C. Myers to rebuild I-580</li>
+  <li><strong>96</strong> : Hours of curing time for concrete road deck</li>
+  <li><strong>200</strong> : Cubic yards of concrete in road deck</li>
+  <li><strong>35</strong> : Cubic yards of concrete in railing walls</li>
+  <li><strong>12</strong> : Number of steel girders supporting I-580 connector</li>
+</ul>
