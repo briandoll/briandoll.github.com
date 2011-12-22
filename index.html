@@ -4,15 +4,10 @@ title: Brian Doll - emphatic solutions
 ---
 
 <div>
-  <h1>Writing:</h1>
+  <ul class="posts">
   {% for post in site.posts %}
-    <div class="index-listing">
-      <a href="{{ post.url }}" class="index-title">{{ post.title }}</a>
-      <span class="index-date">{{ post.date | date(post.date,'%B %Y') }}</span>
-    </div>
+      <li><a href="{{ post.url }}">{{ post.title }}</a>
+      <span class="index-date">// {{ post.date | date(post.date,'%B %Y') }}</span>
   {% endfor %}
-</div>
-
-<div>
-	<h1><br/><a href="/talks.html">List of recent talks &gt;&gt;</a></h1>
+  </ul>
 </div>

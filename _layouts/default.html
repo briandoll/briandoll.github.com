@@ -5,45 +5,44 @@
   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
   <title>{{ page.title }}</title>
   <link href="http://feeds.feedburner.com/EmphaticSolutions" rel="alternate" title="Brian Doll : emphatic solutions" type="application/atom+xml" />
-	<link rel="Shortcut Icon" href="/images/favicon.ico" type="image/x-icon" />
-	<link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="/css/all.css" type="text/css"/>
-	<link rel="stylesheet" href="/css/es.css" type="text/css"/>
-	<link rel="stylesheet" href="/css/syntax.css" type="text/css"/>
+  <link rel="Shortcut Icon" href="/images/favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="/css/foundation.css" type="text/css"/>
+  <link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="/css/syntax.css" type="text/css"/>
   <link rel="stylesheet" href="/css/boastful.css" type="text/css" media="screen" title="boastful css" charset="utf-8">
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.1/jquery.min.js"></script>
-    <script type="text/javascript" src="/js/jquery.boastful.js"></script>
-    <script>$(document).ready(function() { $('#boastful').boastful(); });</script>
+  <link rel="stylesheet" href="/css/app.css" type="text/css"/>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=yes' />
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.1/jquery.min.js"></script>
+  <script type="text/javascript" src="/js/jquery.boastful.js"></script>
+  <script>$(document).ready(function() { $('#boastful').boastful(); });</script>
 </head>
 <body>
-<div class="page gs960">
-  <div class="head">
-    <div>
-      <a href="/"><span class="title">emphatic solutions</span></a>
-      <span class="subtitle">ephemeral musings in the ether...</span>
-    </div>
-    <div class="headRoom byline">
-      <a href="http://about.me/briandoll">Brian Doll</a>, Software/Systems Architect, San Francisco Bay Area, California
-    </div>
-    <div class="headroom icons alignRight">
-      <a href="mailto:brian@emphaticsolutions.com" title="Email Me"><img src="/images/mail-square.png" border="0"></a>
-      <a href="http://github.com/briandoll/" title="briandoll on github"><img src="/images/github.png" border="0"></a>
-      <a href="http://twitter.com/briandoll/" title="@briandoll"><img src="/images/twitter-logo-square.png" border="0"></a>
-      <a href="http://www.linkedin.com/in/briandoll" title="LinkedIn"><img src="/images/linkedin-logo-square2.png" border="0"></a>
-      <a href="http://feeds.feedburner.com/EmphaticSolutions" rel="alternate" type="application/rss+xml" title="RSS"><img src="/images/rss-cube.png" border="0"></a>
-    </div>
-  </div>
-  
-  <div class="body">
-    <div class="main">
-      {{ content }}
-    </div>
-	</div>
+  <div class="container">
 
-  <div class="foot">
-    Copyright © 2007-2011 Brian Doll
+    <div class="row">
+      <div class="twelve columns">
+        <a href="/" class="title"><em>emphatic solutions</em></a> <span class="subtitle">// ephemeral musings in the ether</spa>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="nine columns content">
+        {{ content }}
+      </div>
+      <div class="three columns sidebar" id="sidebar">
+        <div class="hello">hello</div>
+          <p>I'm <a href="mailto:brian@emphaticsolutions.com" title="Brian Doll">Brian Doll</a>.</p><p>I <a href="http://www.linkedin.com/in/briandoll" title="">build things on the web</a>.</p><p>Customer development, lean engineering and agile teams make me happy and sometimes I <a href="/talks.html">get to speak about them</a>.</p><p>My code is <a href="http://github.com/briandoll/" title="briandoll on github">on github</a>, my terse musings are <a href="http://twitter.com/briandoll/" title="@briandoll">on twitter</a> and my heart is in San Francisco.</p>
+        </div>
+    </div>
+
+    <div class="row">
+      <div class="twelve columns footer">
+        Copyright © 2007-2011 Brian Doll
+      </div>
+    </div>
+
   </div>
-</div>
+
 <script type="text/javascript">
   var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
   document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));

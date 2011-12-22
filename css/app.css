@@ -1,0 +1,42 @@
+html { background-color: #F2F2F2; }
+p, div, li, td {font-size: 15px; font-size: 1.5rem;}
+.container {
+  font-family: "Droid Serif", "Liberation Mono", "Lucidia Grande", Serif !important;
+  font-weight: 500 !important;
+  font-size: 1.3em !important;
+  line-height: 1.5em !important;
+  color: #424242 !important;
+}
+p { line-height: 1.5em !important; }
+h1, h2, h3, a, a:visited, a:hover { color: #084B8A; font-weight: 500 !important; text-align: left;}
+h1 { font-size: 2em;}
+code { color: #333; }
+li { list-style: disc outside; margin-left: 30px; }
+table { margin-left: 20px; }
+.header { background-color: #666; }
+.title { background-color: orange; padding:10px; color:#FFF; font-size: 3em; line-height:1.2em; text-align: left !important;
+  -webkit-border-bottom-right-radius: 10px;
+  -webkit-border-bottom-left-radius: 10px;
+  -moz-border-radius-bottomright: 10px;
+  -moz-border-radius-bottomleft: 10px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px; 
+}
+.subtitle { padding:10px; line-height:1.2em; margin-top:-5px; white-space: nowrap;}
+.sidebar {margin-top:50px; text-align: left; font-size: 0.8em; line-height:1.2em;  position: fixed; right: 25px; width: 21.68%;}
+.sidebar p {margin-bottom:7px;}
+.hello { font-size: 3em; margin-bottom: 20px; color: orange; }
+.content { padding-top:50px;}
+.footer {font-size: 0.8em;}
+.posts li { list-style: none; font-size: 1.2em; margin-left: 0px;}
+.index-date { font-size: 0.7em; color: #999; white-space: nowrap;}
+.post-date { font-size: 0.8em; color: #999; margin-top: -15px; padding-bottom: 10px;}
+
+@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {
+  #sidebar {display:none;}
+  .subtitle {display:none;}
+  .title {  font-size: 1.5em; line-height:1.2em;  }
+  h1 { font-size: 1.5em;}
+  h2 { font-size: 1.3em;}
+  h3 { font-size: 1.1em;}
+}
