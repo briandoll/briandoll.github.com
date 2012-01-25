@@ -9,12 +9,9 @@ I was honored to have "my proposal":http://igniterailsconf.com/speakers/365 sele
 
 "I've written about my path to fitness before":http://emphaticsolutions.com/2009/01/12/clean-eating-how-I-make-it-work.html, but this time I wanted to share _why_ I think fitness is so important.
 
-<object width="853" height="505"><param name="movie" value="http://www.youtube.com/v/AqzlCZk9Vao&amp;hl=en_US&amp;fs=1?rel=0&amp;color1=0x3a3a3a&amp;color2=0x999999&amp;hd=1"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/AqzlCZk9Vao&amp;hl=en_US&amp;fs=1?rel=0&amp;color1=0x3a3a3a&amp;color2=0x999999&amp;hd=1" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="853" height="505"></embed></object>
+<iframe width="560" height="315" src="http://www.youtube.com/embed/AqzlCZk9Vao" frameborder="0" allowfullscreen></iframe>
 
-"Rate this presentation on speakerrate.com":http://speakerrate.com/talks/3526-get-fit-to-win
-
-<div style="width:425px" id="__ss_4428255"><object id="__sse4428255" width="425" height="355"><param name="movie" value="http://static.slidesharecdn.com/swf/ssplayer2.swf?doc=getfittowin-100607065420-phpapp01&rel=0&stripped_title=get-fit-to-win" /><param name="allowFullScreen" value="true"/><param name="allowScriptAccess" value="always"/><embed name="__sse4428255" src="http://static.slidesharecdn.com/swf/ssplayer2.swf?doc=getfittowin-100607065420-phpapp01&rel=0&stripped_title=get-fit-to-win" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="425" height="355"></embed></object><div style="padding:5px 0 12px"></div></div>
-
+<div style="width:425px" id="__ss_4428255"> <strong style="display:block;margin:12px 0 4px"><a href="http://www.slideshare.net/briandoll/get-fit-to-win" title="Get Fit to Win" target="_blank">Get Fit to Win</a></strong> <iframe src="http://www.slideshare.net/slideshow/embed_code/4428255" width="425" height="355" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe> </div>
 
 h2. Resources
 

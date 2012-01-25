@@ -5,6 +5,6 @@ title: The Ultimate Productivity Hack - Having Kids
 
 I was honored to be selected to speak at Ignite RailsConf again this year.  <a href="https://www.youtube.com/user/igniterails">All the talks were great</a> and I had a blast.
 
-<iframe width="853" height="510" src="http://www.youtube.com/embed/BtxEKK8DllI?rel=0" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="http://www.youtube.com/embed/BtxEKK8DllI" frameborder="0" allowfullscreen></iframe>
 
 <div style="width:595px" id="__ss_8472736"><iframe src="http://www.slideshare.net/slideshow/embed_code/8472736?rel=0" width="595" height="497" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe></div>
