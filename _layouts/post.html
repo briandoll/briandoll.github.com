@@ -7,27 +7,3 @@ layout: default
 <div class="post-date">// {{ page.date | date(page.date,'%B %Y') }} by Brian Doll</div>
 
 {{ content }}
-
-<hr>
-
-<h3>Thoughts from Twitter</h3>
-<div id="boastful"></div>
-
-<div id="comments">
-	<script>
-	var idcomments_acct = '5099f293aaf2bee997706f02d7d62a3f';
-	var idcomments_post_id;
-	var idcomments_post_url;
-	</script>
-	<span id="IDCommentsPostTitle" style="display:none"></span>
-	<script type='text/javascript' src='http://www.intensedebate.com/js/genericCommentWrapperV2.js'></script>
-</div>
-
-<div id="related">
-  <h3>Related Posts</h3>
-  <table border="0">
-    {% for post in site.related_posts limit:3 %}
-      <tr><td align="right">{{ post.date | date(post.date,'%B %Y') }}</span></td><td> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></td></tr>
-    {% endfor %}
-  </table>
-</div>
