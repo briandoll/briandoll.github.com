@@ -13,7 +13,7 @@ a:hover, a:visited { color: #475b62; text-decoration: underline; }
 code { color: #111; font-family: "Courier", Serif; }
 li { list-style: disc outside; margin-left: 30px; }
 table { margin-left: 20px; }
-blockquote, blockquote > p { color: #042029; border-left: 2px solid #ccc; }
+blockquote { color: #042029; border-left: 2px solid #ccc; }
 .header { padding-top:25px; text-align: center; }
 .title { color: #bd3613 !important; text-decoration: none; font-size: 2em; }
 .subtitle { font-size: 0.8em; }
