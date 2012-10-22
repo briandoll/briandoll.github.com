@@ -10,7 +10,7 @@ h1, h1 > a, h1 > a:hover, h1 > a:visited { color: #bd3613; text-decoration: none
 h1.bio { text-align: center; padding-bottom: 50px; color: #475b62;}
 a { color: #475b62; text-decoration: underline; }
 a:hover, a:visited { color: #475b62; text-decoration: underline; }
-code { color: #FFF; font-family: "Courier", Serif; }
+code { color: #111; font-family: "Courier", Serif; }
 li { list-style: disc outside; margin-left: 30px; }
 table { margin-left: 20px; }
 blockquote, blockquote > p { color: #042029; border-left: 2px solid #ccc; }
