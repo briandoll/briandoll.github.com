@@ -11,7 +11,7 @@ This had several downsides, however.  First, It takes a few steps.  If I don't h
 
 h2. Introducing Twitever
 
-<a href="http://github.com/briandoll/twitever">Twitever brings the flow-of-awesome that is Twitter to the remember-it-for-later of Evernote.  Check it out on Github.</a>
+<a href="http://github.com/briandoll/twitever">Twitever brings the flow-of-awesome that is Twitter to the remember-it-for-later of Evernote.  Check it out on GitHub.</a>
 
 h3. The Twitever workflow
 

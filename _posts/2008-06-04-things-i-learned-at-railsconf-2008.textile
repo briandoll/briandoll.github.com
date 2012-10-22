@@ -40,7 +40,7 @@ Neil Ford had a "Design Patterns" in Ruby presentation, and Obie Fernandez had a
 * The Gang of Four design patterns are all structural, in that they use objects to construct them.  In Ruby, many of these patterns are solved within the standard library, and in an elegant and simple manner.
 * Dynamic languages allow you to do things that you can't conceive of when working in static languages.  The mixin/unmix portion of his presentation was good on this point.
 * An interesting code smell for refactoring: If code looks visually similar, and differs only in whitespace, it's likely that you should refactor.
-* An obvious notion that _should_ go without saying: Know your tools.  Github's rss feeds on projects (like Rails) makes for an easy time keeping up with the direction of the project, on each commit.
+* An obvious notion that _should_ go without saying: Know your tools.  GitHub's rss feeds on projects (like Rails) makes for an easy time keeping up with the direction of the project, on each commit.
 * OOP paradigms are still critical in Ruby and Rails projects.  A programmer without OOP experience will likely make for a terrible Rails programmer.  Thanks Obie for reiterating this point.  Don't get caught up in the "blog in 20 minutes" vision of what Rails is.
 * Beware of Helpers that try to do too much.  They can feel anti-OO and are usually the first to break down.
 
