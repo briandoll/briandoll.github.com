@@ -63,3 +63,6 @@ I'd love to hear your object-oriented rules for creating good, maintainable CSS.
 
 
 *Note:* I'm aware of "Saas (SCSS)":http://sass-lang.com/ and "Compass":http://compass-style.org/, but for the purposes of clarity around OOCSS, this post is aimed at bare CSS.  I know lots of folks love CSS generator frameworks, I guess I'm just not there yet personally.
+
+
+<a href="http://science.webhostinggeeks.com/heuristike-objektno-orjentisanog">This article was translated to Serbo-Croatian</a> by Anja Skrba from Webhostinggeeks.com.
