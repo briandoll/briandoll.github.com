@@ -4,6 +4,6 @@ layout: default
 
 <h1><a href="{{page.url}}">{{page.title}}</a></h1>
 
-<div class="post-date">// {{ page.date | date(page.date,'%B %Y') }} by Brian Doll</div>
+<div class="post-date">// {{ page.date | date: "%B %d, %Y" }} by Brian Doll</div>
 
 {{ content }}
