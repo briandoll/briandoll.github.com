@@ -1,3 +1,12 @@
-name: "Brian Doll : Business & Technology Hacker"
-url: http://emphaticsolutions.com
+markdown: rdiscount
 pygments: true
+auto: true
+rdiscount:
+  extensions: [smart]
+
+name: "Brian Doll"
+url: http://emphaticsolutions.com
+description: "Maker & Marketer at GitHub"
+twitter: briandoll
+github: briandoll
+gravatar_url: https://secure.gravatar.com/avatar/d0bd5ccf2859245b4daf49739a2ceab3
