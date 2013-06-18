@@ -203,8 +203,17 @@ a {
     font-weight: bold; }
   .content .talk-design .color .white {
     color: #fff; }
-  .content .boom {
-    font-size: 42px;
-    margin: 5px 0 15px 0;
+  .content .boom p {
+    font-size: 32px;
+    margin: 8px 0 15px 0;
     color: grey;
-    line-height: 1.3em; }
+    font-family: "Yanone Kaffeesatz", Helvetica, sans-serif;
+    font-familyy: Helvetica;
+    line-height: 1.2em;}
+  .content .boom .shout {
+    font-size: 58px;
+    font-weight: 700;
+    letter-spacing: -1px;
+    line-height: 1em;
+    margin-top: 40px;
+  }
