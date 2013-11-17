@@ -39,7 +39,7 @@ PLATFORMS
 
 DEPENDENCIES
   RedCloth (= 4.2.9)
-  jekyll (= 1.0.2)
+  jekyll (>= 1.0)
   liquid (= 2.5.0)
   maruku (= 0.6.1)
   rdiscount (= 1.6.8)

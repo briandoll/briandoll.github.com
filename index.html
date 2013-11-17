@@ -1,12 +1,30 @@
 ---
-layout: layout
-title: "Brian Doll - Business & Technology Hacker"
+layout: page
+title: 
 ---
 
-<section class="content">
-<div class="boom">
-  <p>Brian Doll is a business and technology hacker who has been building things on the web for over 17 years.</p>
-  <p>After a dozen years in software development and engineering management, Brian is now focused on scaling businesses through marketing and business development.</p>
-  <p class="shout">I'm having the time of my life running marketing at GitHub.</p>
+<div class="col-sm-10 blurb">
+  <div class="article_body">
+    <h1>Brian Doll is a business and technology hacker who has been building and selling things on the web for over 17 years.</h1>
+    <p>After a dozen years in software development and engineering management, Brian is now focused on scaling businesses through marketing and business development.</p>
+    <p><strong>I'm having the time of my life running marketing at GitHub.</strong></p>
   </div>
-</section>
+</div>
+
+<article class="home">
+{% for post in site.posts %}
+  <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+  <span class="post-date">
+    {% assign d = post.date | date: "%d" | plus:'0' %}
+    {{ post.date | date: "%B" }}
+    {% case d %}
+      {% when 1 or 21 or 31 %}{{ d }}st,
+      {% when 2 or 22 %}{{ d }}nd,
+      {% when 3 or 23 %}{{ d }}rd,
+      {% else %}{{ d }}th,
+    {% endcase %}
+    {{ post.date | date: "%Y" }}
+  </span>
+  <hr/>
+{% endfor %}
+</article>
