@@ -1,8 +1,12 @@
 @import url(http://fonts.googleapis.com/css?family=Ubuntu:500&subset=latin,latin-ext);
 
-body{
+body {
   color: #2c3e50;
   font-size: 20px;
+}
+
+.article_body img {
+  max-width: 100%;
 }
 
 .sidebar {
