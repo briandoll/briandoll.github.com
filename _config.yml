@@ -5,7 +5,7 @@ rdiscount:
 
 name: "Brian Doll"
 url: http://emphaticsolutions.com
-description: "Maker & Marketer at GitHub"
+description: "Technology + Business / Strategy at GitHub"
 gravatar_url: https://secure.gravatar.com/avatar/d0bd5ccf2859245b4daf49739a2ceab3
 BASE_PATH: /
 title: "Brian Doll"
@@ -16,5 +16,5 @@ author:
   twitter: briandoll
   linkedin: briandoll
   resume: /talks.html
-  bio: "Maker & Marketer at GitHub"
+  bio: "Technology + Business / Strategy at GitHub"
   email_md5: 7e0748043ab84bb627de8d0d8e739f9e
