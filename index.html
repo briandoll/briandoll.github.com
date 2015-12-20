@@ -1,29 +1,51 @@
----
-layout: page
-title: 
----
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <title>Brian Doll // Marketing + Strategy + Technology</title>
+  <meta name="author" content="Brian Doll">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta property="og:title" content="Brian Doll">
+  <meta property="og:url" content="http://emphaticsolutions.com/">
+  <meta property="og:image" content="https://avatars0.githubusercontent.com/u/4590">
+  <meta name="twitter:image" content="https://avatars0.githubusercontent.com/u/4590">
+  <link href='https://fonts.googleapis.com/css?family=Fauna+One' rel='stylesheet' type='text/css'>
 
-<div class="col-sm-10 blurb">
-  <div class="article_body">
-    <h2>Technology + Business / Strategy at GitHub</h2>
-    <p>Brian has been building and selling things online since the mid-nineties, and has held leadership positions in both business and technical roles in the software, eCommerce, and financial services industries.</p>
+  <style>
+    body {
+      background-color: #ffac33;
+      font-family: 'Fauna One', serif;
+    }
+    .content {
+      margin: auto;
+      width: 60%;
+    }
+    a, a:visited {
+      color: black;
+      margin-right: 20px;
+    }
+  </style>
+
+</head>
+<body>
+  <div class="content">
+    <h1>Hi. I'm Brian.</h1>
+
+    <h3>I'm a story-driven marketer, a technology-infused strategist, and an entrepreneurial executive.</h3>
+
+    <p>Having built and sold things online since the mid-nineties, I've held leadership positions in both business and technical roles in the software, eCommerce, and financial services industries. I'm most happy when every day includes an equal dose of learning, shipping, and laughs.</p>
+
+    <p>
+      <a href="http://twitter.com/briandoll">@briandoll</a>
+      <a href="https://www.linkedin.com/in/briandoll">LinkedIn</a>
+      <a href="http://github.com/briandoll">GitHub</a>
+      <a href="https://medium.com/@briandoll">Medium</a>
+      <a href="https://www.strava.com/athletes/1551425">Strava</a>
+    </p>
+
+
+
+
   </div>
-</div>
-
-<article class="home">
-{% for post in site.posts %}
-  <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-  <span class="post-date">
-    {% assign d = post.date | date: "%d" | plus:'0' %}
-    {{ post.date | date: "%B" }}
-    {% case d %}
-      {% when 1 or 21 or 31 %}{{ d }}st,
-      {% when 2 or 22 %}{{ d }}nd,
-      {% when 3 or 23 %}{{ d }}rd,
-      {% else %}{{ d }}th,
-    {% endcase %}
-    {{ post.date | date: "%Y" }}
-  </span>
-  <hr/>
-{% endfor %}
-</article>
+</body>
+</html>
